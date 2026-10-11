@@ -1,0 +1,3856 @@
+{
+"version": 0.6,
+"osm3s": {
+"timestamp_osm_base": "2026-10-11T04:54:17Z",
+"timestamp_areas_base": "2026-10-09T22:12:50Z",
+"copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+},
+"elements": [
+{
+"type": "node",
+"id": 1014448926,
+"lat": 41.2905123,
+"lon": 69.3007189,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1098324258,
+"lat": 41.271153,
+"lon": 69.2869161,
+"tags": {
+"addr:street": "Abdurauf Fitrat ko'chasi",
+"name": "Шиномонтаж",
+"name:ru": "Шиномонтаж",
+"opening_hours": "Mo-Su 09:00-20:00",
+"shop": "tyres"
+}
+},
+{
+"type": "node",
+"id": 1120018624,
+"lat": 41.2844605,
+"lon": 69.3369704,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1142951614,
+"lat": 41.2795236,
+"lon": 69.2948229,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1145356015,
+"lat": 41.2477206,
+"lon": 69.3011743,
+"tags": {
+"name": "CTO",
+"service:vehicle:tyres": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1145356019,
+"lat": 41.253225,
+"lon": 69.3027451,
+"tags": {
+"service:vehicle:tyres": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1145356020,
+"lat": 41.2532159,
+"lon": 69.3028553,
+"tags": {
+"service": "parts",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 1189660181,
+"lat": 41.3094815,
+"lon": 69.3247266,
+"tags": {
+"name": "Автомастерские",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1223005880,
+"lat": 41.270701,
+"lon": 69.2784539,
+"tags": {
+"name": "Шиномонтаж",
+"name:ru": "Шиномонтаж",
+"service:vehicle:tyres": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1224564034,
+"lat": 41.2650317,
+"lon": 69.2199896,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1232483839,
+"lat": 41.2981472,
+"lon": 69.2966471,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1233425160,
+"lat": 41.2790026,
+"lon": 69.2955848,
+"tags": {
+"name": "Установка ГБО",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1233426637,
+"lat": 41.281297,
+"lon": 69.2969581,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1237273069,
+"lat": 41.3183847,
+"lon": 69.3135152,
+"tags": {
+"service:vehicle:tyres": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1240478810,
+"lat": 41.2816112,
+"lon": 69.2961332,
+"tags": {
+"name": "Установка ГБО под метан",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1242876352,
+"lat": 41.2779355,
+"lon": 69.3068282,
+"tags": {
+"name": "Oktan Petrol",
+"service:vehicle:tyres": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1242876356,
+"lat": 41.2778091,
+"lon": 69.3068262,
+"tags": {
+"name": "Oktan Petrol",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1254060565,
+"lat": 41.2528542,
+"lon": 69.2180025,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1255364442,
+"lat": 41.2723484,
+"lon": 69.2826065,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1255364445,
+"lat": 41.2721413,
+"lon": 69.281032,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1339711607,
+"lat": 41.2558702,
+"lon": 69.1907281,
+"tags": {
+"name": "AutotehXizmat",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1339711623,
+"lat": 41.2510604,
+"lon": 69.3554074,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1633713366,
+"lat": 41.2446076,
+"lon": 69.3145664,
+"tags": {
+"service:vehicle:tyres": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1633713368,
+"lat": 41.2623583,
+"lon": 69.3164763,
+"tags": {
+"service:vehicle:tyres": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1637888428,
+"lat": 41.3291993,
+"lon": 69.3136735,
+"tags": {
+"shop": "tyres"
+}
+},
+{
+"type": "node",
+"id": 1654949887,
+"lat": 41.2768069,
+"lon": 69.2599797,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1772415049,
+"lat": 41.3576876,
+"lon": 69.2067995,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1772489918,
+"lat": 41.3626552,
+"lon": 69.217572,
+"tags": {
+"name": "Автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1773701960,
+"lat": 41.2878304,
+"lon": 69.2808107,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1819768048,
+"lat": 41.2616261,
+"lon": 69.2290309,
+"tags": {
+"name": "Service Hyundai Motor",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 1853833689,
+"lat": 41.1939164,
+"lon": 69.2344581,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 2004304054,
+"lat": 41.2775894,
+"lon": 69.261491,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 2011945485,
+"lat": 41.2720061,
+"lon": 69.3631409,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 2012617894,
+"lat": 41.2543492,
+"lon": 69.3219073,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 2392034765,
+"lat": 41.2589645,
+"lon": 69.1637318,
+"tags": {
+"name": "Ремонт и заправка автокондиционеров",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 2613066696,
+"lat": 41.3306417,
+"lon": 69.3071169,
+"tags": {
+"name": "Шиномонтаж",
+"name:ru": "Шиномонтаж",
+"service:vehicle:tyres": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 2657481732,
+"lat": 41.3776406,
+"lon": 69.2687688,
+"tags": {
+"name": "Castrol Yunus-Obod Car Repair Station",
+"name:ru": "Кастрол Юнусабад",
+"opening_hours": "9:00-19:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3051064723,
+"lat": 41.2697276,
+"lon": 69.2563797,
+"tags": {
+"name": "Колесо магазин",
+"name:en": "Koleso shop",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3154428623,
+"lat": 41.3261056,
+"lon": 69.2548045,
+"tags": {
+"name": "Шиномонтаж",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3320429135,
+"lat": 41.3562576,
+"lon": 69.1992407,
+"tags": {
+"name": "Авто ремонт",
+"name:ru": "Авто ремонт",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3497052433,
+"lat": 41.3301362,
+"lon": 69.3073273,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3579530160,
+"lat": 41.3000552,
+"lon": 69.2025283,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3595751010,
+"lat": 41.2998352,
+"lon": 69.2031299,
+"tags": {
+"name": "tezkor servis",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3604293181,
+"lat": 41.3410477,
+"lon": 69.3587331,
+"tags": {
+"brand": "Lada",
+"name": "ЛАДА СЕРВИЗ",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3704676739,
+"lat": 41.3533393,
+"lon": 69.2665822,
+"tags": {
+"name": "Автомастерска, Электрик",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3704832499,
+"lat": 41.3526926,
+"lon": 69.2660455,
+"tags": {
+"name": "Автомастерская",
+"name:ru": "Автомастерская",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3784992788,
+"lat": 41.2961538,
+"lon": 69.2019573,
+"tags": {
+"name": "Rolf",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3784992789,
+"lat": 41.2937308,
+"lon": 69.2073055,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3784992792,
+"lat": 41.2636052,
+"lon": 69.2353807,
+"tags": {
+"name": "GARAGE автосалон иномарка",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3788750909,
+"lat": 41.2439783,
+"lon": 69.3078971,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3792297864,
+"lat": 41.2733485,
+"lon": 69.1747482,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3893172177,
+"lat": 41.3358917,
+"lon": 69.3046434,
+"tags": {
+"car_repair": "body;paint",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3893172178,
+"lat": 41.3114216,
+"lon": 69.3385486,
+"tags": {
+"car_repair": "body;paint",
+"name": "Кузовные работы",
+"name:ru": "Кузовные работы",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3893172179,
+"lat": 41.315506,
+"lon": 69.3161923,
+"tags": {
+"car_repair": "wheel_repair",
+"service:vehicle:tyres": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3893172182,
+"lat": 41.2806152,
+"lon": 69.3214287,
+"tags": {
+"car_repair": "body;paint",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3893172190,
+"lat": 41.2809611,
+"lon": 69.2956617,
+"tags": {
+"car_repair": "conditioneer",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3910631789,
+"lat": 41.2540924,
+"lon": 69.2047217,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 3970966198,
+"lat": 41.2628922,
+"lon": 69.2323325,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4056070631,
+"lat": 41.2878462,
+"lon": 69.304502,
+"tags": {
+"name": "Erkin Ergashovich",
+"name:ru": "Эркин Эргашович",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4087540888,
+"lat": 41.2832366,
+"lon": 69.2905729,
+"tags": {
+"name": "Автомойка Autochem.uz",
+"name:ru": "autochem.uz Car Wash",
+"service:vehicle:wash": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4117804189,
+"lat": 41.3480836,
+"lon": 69.350558,
+"tags": {
+"name": "GoodYear Store",
+"opening_hours": "Mo-Su 09:00-20:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4170123589,
+"lat": 41.3589626,
+"lon": 69.2425905,
+"tags": {
+"name": "саша",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4185753492,
+"lat": 41.3299058,
+"lon": 69.2225496,
+"tags": {
+"name": "Шиномонтаж",
+"opening_hours": "Mo-Su 09:00-18:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4186443991,
+"lat": 41.339922,
+"lon": 69.2204418,
+"tags": {
+"opening_hours": "Mo-Sa 10:00-19:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4191114735,
+"lat": 41.2656544,
+"lon": 69.2191379,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4191114738,
+"lat": 41.2657401,
+"lon": 69.2194584,
+"tags": {
+"name:ru": "Ремонт радиаторов",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4191131076,
+"lat": 41.2629476,
+"lon": 69.2318806,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4191395629,
+"lat": 41.3298958,
+"lon": 69.2251901,
+"tags": {
+"name": "Без имени",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4192258993,
+"lat": 41.2501709,
+"lon": 69.3547979,
+"tags": {
+"addr:housenumber": "77",
+"addr:street": "Toshkent halqa avtomobil yo'li",
+"name": "SHOH METAN SERVIS",
+"opening_hours": "Mo-Sa 09:00-18:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4201909407,
+"lat": 41.3399496,
+"lon": 69.2187348,
+"tags": {
+"name": "Замена масла",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4201909408,
+"lat": 41.3412262,
+"lon": 69.2145134,
+"tags": {
+"name": "Замена масла",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4201909409,
+"lat": 41.3420408,
+"lon": 69.2120358,
+"tags": {
+"name": "Замена масла",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4201909412,
+"lat": 41.341052,
+"lon": 69.2139522,
+"tags": {
+"name": "СТО",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4201909418,
+"lat": 41.3410782,
+"lon": 69.2138261,
+"tags": {
+"name": "Шиномонтаж",
+"service:vehicle:tyres": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4203929809,
+"lat": 41.2478105,
+"lon": 69.324574,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4204641790,
+"lat": 41.341622,
+"lon": 69.2190712,
+"tags": {
+"name": "Автоэлектрик",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4204641806,
+"lat": 41.3417075,
+"lon": 69.2190202,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4207766189,
+"lat": 41.3079575,
+"lon": 69.1967093,
+"tags": {
+"name": "ааа",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4223565891,
+"lat": 41.3395474,
+"lon": 69.2658377,
+"tags": {
+"opening_hours": "Mo-Sa 09:00-13:00, 14:00-18:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4237178075,
+"lat": 41.2189222,
+"lon": 69.2413227,
+"tags": {
+"addr:street": "Обихаёт улица",
+"name": "Сервис тех. Обслуживания Daewoo-Chevrolet",
+"name:ru": "Сервис тех. Обслуживания Daewoo-Shevrolet",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4237497888,
+"lat": 41.3261155,
+"lon": 69.2548392,
+"tags": {
+"name": "Koleso",
+"shop": "tyres"
+}
+},
+{
+"type": "node",
+"id": 4243132389,
+"lat": 41.2410004,
+"lon": 69.2153139,
+"tags": {
+"addr:street": "Yangi sirg'ali ko'chasi",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4249074566,
+"lat": 41.3255455,
+"lon": 69.2556422,
+"tags": {
+"name": "Shina.uz",
+"shop": "tyres"
+}
+},
+{
+"type": "node",
+"id": 4260145689,
+"lat": 41.3412979,
+"lon": 69.2677595,
+"tags": {
+"name": "Вулканизация",
+"name:en": "High Class Car Tuning Service",
+"name:ru": "High Class Car Tuning Service",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4269431790,
+"lat": 41.284062,
+"lon": 69.1709983,
+"tags": {
+"name": "Автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4271055695,
+"lat": 41.2841365,
+"lon": 69.1949144,
+"tags": {
+"shop": "tyres"
+}
+},
+{
+"type": "node",
+"id": 4271064293,
+"lat": 41.2700552,
+"lon": 69.2651041,
+"tags": {
+"name": "Автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4281625289,
+"lat": 41.3125519,
+"lon": 69.3476914,
+"tags": {
+"name": "ТЭА",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4302122290,
+"lat": 41.3394869,
+"lon": 69.2660222,
+"tags": {
+"name": "Вулканизация",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4314055393,
+"lat": 41.3467487,
+"lon": 69.2166343,
+"tags": {
+"name": "Чимбай СТО",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4322879394,
+"lat": 41.2557512,
+"lon": 69.1893687,
+"tags": {
+"name": "Toyota",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4366506390,
+"lat": 41.258434,
+"lon": 69.1966543,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4367206994,
+"lat": 41.3234297,
+"lon": 69.2304553,
+"tags": {
+"name": "Вулканизация",
+"name:en": "Tire repair",
+"name:ru": "Вулканизация",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4369428393,
+"lat": 41.2884987,
+"lon": 69.3433117,
+"tags": {
+"name": "Автосервис",
+"name:ru": "Автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4378479993,
+"lat": 41.2285663,
+"lon": 69.1776376,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4378526989,
+"lat": 41.2306636,
+"lon": 69.2188573,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4378527089,
+"lat": 41.2320206,
+"lon": 69.2173538,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4378527289,
+"lat": 41.2239837,
+"lon": 69.2129351,
+"tags": {
+"name": "Жамол Сервис",
+"name:en": "Jamol Service",
+"name:ru": "Сарик мастерская",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4378527789,
+"lat": 41.2233404,
+"lon": 69.2135268,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4378928889,
+"lat": 41.2919173,
+"lon": 69.3544804,
+"tags": {
+"name": "Avtoservis1",
+"name:ru": "Автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4378957091,
+"lat": 41.2903008,
+"lon": 69.3432003,
+"tags": {
+"name": "Автосервис Форсаж",
+"name:ru": "Автосервис Форсаж",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4388700696,
+"lat": 41.2800694,
+"lon": 69.2604646,
+"tags": {
+"check_date": "2026-04-21",
+"name": "Токарный цех",
+"name:ru": "Токарный цех",
+"opening_hours": "Mo-Sa 09:00-18:00, 12:00-02:00; Su 09:00-12:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4388705262,
+"lat": 41.2825453,
+"lon": 69.2997633,
+"tags": {
+"name:ru": "Volkswagen-центр",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4388705263,
+"lat": 41.2825499,
+"lon": 69.2998995,
+"tags": {
+"name:ru": "Токарный цех",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4398821135,
+"lat": 41.2498714,
+"lon": 69.2552203,
+"tags": {
+"name:ru": "Автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4421669689,
+"lat": 41.2588571,
+"lon": 69.1523341,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4448691090,
+"lat": 41.2849923,
+"lon": 69.3370654,
+"tags": {
+"name": "Замена масла",
+"name:ru": "Замена масла",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4464652796,
+"lat": 41.3257829,
+"lon": 69.3488006,
+"tags": {
+"addr:street": "Amudaryo ko'chasi",
+"name": "Шиномонтаж",
+"name:en": "Car foot",
+"name:ru": "Замена колес Вулканизация",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4464654696,
+"lat": 41.3256662,
+"lon": 69.3487299,
+"tags": {
+"addr:housenumber": "1А",
+"addr:street": "Амударьинская улица",
+"name": "Замена Маслa",
+"name:en": "Oil change",
+"name:ru": "Замена Маслa",
+"opening_hours": "Mo-Su 10:00-22:00",
+"operator": "Отабек",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4464824946,
+"lat": 41.3329288,
+"lon": 69.3515501,
+"tags": {
+"name": "Автосервис",
+"name:ru": "Автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4479094597,
+"lat": 41.3379159,
+"lon": 69.2932357,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4483432091,
+"lat": 41.3004957,
+"lon": 69.2273567,
+"tags": {
+"addr:city": "Tashkent",
+"addr:country": "UZ",
+"addr:housenumber": "1",
+"addr:street": "Байналминал улица",
+"name": "Автосервис",
+"name:en": "Car Repair Service",
+"name:ru": "Автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4494391293,
+"lat": 41.2806286,
+"lon": 69.3507055,
+"tags": {
+"name": "Замена масла+электрики",
+"name:ru": "Замена масла+электрики",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4494408089,
+"lat": 41.2805034,
+"lon": 69.3508362,
+"tags": {
+"name": "Шиномонтаж и подкачка",
+"name:ru": "Шиномонтаж и подкачка",
+"shop": "tyres"
+}
+},
+{
+"type": "node",
+"id": 4513202613,
+"lat": 41.3086412,
+"lon": 69.3438623,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4520242589,
+"lat": 41.3233869,
+"lon": 69.2305746,
+"tags": {
+"name:en": "Paint Shop",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4520242689,
+"lat": 41.3233205,
+"lon": 69.2303353,
+"tags": {
+"name": "Авто Электрик",
+"name:en": "Auto Electric",
+"name:ru": "Авто Электрик",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4526106127,
+"lat": 41.3146875,
+"lon": 69.3345774,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4570574925,
+"lat": 41.347444,
+"lon": 69.2469505,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4582687989,
+"lat": 41.2081382,
+"lon": 69.2239297,
+"tags": {
+"name": "Автосервис",
+"name:ru": "Автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4621010591,
+"lat": 41.3726847,
+"lon": 69.3225044,
+"tags": {
+"name": "Развал схождение",
+"name:ru": "Развал схождение",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4621063190,
+"lat": 41.3728634,
+"lon": 69.3224468,
+"tags": {
+"name": "Замена масла",
+"name:ru": "Замена масла",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4621073789,
+"lat": 41.3727772,
+"lon": 69.3224814,
+"tags": {
+"name": "Вулканизация",
+"name:ru": "Вулканизация",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4622199992,
+"lat": 41.3052557,
+"lon": 69.1934346,
+"tags": {
+"addr:street": "Kichik Halqa yo'li",
+"name": "Castrol Archa kucha",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4659467689,
+"lat": 41.3268281,
+"lon": 69.2889146,
+"tags": {
+"name": "Регулировка фар",
+"name:ru": "Регулировка фар",
+"opening_hours": "24/7",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4693271649,
+"lat": 41.3552126,
+"lon": 69.2879281,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4693722792,
+"lat": 41.2268201,
+"lon": 69.2184383,
+"tags": {
+"name": "Fix iT сервис центр",
+"name:ru": "Fix iT сервис центр",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4697494395,
+"lat": 41.2999288,
+"lon": 69.2131052,
+"tags": {
+"addr:street": "Байналминал улица",
+"name": "Автосервис",
+"name:en": "Autoservice",
+"name:ru": "Автосервис",
+"opening_hours": "Mo-Su 07:00-20:00",
+"operator": "Ташкентский Автодорожный колледж",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4714581694,
+"lat": 41.2674577,
+"lon": 69.3133348,
+"tags": {
+"name:ru": "Вулканизация",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4714605490,
+"lat": 41.2659981,
+"lon": 69.3136687,
+"tags": {
+"name": "Вулканизация",
+"name:ru": "Вулканизация",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4714605491,
+"lat": 41.2693564,
+"lon": 69.3136954,
+"tags": {
+"name": "Автосервис",
+"name:ru": "Автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4715997189,
+"lat": 41.2648417,
+"lon": 69.2313267,
+"tags": {
+"name": "Fors.uz",
+"name:en": "Fors.uz",
+"name:ru": "Форс.уз",
+"opening_hours": "Mo-Sa 09:00-20:00; Su 09:00-18:00",
+"shop": "car_repair",
+"website": "https://fors.uz/"
+}
+},
+{
+"type": "node",
+"id": 4722142691,
+"lat": 41.2234727,
+"lon": 69.2347729,
+"tags": {
+"name": "Eurostar Motors",
+"name:en": "Eurostar Motors",
+"name:ru": "Eurostar Motors",
+"opening_hours": "Mo-Su 09:00-18:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4727204691,
+"lat": 41.2285553,
+"lon": 69.1776164,
+"tags": {
+"internet_access": "wlan",
+"name": "Питстоп",
+"name:en": "Pitstop",
+"name:ru": "Питстоп",
+"opening_hours": "Mo-Su 09:00-19:00",
+"operator": "Pitstop",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4727212689,
+"lat": 41.2727112,
+"lon": 69.1679261,
+"tags": {
+"addr:housenumber": "+998951427279",
+"addr:street": "Катта Канъи улица",
+"name": "Катта Қаъни Автосервис",
+"name:en": "Kotta Qa'ni avtoservis",
+"name:ru": "Катта кани автосервис",
+"opening_hours": "Mo-Su 09:00-20:00",
+"shop": "car_repair",
+"website": "https://facebook.com/shodrazvaltashkent"
+}
+},
+{
+"type": "node",
+"id": 4742613365,
+"lat": 41.3408459,
+"lon": 69.2614108,
+"tags": {
+"name": "Ал Азиз",
+"name:en": "Al Aziz",
+"name:ru": "Ал Азиз",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4744121622,
+"lat": 41.2689228,
+"lon": 69.28918,
+"tags": {
+"name": "Вулканизация у Марата",
+"name:ru": "Вулканизация у Марата АЗС MUSTANG",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4744130523,
+"lat": 41.2683802,
+"lon": 69.2897481,
+"tags": {
+"name": "Автосервис",
+"name:ru": "Автосервис-мойка \"MEGA HOUSE\" замена масла \"EUROOIL\"",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4747525937,
+"lat": 41.2967481,
+"lon": 69.2577817,
+"tags": {
+"name": "Carbox",
+"name:en": "Carbox",
+"name:ru": "Carbox",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4770555231,
+"lat": 41.3065506,
+"lon": 69.1978104,
+"tags": {
+"addr:street": "Чукуркуприк улица",
+"name": "Ремонт автомоторов",
+"name:ru": "Ремонт автомоторов",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4770555232,
+"lat": 41.3064669,
+"lon": 69.1979201,
+"tags": {
+"name": "Перекачка и ремонт амортизаторов",
+"name:ru": "Перекачка и ремонт амортизаторов",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4770555433,
+"lat": 41.306682,
+"lon": 69.1976617,
+"tags": {
+"addr:street": "Чукуркуприк улица",
+"name": "Вулканизация",
+"name:ru": "Вулканизация",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4770577022,
+"lat": 41.3066177,
+"lon": 69.197747,
+"tags": {
+"addr:street": "Чукуркуприк улица",
+"name": "Ремонт ходовой части автомобиля",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4773537928,
+"lat": 41.3162306,
+"lon": 69.3559674,
+"tags": {
+"name": "Вулканизация",
+"name:ru": "Вулканизация",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4773538821,
+"lat": 41.3226377,
+"lon": 69.3592309,
+"tags": {
+"name": "Шиномонтаж",
+"service:vehicle:tyres": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4799898822,
+"lat": 41.2669807,
+"lon": 69.2026571,
+"tags": {
+"name": "High Class Car Tuning Service",
+"name:en": "High Class Car Tuning Service",
+"name:ru": "High Class Car Tuning Service",
+"opening_hours": "Sa-Th 09:00-18:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4831271324,
+"lat": 41.3176766,
+"lon": 69.3578668,
+"tags": {
+"name": "Замена масла",
+"name:ru": "Замена масла",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4837817221,
+"lat": 41.2713546,
+"lon": 69.2079799,
+"tags": {
+"name": "SIGMA",
+"opening_hours": "24/7",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4932667423,
+"lat": 41.3051531,
+"lon": 69.1935173,
+"tags": {
+"name": "СТО",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4934809298,
+"lat": 41.2906853,
+"lon": 69.3509103,
+"tags": {
+"name": "Шиномонтаж",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4960920122,
+"lat": 41.3698462,
+"lon": 69.2666247,
+"tags": {
+"name": "Офис 7кв",
+"name:ru": "Офис 7кв",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4971454321,
+"lat": 41.2502927,
+"lon": 69.2173811,
+"tags": {
+"name": "DISK OSIYO",
+"name:en": "DISK OSIYO",
+"name:ru": "DISK OSIYO",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4972955722,
+"lat": 41.2892288,
+"lon": 69.3023268,
+"tags": {
+"name": "Развал-схождение",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4973022075,
+"lat": 41.2879679,
+"lon": 69.2809047,
+"tags": {
+"check_date": "2026-04-21",
+"description": "Устранение боковых шишек, латание больших порезов.\n\nБалансировка, прокатка дисков, вулканизация.",
+"name": "Шиномонтаж",
+"name:ru": "Шиномонтаж круглосуточно",
+"opening_hours": "24/7",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 4976703823,
+"lat": 41.2747005,
+"lon": 69.2135804,
+"tags": {
+"name": "Вулканизация",
+"name:ru": "Вулканизация",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5004442322,
+"lat": 41.2826252,
+"lon": 69.1958474,
+"tags": {
+"name": "Техобслуга Chevrolet, Lada",
+"name:ru": "Техобслуга Chevrolet, Lada",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5007769721,
+"lat": 41.223516,
+"lon": 69.2076023,
+"tags": {
+"name": "Вулканизация",
+"name:ru": "Вулканизация",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5018002224,
+"lat": 41.3610474,
+"lon": 69.2245024,
+"tags": {
+"name": "Автомастерская",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5045654224,
+"lat": 41.2514184,
+"lon": 69.36994,
+"tags": {
+"name": "Замена масла Лёха",
+"name:ru": "Замена масла Лёха",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5074870664,
+"lat": 41.3469792,
+"lon": 69.2470155,
+"tags": {
+"addr:street": "Kichik Halqa yo'li",
+"name": "Автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5074916245,
+"lat": 41.2423391,
+"lon": 69.3359916,
+"tags": {
+"addr:street": "To'yona ko'chasi",
+"name": "Автосервис",
+"name:ru": "Автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5074927841,
+"lat": 41.2425803,
+"lon": 69.3366551,
+"tags": {
+"addr:street": "Toshkent halqa avtomobil yo'li",
+"name": "Шиномонтаж",
+"name:ru": "Шиномонтаж для грузовых машин",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5082926368,
+"lat": 41.2510349,
+"lon": 69.3554732,
+"tags": {
+"name": "Артём замена масла",
+"name:ru": "Артём замена масла",
+"opening_hours": "Mo-Sa 09:00-19:00",
+"service:vehicle:oil_change": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5115206023,
+"lat": 41.2687287,
+"lon": 69.2131249,
+"tags": {
+"name": "Замена масла",
+"name:en": "OIL CITY",
+"name:ru": "Замена масла",
+"opening_hours": "Mo-Su 09:00-18:00",
+"service": "oil",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5116382521,
+"lat": 41.2776636,
+"lon": 69.1766442,
+"tags": {
+"name": "Вулканизация",
+"name:ru": "Вулканизация",
+"service:vehicle:tyres": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5116382621,
+"lat": 41.2839538,
+"lon": 69.170952,
+"tags": {
+"name": "Вулканизация",
+"name:ru": "Вулканизация",
+"service:vehicle:tyres": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5117830724,
+"lat": 41.2737187,
+"lon": 69.3006031,
+"tags": {
+"addr:street": "Eski Sariko'l ko'chasi",
+"name": "Автосервис «BMW» «AutoZone»",
+"name:en": "Auto Zone",
+"name:ru": "AUTOZONE",
+"opening_hours": "Mo-Fr 09:00-19:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5142360421,
+"lat": 41.3461825,
+"lon": 69.3652506,
+"tags": {
+"name": "Автосервис",
+"name:ru": "Автосервим",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5214809523,
+"lat": 41.2608449,
+"lon": 69.1938337,
+"tags": {
+"addr:street": "Bogodob ko'chasi",
+"name": "Авточехолы",
+"opening_hours": "Mo-Su 09:00-18:00",
+"shop": "tyres"
+}
+},
+{
+"type": "node",
+"id": 5251420021,
+"lat": 41.275098,
+"lon": 69.2138075,
+"tags": {
+"name": "СТО Алим ака",
+"name:ru": "СТО Алим ака",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5255190721,
+"lat": 41.2807101,
+"lon": 69.2287129,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5257346023,
+"lat": 41.2741929,
+"lon": 69.224189,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5271983067,
+"lat": 41.258512,
+"lon": 69.2287628,
+"tags": {
+"addr:city": "Tashkent",
+"addr:country": "UZ",
+"addr:housenumber": "27",
+"addr:street": "Sa'diy ko'chasi",
+"alt_name": "stag.uz",
+"image": "https://plus.google.com/photos/photo/106214918842451271840/6457125271437415794",
+"name": "Easy Gas Service",
+"shop": "car_repair",
+"website": "https://www.stag.uz/"
+}
+},
+{
+"type": "node",
+"id": 5285585522,
+"lat": 41.2832197,
+"lon": 69.2904379,
+"tags": {
+"addr:postcode": "100000",
+"addr:street": "Eski Sariko'l 2-o'tish ko'chasi",
+"name": "Керамик Про Узбекистан",
+"name:en": "CERAMIC PRO UZBEKISTAN",
+"opening_hours": "24/7",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5321370621,
+"lat": 41.3955308,
+"lon": 69.2649135,
+"tags": {
+"name": "УСТАНОВКА ГБО ТОХИР",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5345016023,
+"lat": 41.3386005,
+"lon": 69.3571198,
+"tags": {
+"addr:street": "Buyuk Ipak Yo'li ko'chasi",
+"name": "AVTOLINE сервис центр",
+"opening_hours": "Mo-Su 08:00-22:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5349712223,
+"lat": 41.3562657,
+"lon": 69.1990227,
+"tags": {
+"name": "Развал",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5372711821,
+"lat": 41.3644468,
+"lon": 69.3001332,
+"tags": {
+"addr:city": "Toshkent",
+"addr:postcode": "100177",
+"addr:street": "Yangi Yunusobod ko'chasi",
+"name": "Ремонт автостекол",
+"name:en": "Car glass repair",
+"name:ru": "Ремонт автостекол",
+"opening_hours": "Su 09:00-18:00; Mo-Sa 09:00-18:00",
+"operator": "Sergey",
+"service:vehicle:glass": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5387524148,
+"lat": 41.2577084,
+"lon": 69.3589826,
+"tags": {
+"addr:city": "Яшнободский район",
+"addr:street": "Toshkent halqa avtomobil yo'li",
+"name": "Ремонт автостекол",
+"payment:cash": "yes",
+"service:vehicle:glass": "yes",
+"service:vehicle:lights": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5437044766,
+"lat": 41.3309526,
+"lon": 69.3137399,
+"tags": {
+"name": "Замена масла ENOC by InRent",
+"name:ru": "Замена масла Total, развал-схождение",
+"opening_hours": "Mo-Sa 09:00-20:00",
+"payment:cash": "yes",
+"payment:credit_cards": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5443936427,
+"lat": 41.282958,
+"lon": 69.193069,
+"tags": {
+"addr:city": "Ташкент",
+"addr:housenumber": "14",
+"addr:street": "Farhod ko'chasi",
+"car:repair": "yes",
+"fixme": "translate tags to proper English ones",
+"name": "Автосервис ХАН КАР (XAN CAR)",
+"opening_hours": "Mo-Su 10:00-22:00",
+"operator": "avtostyle",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5513456023,
+"lat": 41.312564,
+"lon": 69.1931668,
+"tags": {
+"addr:housenumber": "80",
+"addr:street": "Kichik Halqa yo'li",
+"name": "Замена моторных масел Liqui Moly",
+"name:en": "Liqui Moly",
+"opening_hours": "Mo-Su 09:00-18:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5551736821,
+"lat": 41.2584525,
+"lon": 69.359609,
+"tags": {
+"addr:street": "Toshkent halqa avtomobil yo'li",
+"name": "Автосервис",
+"name:en": "Autodesk",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5570222224,
+"lat": 41.33525,
+"lon": 69.304111,
+"tags": {
+"name": "Автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5584532721,
+"lat": 41.2827379,
+"lon": 69.1934082,
+"tags": {
+"name": "Premier Service",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5612705123,
+"lat": 41.3492441,
+"lon": 69.3894253,
+"tags": {
+"name": "Автосервис и мойка",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5681220323,
+"lat": 41.3644338,
+"lon": 69.3005925,
+"tags": {
+"name": "Apriori",
+"name:en": "Apriori",
+"opening_hours": "Mo-Sa 09:00-18:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5685395621,
+"lat": 41.200517,
+"lon": 69.226088,
+"tags": {
+"addr:street": "Davlatobod ko'chasi",
+"name": "Автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5685395821,
+"lat": 41.2004417,
+"lon": 69.2261391,
+"tags": {
+"name": "Шиномонтаж",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5750260021,
+"lat": 41.2728646,
+"lon": 69.2965785,
+"tags": {
+"addr:street": "Abdurauf Fitrat 5-o'tish ko'chasi",
+"name": "Мухаммаджон",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5753169321,
+"lat": 41.3277563,
+"lon": 69.2924231,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5794987055,
+"lat": 41.2738474,
+"lon": 69.3425528,
+"tags": {
+"addr:street": "Izzat ko'chasi",
+"name": "Замена масла",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5794988355,
+"lat": 41.2736697,
+"lon": 69.3429001,
+"tags": {
+"addr:street": "Izzat ko'chasi",
+"name": "Автоэлектрик",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5794988454,
+"lat": 41.2738072,
+"lon": 69.3425608,
+"tags": {
+"addr:street": "Izzat ko'chasi",
+"name": "Кузовные работы",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5794988455,
+"lat": 41.2736197,
+"lon": 69.3429043,
+"tags": {
+"addr:street": "Izzat ko'chasi",
+"name": "Ремонт и установка автокондиционера",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5858852086,
+"lat": 41.2621827,
+"lon": 69.2272954,
+"tags": {
+"name": "Авто Маркет",
+"name:en": "Avto Market",
+"opening_hours": "Mo-Sa 09:00-18:00",
+"shop": "tyres",
+"website": "http://www.nexen.uz"
+}
+},
+{
+"type": "node",
+"id": 5872929086,
+"lat": 41.2716816,
+"lon": 69.1894884,
+"tags": {
+"addr:street": "Qatortol 2-o'tish ko'chasi",
+"name": "3-D развал схождение",
+"name:en": "HOFMANN Germany",
+"opening_hours": "Mo-Su 09:00-21:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5877090489,
+"lat": 41.3235081,
+"lon": 69.230509,
+"tags": {
+"addr:street": "Лайлитогон",
+"name": "Аккумурятор DELKOR",
+"name:en": "DELKOR.UZ",
+"opening_hours": "Mo-Sa 09:00-18:00",
+"shop": "tyres",
+"website": "http://www.delkor.uz"
+}
+},
+{
+"type": "node",
+"id": 5878100485,
+"lat": 41.2763166,
+"lon": 69.2635499,
+"tags": {
+"addr:street": "Abdulla Kahhar ko'chasi",
+"name": "Spektr Service",
+"name:ru": "Спектр Сервис",
+"opening_hours": "Sa-Th 09:00-18:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 5899406742,
+"lat": 41.3774516,
+"lon": 69.2688394,
+"tags": {
+"name": "HUMO",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6112490091,
+"lat": 41.3203903,
+"lon": 69.1737181,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6132385685,
+"lat": 41.3279606,
+"lon": 69.2060978,
+"tags": {
+"name": "Durbek kastoprav izzat",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6187308933,
+"lat": 41.3410575,
+"lon": 69.2139592,
+"tags": {
+"name": "СТО",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6190357232,
+"lat": 41.3060418,
+"lon": 69.1932965,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6196909785,
+"lat": 41.2826297,
+"lon": 69.1935966,
+"tags": {
+"name": "БассХед Ташкент",
+"name:en": "BassHead Tashkent",
+"opening_hours": "Mo-Su 11:00-20:00",
+"shop": "car_repair",
+"website": "http://t.me/Basshead_Tashkent t.me/BassHeadTashkent"
+}
+},
+{
+"type": "node",
+"id": 6229865908,
+"lat": 41.2547435,
+"lon": 69.2471139,
+"tags": {
+"addr:city": "Ташкент",
+"addr:street": "Саватчи улица",
+"air_conditioning": "yes",
+"description": "Студия детейлинга. Полировка, тонировка, химчистка салона, оклейка кузова авто.",
+"internet_access": "wlan",
+"name": "Gloss Technology Detailing Solutions",
+"opening_hours": "Mo-Su 09:00-21:00",
+"shop": "car_repair",
+"start_date": "2016",
+"website": "https://www.gloss.uz/"
+}
+},
+{
+"type": "node",
+"id": 6237752686,
+"lat": 41.167246,
+"lon": 69.2439674,
+"tags": {
+"service:vehicle:vulcanization": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6291264787,
+"lat": 41.3258763,
+"lon": 69.1928982,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6311323222,
+"lat": 41.3141143,
+"lon": 69.3359752,
+"tags": {
+"car_repair": "body",
+"name": "Кузовные работы",
+"name:ru": "Кузовные работы",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6340904086,
+"lat": 41.3125268,
+"lon": 69.2092037,
+"tags": {
+"name": "Avtoritet",
+"name:en": "Avtoritet",
+"service": "dealer;parts;repair;tyres",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6353751029,
+"lat": 41.3280158,
+"lon": 69.2853624,
+"tags": {
+"name": "Заправка авто кондиционеров",
+"opening_hours": "Mo-Sa 09:00-18:00",
+"operator": "Элако",
+"service:vehicle:car_repair": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6354381840,
+"lat": 41.3091818,
+"lon": 69.3243596,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6354381845,
+"lat": 41.308271,
+"lon": 69.3270526,
+"tags": {
+"name": "Сварные работы",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6403440085,
+"lat": 41.3256486,
+"lon": 69.3488022,
+"tags": {
+"name": "Автомастерская",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6414857585,
+"lat": 41.3828686,
+"lon": 69.2917179,
+"tags": {
+"name": "Учкахрамон",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6429755985,
+"lat": 41.2821301,
+"lon": 69.1941485,
+"tags": {
+"name": "Автотюнинг",
+"name:en": "Autotuning",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6497355176,
+"lat": 41.1940971,
+"lon": 69.2143065,
+"tags": {
+"addr:street": "Дустлик",
+"name": "СТО",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6535009462,
+"lat": 41.3239815,
+"lon": 69.2317283,
+"tags": {
+"name": "Моторист Музаффар",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6601774885,
+"lat": 41.3777186,
+"lon": 69.3131525,
+"tags": {
+"addr:postcode": "100114",
+"check_date": "2026-05-03",
+"name": "автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6612458485,
+"lat": 41.2945385,
+"lon": 69.2938556,
+"tags": {
+"addr:street": "Farg'ona Yo'li",
+"internet_access": "wlan",
+"name": "Центр техническогообслуживания высокоскоростного поез",
+"name:ru": "Центр техническогообслуживания высокоскоростного поезда «Афросиёб»",
+"opening_hours": "24/7",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6619066586,
+"lat": 41.3627989,
+"lon": 69.2162203,
+"tags": {
+"name": "Автосервис LUX",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6631388695,
+"lat": 41.3492909,
+"lon": 69.2414124,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6642748899,
+"lat": 41.276545,
+"lon": 69.309596,
+"tags": {
+"name": "Вали Галваника Электро апарат",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6681722485,
+"lat": 41.3385568,
+"lon": 69.2239036,
+"tags": {
+"name": "Автосервис - мотор, замена КПП",
+"name:ru": "Автосервис - замена и ремонт мотора и коробка передач",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6738269986,
+"lat": 41.2715724,
+"lon": 69.2806291,
+"tags": {
+"addr:street": "махалля Банокатий",
+"name": "OSIPYANMOTORS",
+"opening_hours": "Mo-Fr 09:00-18:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6876412985,
+"lat": 41.3391989,
+"lon": 69.3004281,
+"tags": {
+"name": "СТО",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6885636417,
+"lat": 41.3057981,
+"lon": 69.1940544,
+"tags": {
+"name": "СТО",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 6942916888,
+"lat": 41.2964938,
+"lon": 69.3628083,
+"tags": {
+"addr:street": "Тузель",
+"name": "Anygard тонировка",
+"name:en": "Anygard sunting",
+"opening_hours": "Mo-Su 10:00-20:00",
+"shop": "car_repair",
+"website": "https://instagram.com/anygard.uz"
+}
+},
+{
+"type": "node",
+"id": 7099398287,
+"lat": 41.2824018,
+"lon": 69.1963313,
+"tags": {
+"addr:street": "Kichik Halqa yo'li",
+"name": "Ремонт Амортизатора",
+"opening_hours": "Mo-Su 09:00-18:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 7276393685,
+"lat": 41.2472702,
+"lon": 69.3241333,
+"tags": {
+"name": "Шиномонтаж",
+"opening_hours": "Mo-Su 09:00-18:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 7521102085,
+"lat": 41.2807751,
+"lon": 69.2605706,
+"tags": {
+"addr:postcode": "100100",
+"addr:street": "Abdulla Kahhar 6-o'tish ko'chasi",
+"check_date": "2026-04-21",
+"name": "Автосервис. Тюнинг.",
+"name:en": "Vehicle repair. Tuning.",
+"opening_hours": "Mo-Su 08:00-19:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 7521569972,
+"lat": 41.3544594,
+"lon": 69.3724914,
+"tags": {
+"name": "Замена Масла",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 7616124985,
+"lat": 41.3541656,
+"lon": 69.2985683,
+"tags": {
+"name:de": "Werkstatt",
+"shop": "tyres"
+}
+},
+{
+"type": "node",
+"id": 7833689916,
+"lat": 41.3207385,
+"lon": 69.2240502,
+"tags": {
+"name": "Шиномонтаж",
+"service:vehicle:tyres": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 7833689919,
+"lat": 41.3214949,
+"lon": 69.2225227,
+"tags": {
+"name": "Шиномонтаж",
+"service:vehicle:tyres": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 7833692347,
+"lat": 41.3287352,
+"lon": 69.193581,
+"tags": {
+"service": "repair",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 7835993885,
+"lat": 41.2782073,
+"lon": 69.1500794,
+"tags": {
+"addr:street": "Izza 2-o'tish ko'chasi",
+"name": "Bunker Tashkent",
+"name:en": "Бункер Ташкент",
+"opening_hours": "24/7",
+"operator": "Faxriddin and Husniddin",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 7899197022,
+"lat": 41.2953853,
+"lon": 69.29259,
+"tags": {
+"name": "АВТОРИТЕТ",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 7987967685,
+"lat": 41.3374044,
+"lon": 69.3259864,
+"tags": {
+"name": "Регулировка фар",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 8051670986,
+"lat": 41.3388455,
+"lon": 69.2208999,
+"tags": {
+"name": "Avto do'kon",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 8051670987,
+"lat": 41.3388722,
+"lon": 69.2208154,
+"tags": {
+"name": "Avtoservis Daewoo",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 8051671110,
+"lat": 41.3335469,
+"lon": 69.2294012,
+"tags": {
+"name": "Замена масла",
+"service": "repair",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 8116895421,
+"lat": 41.3537815,
+"lon": 69.1860165,
+"tags": {
+"name": "Мошина уста",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 8259338012,
+"lat": 41.2993226,
+"lon": 69.1936118,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 8933090509,
+"lat": 41.304386,
+"lon": 69.319759,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 8981456416,
+"lat": 41.2892913,
+"lon": 69.3019935,
+"tags": {
+"name": "Вулканизация",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 9027661617,
+"lat": 41.3503145,
+"lon": 69.3795805,
+"tags": {
+"name": "Вулканизация",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 9027661619,
+"lat": 41.3489832,
+"lon": 69.3896161,
+"tags": {
+"name": "Вулканизация",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 9094082747,
+"lat": 41.3470673,
+"lon": 69.2784514,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 9106680645,
+"lat": 41.215134,
+"lon": 69.3375287,
+"tags": {
+"name": "Станция техосмотра",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 9106680646,
+"lat": 41.3057948,
+"lon": 69.4643318,
+"tags": {
+"name": "Станция техосмотра",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 9147313017,
+"lat": 41.3471642,
+"lon": 69.3657372,
+"tags": {
+"name": "Вулканизация",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 9205691655,
+"lat": 41.2828678,
+"lon": 69.4477813,
+"tags": {
+"name": "Вулканизация",
+"service:vehicle:tyres": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 9311565617,
+"lat": 41.2749588,
+"lon": 69.2136837,
+"tags": {
+"addr:street": "Chilonzor ko'chasi",
+"internet_access": "wlan",
+"name": "Pandora Auto Security",
+"opening_hours": "Mo-Su 10:00-08:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 9375514529,
+"lat": 41.340896,
+"lon": 69.3585118,
+"tags": {
+"name": "Авторитет",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 9428411965,
+"lat": 41.3225132,
+"lon": 69.3595138,
+"tags": {
+"name": "Avtoservis",
+"service": "repair",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 9584854517,
+"lat": 41.3620479,
+"lon": 69.3837745,
+"tags": {
+"name": "Вулканизация",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 9688270017,
+"lat": 41.3620594,
+"lon": 69.2849706,
+"tags": {
+"addr:street": "Ahmad Donish ko'chasi",
+"name": "Тонировка.уз",
+"name:en": "Tanirovka.uz",
+"shop": "car_repair",
+"website": "https://instagram.com/tonirovka.uz?igshid=YmMyMTA2M2Y="
+}
+},
+{
+"type": "node",
+"id": 9789556117,
+"lat": 41.3296767,
+"lon": 69.3471677,
+"tags": {
+"name": "Вулканизация",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 9955055187,
+"lat": 41.2873189,
+"lon": 69.2869939,
+"tags": {
+"name": "Подкачка",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 9965234576,
+"lat": 41.2751117,
+"lon": 69.2244452,
+"tags": {
+"name": "керамика тонировка шyмоизоляция",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 10101477117,
+"lat": 41.2802546,
+"lon": 69.3339384,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 10538614796,
+"lat": 41.3466384,
+"lon": 69.2583207,
+"tags": {
+"brand": "Chevrolet",
+"name": "Avto servis",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 10688225056,
+"lat": 41.3468068,
+"lon": 69.2165454,
+"tags": {
+"brand": "Chevrolet",
+"name": "Магазин по продаже автомобильных запчастей",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 10692811551,
+"lat": 41.3629805,
+"lon": 69.2161223,
+"tags": {
+"brand": "Chevrolet",
+"name": "Lux",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 10726349031,
+"lat": 41.2812128,
+"lon": 69.2288285,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 10746504523,
+"lat": 41.2417592,
+"lon": 69.172423,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 10777824179,
+"lat": 41.2946814,
+"lon": 69.2079934,
+"tags": {
+"brand": "Chevrolet",
+"name": "Begzod Servis SXS",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 10777824190,
+"lat": 41.2935636,
+"lon": 69.2077491,
+"tags": {
+"brand": "Chevrolet",
+"name": "Humo NTD Avtoservis",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 10864469692,
+"lat": 41.2947264,
+"lon": 69.2972875,
+"tags": {
+"description": "ЧП «SECURITY TRADE»",
+"name": "Фирменный центр StarLine («SECURITY TRADE»)",
+"payment:cash": "yes",
+"service:vehicle:car_parts": "yes",
+"service:vehicle:electrical": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 10864469695,
+"lat": 41.2945151,
+"lon": 69.2972351,
+"tags": {
+"name": "Autozone.uz - многопрофильный автосервис",
+"opening_hours": "Mo-Su 10:00-19:00",
+"service:vehicle:alignment": "yes",
+"service:vehicle:car_repair": "yes",
+"service:vehicle:diagnostics": "yes",
+"service:vehicle:electrical": "yes",
+"service:vehicle:inspection": "yes",
+"shop": "car_repair",
+"website": "https://www.instagram.com/autozone.uz/"
+}
+},
+{
+"type": "node",
+"id": 10864469696,
+"lat": 41.2945863,
+"lon": 69.2974043,
+"tags": {
+"name": "Tonirovka.uz",
+"service:vehicle:car_repair": "yes",
+"service:vehicle:glass": "yes",
+"shop": "car_repair",
+"website": "https://tonirovka-uz.business.site/"
+}
+},
+{
+"type": "node",
+"id": 10928967165,
+"lat": 41.2595764,
+"lon": 69.2132082,
+"tags": {
+"brand": "Chevrolet",
+"name": "Gavxar",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 10933931526,
+"lat": 41.205612,
+"lon": 69.2384505,
+"tags": {
+"name": "Megawatt Service",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 11019852541,
+"lat": 41.2752764,
+"lon": 69.2140849,
+"tags": {
+"shop": "tyres"
+}
+},
+{
+"type": "node",
+"id": 11091336621,
+"lat": 41.341088,
+"lon": 69.2613586,
+"tags": {
+"brand": "Chevrolet",
+"name": "Taxtapul",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 11273643143,
+"lat": 41.2481381,
+"lon": 69.3244444,
+"tags": {
+"name": "Teyes.uz - установочный сервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 11397485142,
+"lat": 41.3087366,
+"lon": 69.2378138,
+"tags": {
+"name": "Avtoglass premium",
+"opening_hours": "Mo-Su 09:00-13:00,14:00-19:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 11545864628,
+"lat": 41.2633884,
+"lon": 69.2332488,
+"tags": {
+"name": "Stek Uzbekistan",
+"opening_hours": "Mo-Sa 10:30-22:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 11807153413,
+"lat": 41.3090388,
+"lon": 69.2073869,
+"tags": {
+"name": "Tuning for cars",
+"opening_hours": "Mo-Sa 09:00-20:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 12741687339,
+"lat": 41.3240749,
+"lon": 69.2318469,
+"tags": {
+"name": "Avtoservis",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 12759677800,
+"lat": 41.2948302,
+"lon": 69.2117154,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 12903894084,
+"lat": 41.2611794,
+"lon": 69.1618889,
+"tags": {
+"name": "Автомастерская",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 12946578794,
+"lat": 41.2929026,
+"lon": 69.2343505,
+"tags": {
+"shop": "tyres"
+}
+},
+{
+"type": "node",
+"id": 12968927846,
+"lat": 41.2677181,
+"lon": 69.2647097,
+"tags": {
+"name:ru": "Автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 12989957218,
+"lat": 41.2936652,
+"lon": 69.2460697,
+"tags": {
+"addr:street": "Тошбулок улица",
+"name": "Аккумуляторщик",
+"opening_hours": "9:00-18:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 13246595155,
+"lat": 41.2987617,
+"lon": 69.1869378,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 13246595156,
+"lat": 41.2986569,
+"lon": 69.187888,
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 13246595163,
+"lat": 41.2987486,
+"lon": 69.188413,
+"tags": {
+"service:vehicle:oil_change": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "node",
+"id": 13620105671,
+"lat": 41.3545355,
+"lon": 69.3715938,
+"tags": {
+"name": "Mobil One Замена Масла",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 105958811,
+"center": {
+"lat": 41.382332,
+"lon": 69.2889634
+},
+"tags": {
+"addr:street": "Amir Temur shoh ko'chasi",
+"building": "yes",
+"man_made": "works",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 105958812,
+"center": {
+"lat": 41.3824055,
+"lon": 69.2880712
+},
+"tags": {
+"building": "yes",
+"man_made": "works",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 105958931,
+"center": {
+"lat": 41.3817937,
+"lon": 69.2879037
+},
+"tags": {
+"building": "yes",
+"man_made": "works",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 108548949,
+"center": {
+"lat": 41.2577211,
+"lon": 69.1970003
+},
+"tags": {
+"addr:housenumber": "27",
+"addr:street": "Bunyodkor shoh ko'chasi",
+"building": "yes",
+"building:levels": "3",
+"name": "Автосервис ВАЗ",
+"name:ru": "Автосервис ВАЗ",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 127853987,
+"center": {
+"lat": 41.2198651,
+"lon": 69.2422009
+},
+"tags": {
+"addr:city": "Tashkent",
+"addr:country": "UZ",
+"addr:housenumber": "39",
+"addr:street": "Обихаёт улица",
+"brand": "GM Uzbekistan",
+"building": "yes",
+"building:levels": "3",
+"name": "ОАО \"Сергели-Автотехсервис\"",
+"service": "dealer",
+"shop": "car"
+}
+},
+{
+"type": "way",
+"id": 134634181,
+"center": {
+"lat": 41.2978408,
+"lon": 69.183639
+},
+"tags": {
+"addr:housenumber": "24B",
+"addr:street": "Foziltepa ko'chasi",
+"building": "yes",
+"building:levels": "2",
+"internet_access": "wlan",
+"name": "МЕД ОПТИМАЛ ПЛЮС",
+"name:en": "MED OPTIMAL PLUS",
+"opening_hours": "24/7",
+"operator": "проктологическая частная клиника",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 136586164,
+"center": {
+"lat": 41.290319,
+"lon": 69.1763936
+},
+"tags": {
+"addr:place": "Chilonzor 23 mavzesi",
+"building": "yes",
+"name": "автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 141322446,
+"center": {
+"lat": 41.3590676,
+"lon": 69.2056815
+},
+"tags": {
+"addr:housenumber": "4/2",
+"addr:street": "Muxbir ko'chasi",
+"building": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 149541349,
+"center": {
+"lat": 41.2624699,
+"lon": 69.3163869
+},
+"tags": {
+"addr:street": "Farg'ona Yo'li",
+"building": "yes",
+"building:levels": "1",
+"name": "Авто сервис",
+"name:en": "Avto servis",
+"opening_hours": "Mo-Su 08:00-22:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 149714246,
+"center": {
+"lat": 41.3461509,
+"lon": 69.208321
+},
+"tags": {
+"building": "yes",
+"shop": "car_repair",
+"source": "Bing"
+}
+},
+{
+"type": "way",
+"id": 150927233,
+"center": {
+"lat": 41.3292446,
+"lon": 69.3128813
+},
+"tags": {
+"building": "yes",
+"name": "BMW электрик, диагностика",
+"opening_hours": "Mo-Sa 10:00-21:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 153321906,
+"center": {
+"lat": 41.2669722,
+"lon": 69.3643927
+},
+"tags": {
+"building": "yes",
+"name": "Автотеххизмат \"Рахат\"",
+"operator": "ОАО \"Автотеххизмат\"",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 164289189,
+"center": {
+"lat": 41.2327899,
+"lon": 69.2725111
+},
+"tags": {
+"building": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 165624980,
+"center": {
+"lat": 41.2784354,
+"lon": 69.3238227
+},
+"tags": {
+"building": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 202962996,
+"center": {
+"lat": 41.3323823,
+"lon": 69.2520846
+},
+"tags": {
+"building": "commercial",
+"name": "Автозапчасти",
+"opening_hours": "Mo-Sa 09:00-20:00",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 226025577,
+"center": {
+"lat": 41.3190015,
+"lon": 69.3570866
+},
+"tags": {
+"building": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 301152163,
+"center": {
+"lat": 41.2554243,
+"lon": 69.2472636
+},
+"tags": {
+"building": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 324042024,
+"center": {
+"lat": 41.3593736,
+"lon": 69.2417828
+},
+"tags": {
+"addr:housenumber": "343в",
+"addr:street": "Qorasaroy ko'chasi",
+"building": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 326740210,
+"center": {
+"lat": 41.3300699,
+"lon": 69.314227
+},
+"tags": {
+"building": "hut",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 328230823,
+"center": {
+"lat": 41.2530861,
+"lon": 69.3099003
+},
+"tags": {
+"name": "Isuzu service center",
+"name:ru": "Isuzu сервисный центр",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 366494055,
+"center": {
+"lat": 41.352762,
+"lon": 69.2660255
+},
+"tags": {
+"building": "garages",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 375029565,
+"center": {
+"lat": 41.29006,
+"lon": 69.1669226
+},
+"tags": {
+"building": "yes",
+"name": "автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 401914336,
+"center": {
+"lat": 41.244914,
+"lon": 69.2747963
+},
+"tags": {
+"building": "yes",
+"name": "Mannol",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 409034386,
+"center": {
+"lat": 41.3572747,
+"lon": 69.3589942
+},
+"tags": {
+"addr:street": "Kasaba ko'chasi",
+"building": "yes",
+"building:levels": "1",
+"name": "Электрик Шухрат",
+"name:ru": "Электрик Шухрат",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 426990485,
+"center": {
+"lat": 41.2823006,
+"lon": 69.3325897
+},
+"tags": {
+"building": "yes",
+"name:ru": "Шиномонтаж",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 529178198,
+"center": {
+"lat": 41.2454385,
+"lon": 69.2832051
+},
+"tags": {
+"building": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 549510426,
+"center": {
+"lat": 41.244956,
+"lon": 69.2305043
+},
+"tags": {
+"building": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 551188717,
+"center": {
+"lat": 41.3636412,
+"lon": 69.2030555
+},
+"tags": {
+"addr:city": "Ташкент",
+"addr:housenumber": "6А",
+"building": "yes",
+"name": "Замена масла",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 570250912,
+"center": {
+"lat": 41.2905189,
+"lon": 69.3030725
+},
+"tags": {
+"building": "industrial",
+"name": "Автомастерская",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 586307237,
+"center": {
+"lat": 41.1979874,
+"lon": 69.2304184
+},
+"tags": {
+"building": "yes",
+"name": "Автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 586307238,
+"center": {
+"lat": 41.200137,
+"lon": 69.2262345
+},
+"tags": {
+"building": "yes",
+"name": "Автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 617870274,
+"center": {
+"lat": 41.337305,
+"lon": 69.1651859
+},
+"tags": {
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 617870276,
+"center": {
+"lat": 41.3373162,
+"lon": 69.1651853
+},
+"tags": {
+"building": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 626315410,
+"center": {
+"lat": 41.3429688,
+"lon": 69.2021515
+},
+"tags": {
+"building": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 628550460,
+"center": {
+"lat": 41.3581207,
+"lon": 69.3073799
+},
+"tags": {
+"building": "yes",
+"name": "Автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 662903830,
+"center": {
+"lat": 41.3610566,
+"lon": 69.2245487
+},
+"tags": {
+"building": "yes",
+"name": "Автосервис",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 682908982,
+"center": {
+"lat": 41.3489703,
+"lon": 69.1802002
+},
+"tags": {
+"addr:city": "Ташкент",
+"addr:housenumber": "459A",
+"addr:street": "Farovon ko'chasi",
+"building": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 688148468,
+"center": {
+"lat": 41.363331,
+"lon": 69.2032359
+},
+"tags": {
+"addr:city": "Ташкент",
+"addr:street": "Talabalar ko'chasi",
+"building": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 776542857,
+"center": {
+"lat": 41.3480519,
+"lon": 69.1687064
+},
+"tags": {
+"addr:city": "Ташкент",
+"addr:street": "Farobiy ko'chasi",
+"building": "yes",
+"service:vehicle:air_conditioning": "yes",
+"service:vehicle:oil_change": "yes",
+"service:vehicle:repairs": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 804100158,
+"center": {
+"lat": 41.3587263,
+"lon": 69.3843601
+},
+"tags": {
+"building": "yes",
+"name": "Шиномонтаж",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 804139329,
+"center": {
+"lat": 41.3545619,
+"lon": 69.3708328
+},
+"tags": {
+"building": "yes",
+"name": "Замена Масла",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 804139330,
+"center": {
+"lat": 41.3545391,
+"lon": 69.3710018
+},
+"tags": {
+"building": "yes",
+"name": "Замена Масла",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 823343947,
+"center": {
+"lat": 41.2679098,
+"lon": 69.265608
+},
+"tags": {
+"building": "yes",
+"name": "Шиномонтаж у дороги",
+"payment:cash": "yes",
+"service:vehicle:repairs": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 833098926,
+"center": {
+"lat": 41.3476356,
+"lon": 69.166283
+},
+"tags": {
+"addr:city": "Ташкент",
+"addr:street": "Farobiy ko'chasi",
+"building": "yes",
+"service:vehicle:diagnostics": "yes",
+"service:vehicle:electrical": "yes",
+"service:vehicle:tyres": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 957450062,
+"center": {
+"lat": 41.2810468,
+"lon": 69.3135357
+},
+"tags": {
+"building": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 1025764362,
+"center": {
+"lat": 41.3493565,
+"lon": 69.3353111
+},
+"tags": {
+"building": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 1051627488,
+"center": {
+"lat": 41.3541075,
+"lon": 69.3710258
+},
+"tags": {
+"building": "yes",
+"name": "Замена Масла",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 1120553893,
+"center": {
+"lat": 41.2694333,
+"lon": 69.3138484
+},
+"tags": {
+"building": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 1122662135,
+"center": {
+"lat": 41.3671847,
+"lon": 69.1848685
+},
+"tags": {
+"addr:housenumber": "12/3",
+"addr:street": "Shifokorlar 4-chi o'tish yo'li",
+"brand": "Chevrolet",
+"building": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 1524897052,
+"center": {
+"lat": 41.2549663,
+"lon": 69.319113
+},
+"tags": {
+"building": "yes",
+"name": "Tengfei AutoService",
+"shop": "car_repair"
+}
+},
+{
+"type": "way",
+"id": 1552033003,
+"center": {
+"lat": 41.3733592,
+"lon": 69.3100621
+},
+"tags": {
+"building": "yes",
+"shop": "car_repair"
+}
+},
+{
+"type": "relation",
+"id": 9468094,
+"center": {
+"lat": 41.25819,
+"lon": 69.3326956
+},
+"tags": {
+"name": "Texnik Dizel Servis OOO (MAN CENTRE)",
+"opening_hours": "Mo-Sa 09:00-13:00, 14:00-18:00",
+"shop": "car_repair",
+"type": "multipolygon",
+"website": "http://tdservis.uz"
+}
+}
+]
+}

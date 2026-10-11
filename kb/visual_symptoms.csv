@@ -1,0 +1,29 @@
+symptom_id,modality,label,light_or_fluid_colour,what_the_camera_sees,meaning,urgency,driver_action,repair_types,source_ids,caveat
+WL01,warning_light,oil_pressure,red,Oil-can symbol lit,Oil level too low or oil pump failure,stop_now,Pull over safely and switch off; check oil level; do not drive on,oil_service;engine,S01;S02,Some cars show this amber for low level
+WL02,warning_light,coolant_temperature,red,Thermometer-in-liquid symbol lit,Engine overheating,stop_now,Pull over and switch off; do not open a hot radiator cap,cooling,S01;S02,
+WL03,warning_light,brake_system,red,Circle with ! or (P) lit,Low brake fluid / handbrake on / pad wear sensor,stop_now,Check handbrake; if still lit stop and call for help,brakes,S01;S02,
+WL04,warning_light,battery_charging,red,Battery symbol lit while engine runs,Alternator not charging,stop_now,Car runs on battery only — drive straight to a workshop or stop,electrical,S01;S02,May stall when battery is flat
+WL05,warning_light,airbag_srs,red,Seated person with airbag circle lit,Airbag system fault — may not deploy,fix_soon,Book a dealer check soon,airbag_srs,S01,
+WL06,warning_light,power_steering,red,Steering wheel with ! lit,Loss of steering assistance,stop_now,Stop safely; steering becomes heavy,suspension_steering;electrical,S01,
+WL07,warning_light,check_engine_steady,amber,Engine outline lit (steady),Engine-control or emissions fault,fix_soon,Diagnose soon; avoid long trips,diagnostics;engine,S01;S02,
+WL08,warning_light,check_engine_flashing,amber,Engine outline flashing,Serious misfire that can damage the catalyst,stop_now,Stop driving and get service,engine;diagnostics,S01;S02,Flashing is more serious than steady
+WL09,warning_light,abs,amber,ABS in circle lit,Anti-lock braking offline (normal brakes still work),fix_soon,Book diagnostics,brakes;diagnostics,S01;S02,
+WL10,warning_light,traction_esp,amber,Car with wavy lines lit,Stability control fault or switched off,fix_soon,Book diagnostics,diagnostics,S01,
+WL11,warning_light,tyre_pressure,amber,Horseshoe tyre with ! lit,One or more tyres about 20–25% under-inflated,fix_soon,Inflate at the next station; check for puncture,tyres,S01;S02,
+WL12,warning_light,low_fuel,amber,Fuel pump symbol lit,About 50–80 km range left,fix_soon,Refuel,,S01,Not a fault
+WL13,warning_light,ev_reduced_power,amber,Turtle symbol lit,EV/hybrid limp-home: low battery or overheating,fix_soon,Drive gently to a charger or dealer,ev_hv,S01,
+WL14,warning_light,ev_battery_temperature,amber/red,Battery with thermometer lit,Traction battery too hot or cold,fix_soon,Avoid DC fast charging; dealer check if it persists,ev_hv,S01,
+WL15,warning_light,seatbelt,red,Person with seatbelt lit,Seatbelt not fastened,info,Buckle up,,S01,Not a fault
+WL16,warning_light,door_open,red,Car with open door lit,Door / bonnet / boot not closed,info,Close it,,S01,Not a fault
+LK01,leak,coolant,green / orange / pink,Puddle under the radiator / front engine area,Coolant leak,fix_soon,Check coolant level; watch the temperature gauge; fix promptly to avoid overheating,cooling,S03,Pink/red coolant overlaps with transmission fluid colour — use location
+LK02,leak,transmission_fluid,red / pink,Puddle under the gearbox (middle of car),Transmission fluid leak,fix_soon,Do not delay the repair,transmission,S03,
+LK03,leak,power_steering_fluid,red / pink,Puddle near the front wheels / steering rack,Power steering fluid leak,fix_soon,Do not delay the repair,suspension_steering,S03,
+LK04,leak,engine_oil,light brown / black,Puddle under the engine (oil pan / valve cover / sump plug),Engine oil leak,fix_soon,Check dipstick; book repair soon,oil_service,S03,
+LK05,leak,brake_fluid,brown (burnt smell),Wet patch near a wheel or under the pedal area,Brake fluid leak,stop_now,Do not drive — safety issue,brakes,S03,Hard to separate from oil by colour only — ask about location and smell
+LK06,leak,washer_fluid,blue (sometimes green/orange),Drip near the front of the car,Windscreen washer fluid,can_wait,Fix when convenient,,S03,
+LK07,leak,ac_condensate,clear (water),Drip near the front passenger footwell area,Normal A/C condensation,info,Normal — no action unless excessive,ac,S03,
+SM01,smoke,white_thin_cold_start,white (thin),Thin vapour that disappears after warm-up,Normal condensation,info,No action,,S04,
+SM02,smoke,white_thick_persistent,white (thick),Thick white plume after warm-up,Coolant entering the engine (e.g. failed head gasket),stop_now,Stop and check coolant; risk of engine failure,cooling;engine,S04,
+SM03,smoke,blue,blue,Blue-tinted smoke,Engine burning oil (valve seals / piston rings / turbo),fix_soon,Check oil level; mechanic inspection,engine,S04,
+SM04,smoke,grey,grey,Grey smoke,Oil burning / faulty PCV valve / transmission fluid leak (automatic),fix_soon,Professional inspection; urgent if transmission fluid,engine;transmission,S04,
+SM05,smoke,black,black,Black sooty smoke,Petrol: too much fuel (air filter / injectors); diesel: soot / DPF,fix_soon,Check the air filter first; injectors at a workshop,engine;fuel_system,S04,

@@ -1,0 +1,947 @@
+{
+"version": 0.6,
+"osm3s": {
+"timestamp_osm_base": "2026-10-11T04:57:11Z",
+"timestamp_areas_base": "2026-10-09T22:12:50Z",
+"copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+},
+"elements": [
+{
+"type": "node",
+"id": 1107347967,
+"lat": 41.2807204,
+"lon": 69.3506524,
+"tags": {
+"name": "Автозапчасти",
+"name:ru": "Автозапчасти",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 1145356020,
+"lat": 41.2532159,
+"lon": 69.3028553,
+"tags": {
+"service": "parts",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 1220036400,
+"lat": 41.3821497,
+"lon": 69.2893103,
+"tags": {
+"name": "Автосалон UzDAEWOO",
+"name:ru": "Автосалон UzDAEWOO",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 1240478811,
+"lat": 41.2815419,
+"lon": 69.2960497,
+"tags": {
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 1258977603,
+"lat": 41.2466037,
+"lon": 69.3251385,
+"tags": {
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 1258977651,
+"lat": 41.2478549,
+"lon": 69.3254114,
+"tags": {
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 1339711552,
+"lat": 41.2560218,
+"lon": 69.190964,
+"tags": {
+"name": "ГАЗ",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 1339711556,
+"lat": 41.2422563,
+"lon": 69.3374084,
+"tags": {
+"name": "Автосалон",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 1339711604,
+"lat": 41.2557445,
+"lon": 69.1904771,
+"tags": {
+"name": "Chevrolet",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 1339711638,
+"lat": 41.2493554,
+"lon": 69.3537064,
+"tags": {
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 1595062528,
+"lat": 41.257615,
+"lon": 69.3531409,
+"tags": {
+"shop": "car",
+"source": "Bing"
+}
+},
+{
+"type": "node",
+"id": 1976666309,
+"lat": 41.3343622,
+"lon": 69.2148198,
+"tags": {
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 2004078079,
+"lat": 41.2617947,
+"lon": 69.1500139,
+"tags": {
+"name": "Алгоритм",
+"name:ru": "Алгоритм",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 3051065033,
+"lat": 41.2697477,
+"lon": 69.2569834,
+"tags": {
+"name": "Best Cars",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 3875842972,
+"lat": 41.2739256,
+"lon": 69.3428279,
+"tags": {
+"amenity": "car_wash",
+"name": "Мойка",
+"name:en": "Washer",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 3967848373,
+"lat": 41.3299052,
+"lon": 69.3132921,
+"tags": {
+"addr:postcode": "100052",
+"name": "Audi Center Tashkent",
+"opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-18:00",
+"operator": "\"Sayor Motors Ltd\" ООО",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 4151580991,
+"lat": 41.3458918,
+"lon": 69.3478275,
+"tags": {
+"addr:city": "Toshkent",
+"addr:postcode": "100125",
+"brand": "Chevrolet",
+"name": "\"Poxtaxt Avtosavdo\" avtosaloni",
+"name:ru": "Автосалон \"Пойтахт Автосавдо\"",
+"opening_hours": "Mo-Su 09:00-18:00",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 4219382990,
+"lat": 41.2373484,
+"lon": 69.2132084,
+"tags": {
+"addr:street": "Yangi sirg'ali ko'chasi",
+"name": "Салон строительной техники СиноМаркет",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 4235543994,
+"lat": 41.2620922,
+"lon": 69.2284204,
+"tags": {
+"brand": "Mercedes-Benz",
+"brand:wikidata": "Q36008",
+"name": "Mercedes Benz Мерседес Бенз",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 4293957292,
+"lat": 41.2388214,
+"lon": 69.2147525,
+"tags": {
+"addr:street": "Yangi sirg'ali ko'chasi",
+"name": "Сардор Авто Инвест",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 4306676890,
+"lat": 41.2339798,
+"lon": 69.3351873,
+"tags": {
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 4487902590,
+"lat": 41.3440593,
+"lon": 69.2090718,
+"tags": {
+"internet_access": "wlan",
+"name": "Zamena Masla",
+"name:en": "change oil",
+"name:ru": "Замена масла",
+"opening_hours": "Mo-Su 08:30-22:00",
+"operator": "Файзиев Ботир",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 4606171055,
+"lat": 41.3223061,
+"lon": 69.35995,
+"tags": {
+"addr:housenumber": "98а",
+"addr:street": "Avayhon ko'chasi",
+"name": "Avtobangroup",
+"shop": "car",
+"website": "http://avtobangroup.uz"
+}
+},
+{
+"type": "node",
+"id": 4642395890,
+"lat": 41.334383,
+"lon": 69.2841995,
+"tags": {
+"name": "ISUZU",
+"name:ru": "ISUZU",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 4679987293,
+"lat": 41.2572224,
+"lon": 69.3336705,
+"tags": {
+"addr:housenumber": "23A",
+"addr:street": "Uysozlar ko'chasi",
+"internet_access": "wlan",
+"name": "TECHNIC DIESEL TRADE MAN центр",
+"name:en": "MAN LOGISTIC SERVICE",
+"name:ru": "MAN центр TECHNIC DIESEL TRADE",
+"opening_hours": "Mo-Sa 09:00-12:00, 13:00-18:00",
+"shop": "car",
+"website": "https://man-tdt.uz/"
+}
+},
+{
+"type": "node",
+"id": 4740325329,
+"lat": 41.3833757,
+"lon": 69.2934068,
+"tags": {
+"addr:street": "Toshkent halqa avtomobil yo'li",
+"opening_hours": "Mo-Su 09:00-22:00",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 4826316722,
+"lat": 41.2620175,
+"lon": 69.2270909,
+"tags": {
+"name": "Grand Avto",
+"name:ru": "Grand Avto",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 4922677603,
+"lat": 41.2443549,
+"lon": 69.2213646,
+"tags": {
+"name": "GAZ",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 5076282323,
+"lat": 41.2522319,
+"lon": 69.3777622,
+"tags": {
+"name": "Автостоянка",
+"name:ru": "Автостоянка",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 5271672321,
+"lat": 41.2372559,
+"lon": 69.2143678,
+"tags": {
+"name:en": "Autoritet",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 5428070923,
+"lat": 41.2623048,
+"lon": 69.3625149,
+"tags": {
+"name": "Станок ремон Мухаммаджон",
+"name:en": "Stanok remont Muxammadjon",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 6537169299,
+"lat": 41.2303642,
+"lon": 69.2069062,
+"tags": {
+"addr:street": "Toshkent halqa avtomobil yo'li",
+"amenity": "cafe",
+"name": "Alnur choyxona",
+"name:ru": "Алнур чойхона",
+"opening_hours": "Mo-Su 09:00-23:00",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 6717776886,
+"lat": 41.2303729,
+"lon": 69.2157481,
+"tags": {
+"addr:street": "Yangi sirg'ali ko'chasi",
+"name": "Авторынок \"Сергели\"",
+"name:en": "Car market \"Sergeli\"",
+"name:ru": "Авторынок \"Сергели\"",
+"opening_hours": "Tu-Su 09:00-17:00",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 6743847786,
+"lat": 41.3193075,
+"lon": 69.3206525,
+"tags": {
+"addr:street": "Mirzo Ulug'bek shoh ko'chasi",
+"internet_access": "wlan",
+"name": "turon",
+"opening_hours": "24/7",
+"operator": "Gulomaliev Sheroz",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 6911042985,
+"lat": 41.3487292,
+"lon": 69.2881271,
+"tags": {
+"brand": "Lada",
+"brand:en": "Lada",
+"brand:ru": "Лада",
+"brand:wikidata": "Q35676",
+"name": "Лада",
+"name:en": "Lada",
+"name:ru": "Лада",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 7579710485,
+"lat": 41.2331705,
+"lon": 69.2129997,
+"tags": {
+"addr:street": "Yangi sirg'ali ko'chasi",
+"name": "Российские авто",
+"name:en": "Russian automobiles",
+"name:ru": "Российские авто",
+"opening_hours": "Sa-Su 09:00-17:00",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 7899805052,
+"lat": 41.2947777,
+"lon": 69.2916043,
+"tags": {
+"name": "ORIENT MOTORS",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 8259574117,
+"lat": 41.2045231,
+"lon": 69.2855322,
+"tags": {
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 9081452817,
+"lat": 41.3261005,
+"lon": 69.228644,
+"tags": {
+"addr:housenumber": "3A",
+"addr:street": "Beruniy shoh ko'chasi",
+"name": "Пойтахт Авто Тех Савдо",
+"name:en": "Poytaxt Avto Tex Savdo",
+"opening_hours": "Mo-Sa 09:00-13:00, 14:00-18:00",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 9733885889,
+"lat": 41.3187244,
+"lon": 69.2491105,
+"tags": {
+"brand": "Hyundai",
+"brand:wikidata": "Q55931",
+"check_date": "2023-02-27",
+"name": "Hyundai",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 10065216312,
+"lat": 41.2363488,
+"lon": 69.213198,
+"tags": {
+"name": "Orient Motors",
+"opening_hours": "Mo-Sa 09:00-18:00",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 10697101678,
+"lat": 41.3180437,
+"lon": 69.2767923,
+"tags": {
+"name": "Avtosalon",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 10697186728,
+"lat": 41.3188166,
+"lon": 69.2474721,
+"tags": {
+"brand": "Toyota",
+"brand:wikidata": "Q53268",
+"check_date": "2023-02-27",
+"name": "Toyota",
+"opening_hours": "Mo-Su 09:00-20:00",
+"shop": "car",
+"telegram": "https://t.me/+998957000222"
+}
+},
+{
+"type": "node",
+"id": 11027819812,
+"lat": 41.2319082,
+"lon": 69.2069954,
+"tags": {
+"name": "Jetour",
+"opening_hours": "Mo-Su 09:00-18:00",
+"shop": "car",
+"telegram": "https://t.me/jetouruz"
+}
+},
+{
+"type": "node",
+"id": 11027819860,
+"lat": 41.2486646,
+"lon": 69.3239236,
+"tags": {
+"name": "Premier Motors",
+"opening_hours": "Mo-Su 09:00-13:00,14:00-20:00",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 11027819861,
+"lat": 41.2521815,
+"lon": 69.2518526,
+"tags": {
+"name": "Premier Motors",
+"opening_hours": "Mo-Su 09:00-13:00,14:00-20:00",
+"shop": "car",
+"telegram": "https://t.me/premiermotorsuz"
+}
+},
+{
+"type": "node",
+"id": 11397485139,
+"lat": 41.2436026,
+"lon": 69.2521584,
+"tags": {
+"name": "Tez Eco Motors",
+"opening_hours": "Mo-Su 09:00-18:00",
+"shop": "car",
+"telegram": "https://t.me/tez_eco_motors"
+}
+},
+{
+"type": "node",
+"id": 11422279169,
+"lat": 41.287102,
+"lon": 69.216781,
+"tags": {
+"addr:postcode": "100000",
+"addr:street": "Бунёдкор проспект",
+"internet_access": "wlan",
+"name": "X motors",
+"name:zh": "X motors 汽车4s店",
+"opening_hours": "Mo-Su 09:00-21:00",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 11545864642,
+"lat": 41.3183907,
+"lon": 69.2434573,
+"tags": {
+"name": "MB-City",
+"opening_hours": "Mo-Sa 10:00-20:00; Su 10:00-18:00",
+"shop": "car",
+"telegram": "https://t.me/mbcityuz"
+}
+},
+{
+"type": "node",
+"id": 11575759150,
+"lat": 41.3156349,
+"lon": 69.2413233,
+"tags": {
+"entrance": "yes",
+"name": "Bravo Motors",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 11808199767,
+"lat": 41.3038583,
+"lon": 69.3176102,
+"tags": {
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 11828398783,
+"lat": 41.3371952,
+"lon": 69.2225254,
+"tags": {
+"name": "Byd Chigatoy",
+"opening_hours": "Mo-Su 08:30-21:00",
+"shop": "car",
+"telegram": "https://t.me/byd_chigatoy"
+}
+},
+{
+"type": "node",
+"id": 12361060128,
+"lat": 41.3187529,
+"lon": 69.2523112,
+"tags": {
+"brand": "Zeekr",
+"name": "Zeekr City",
+"opening_hours": "Mo-Su 10:00-22:00",
+"shop": "car",
+"telegram": "https://t.me/zeekruzbekistan"
+}
+},
+{
+"type": "node",
+"id": 12637178339,
+"lat": 41.2885402,
+"lon": 69.3027389,
+"tags": {
+"addr:city": "Toshkent",
+"addr:housenumber": "147",
+"addr:street": "Farg'ona Yo'li",
+"brand": "Opel, Fiat, Geely, Alfa Romeo, Wuling",
+"name": "AC MOTO",
+"opening_hours": "09:00-20:00",
+"operator": "Asaka motors",
+"shop": "car",
+"website": "https://asakamotors.com"
+}
+},
+{
+"type": "node",
+"id": 12662689954,
+"lat": 41.2977125,
+"lon": 69.2482971,
+"tags": {
+"brand": "BYD",
+"brand:wikidata": "Q27423",
+"name": "BYD Megawatt Next",
+"opening_hours": "Mo-Su 10:00-22:00",
+"operator": "Megawatt",
+"payment:app": "yes",
+"payment:cards": "yes",
+"payment:cash": "yes",
+"payment:contactless": "yes",
+"payment:credit_cards": "yes",
+"payment:debit_cards": "yes",
+"payment:electronic_purses": "yes",
+"payment:notes": "yes",
+"payment:visa": "yes",
+"second_hand": "no",
+"service:vehicle:new_car_sales": "yes",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 12887959426,
+"lat": 41.2884361,
+"lon": 69.3028696,
+"tags": {
+"addr:housenumber": "147",
+"addr:street": "Farg'ona Yo'li",
+"fixme": "нарисовано приблизительно",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 12979105375,
+"lat": 41.3299438,
+"lon": 69.3131875,
+"tags": {
+"brand": "BMW",
+"brand:wikidata": "Q26678",
+"name": "BMW",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 13238292573,
+"lat": 41.2358454,
+"lon": 69.2100146,
+"tags": {
+"internet_access": "wlan",
+"name": "Driver's Village",
+"opening_hours": "Mo-Fr 09:00-13:00, 14:00-18:00",
+"shop": "car",
+"website": "https://www.driversvillage.uz/"
+}
+},
+{
+"type": "node",
+"id": 13301663979,
+"lat": 41.1880841,
+"lon": 69.1949862,
+"tags": {
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 13301663980,
+"lat": 41.1878348,
+"lon": 69.1952222,
+"tags": {
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 13454932776,
+"lat": 41.2404987,
+"lon": 69.2176801,
+"tags": {
+"name": "Turon Avto",
+"name:ru": "Турон Авто",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 13475108053,
+"lat": 41.360466,
+"lon": 69.335669,
+"tags": {
+"name": "Chery",
+"shop": "car"
+}
+},
+{
+"type": "node",
+"id": 13733273609,
+"lat": 41.2658873,
+"lon": 69.2409824,
+"tags": {
+"shop": "car"
+}
+},
+{
+"type": "way",
+"id": 102404236,
+"center": {
+"lat": 41.2672369,
+"lon": 69.3652173
+},
+"tags": {
+"addr:housenumber": "1",
+"addr:street": "Алмалыкское кольцо",
+"brand": "GM",
+"building": "yes",
+"name": "Автосалон «Рахат»",
+"name:ru": "Автосалон «Рахат»",
+"shop": "car",
+"website": "http://www.avtosalonrohat.uz/"
+}
+},
+{
+"type": "way",
+"id": 127853987,
+"center": {
+"lat": 41.2198651,
+"lon": 69.2422009
+},
+"tags": {
+"addr:city": "Tashkent",
+"addr:country": "UZ",
+"addr:housenumber": "39",
+"addr:street": "Обихаёт улица",
+"brand": "GM Uzbekistan",
+"building": "yes",
+"building:levels": "3",
+"name": "ОАО \"Сергели-Автотехсервис\"",
+"service": "dealer",
+"shop": "car"
+}
+},
+{
+"type": "way",
+"id": 142872504,
+"center": {
+"lat": 41.365993,
+"lon": 69.28538
+},
+"tags": {
+"building": "yes",
+"building:levels": "4",
+"name": "XumoAvtosavdo",
+"shop": "car"
+}
+},
+{
+"type": "way",
+"id": 149541352,
+"center": {
+"lat": 41.2601767,
+"lon": 69.3176357
+},
+"tags": {
+"addr:housenumber": "7a",
+"brand": "Chevrolet",
+"building": "yes",
+"name": "LionMotors",
+"old_name": "POYTAXT AVTO TEX SAVDO",
+"old_name:ru": "ПОЙТАХТ АВТО ТЕХ САВДО",
+"shop": "car",
+"website": "http://www.lionmotors.uz/"
+}
+},
+{
+"type": "way",
+"id": 149779611,
+"center": {
+"lat": 41.3375182,
+"lon": 69.2736235
+},
+"tags": {
+"addr:street": "Kichik Halqa yo'li",
+"brand": "GM",
+"building": "yes",
+"building:levels": "3",
+"name": "PSM Autosavdo",
+"shop": "car"
+}
+},
+{
+"type": "way",
+"id": 154349340,
+"center": {
+"lat": 41.2594275,
+"lon": 69.2198226
+},
+"tags": {
+"addr:city": "Ташкент",
+"building": "yes",
+"building:levels": "3",
+"name": "Автомагазин Южный",
+"operator": "Shevrolet",
+"shop": "car"
+}
+},
+{
+"type": "way",
+"id": 171037324,
+"center": {
+"lat": 41.2196581,
+"lon": 69.2412499
+},
+"tags": {
+"landuse": "retail",
+"name": "Автосалон СЕРГЕЛИЙСКИЙ филиал",
+"name:ru": "Автосалон СЕРГЕЛИ",
+"shop": "car"
+}
+},
+{
+"type": "way",
+"id": 171263849,
+"center": {
+"lat": 41.2366918,
+"lon": 69.2145892
+},
+"tags": {
+"addr:housenumber": "7",
+"addr:street": "Yangi sirg'ali ko'chasi",
+"building": "yes",
+"building:levels": "3",
+"internet_access": "wlan",
+"name": "LADA Uzbekistan",
+"opening_hours": "Mo-Sa 09:00-20:00",
+"shop": "car",
+"website": "https://www.lada.uz"
+}
+},
+{
+"type": "way",
+"id": 609460207,
+"center": {
+"lat": 41.2320513,
+"lon": 69.3770389
+},
+"tags": {
+"building": "yes",
+"name": "RELAX GRAND PLUS",
+"name:en": "RELAX GRAND PLUS",
+"shop": "car"
+}
+},
+{
+"type": "way",
+"id": 808003717,
+"center": {
+"lat": 41.3359244,
+"lon": 69.3153134
+},
+"tags": {
+"brand": "Chevrolet",
+"brand:wikidata": "Q29570",
+"building": "yes",
+"building:levels": "3",
+"name": "Lux Auto Motors",
+"opening_hours": "Mo-Sa 09:00-18:00",
+"shop": "car",
+"telegram": "https://t.me/luxautomotor"
+}
+},
+{
+"type": "way",
+"id": 1112004235,
+"center": {
+"lat": 41.3468898,
+"lon": 69.2863712
+},
+"tags": {
+"building": "yes",
+"name": "Autocity",
+"shop": "car"
+}
+},
+{
+"type": "way",
+"id": 1158155855,
+"center": {
+"lat": 41.2955226,
+"lon": 69.2004357
+},
+"tags": {
+"addr:housenumber": "42/2",
+"addr:street": "Lutfiy ko'chasi",
+"brand": "Changan",
+"building": "yes",
+"name": "Changan",
+"shop": "car"
+}
+}
+]
+}

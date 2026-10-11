@@ -1,0 +1,6 @@
+dealer_id,name,brands,type,address,lat,lon,source_ids,verified_by_team,note
+DL01,Asacar Auto Center,chevrolet,official UzAuto Motors dealer,"Tashkent, Yakkasaray district, Shota Rustaveli st. 152A",,,S15,no,Call to confirm service bay and address
+DL02,Tashkent AutoMarkaz,chevrolet,official UzAuto Motors dealer,"Tashkent, Chilanzar, Bunyodkor st. 27",,,S15,no,Call to confirm service bay and address
+DL03,Driver's Village,chevrolet,authorised Chevrolet sales + maintenance,"Tashkent, Zangiata district, Uzgarish KFY, Kichik Khalka Yuli",,,S15,no,Call to confirm
+DL04,Royal Motors (Toyota),toyota,Toyota dealer / repair (directory),"Tashkent, Shaykhantakhur district, Zargarlik st. 3/1 (near Park In Mall)",,,S16,no,Ask whether BYD Royal Motors service is at the same site
+DL05,Sergeli-Avtotexservis,chevrolet,GM Uzbekistan dealer with service,"Tashkent, Sergeli district, Obikhayot st. 39",41.219865,69.242201,S13;S14;S15,no,Also in OSM (way 127853987)

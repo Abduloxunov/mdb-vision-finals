@@ -1,0 +1,335 @@
+workshop_id,name,name_ru,category,category_basis,brands,lat,lon,address,opening_hours,website,osm_url,source_ids,verified_by_team
+osm_n6353751029,Заправка авто кондиционеров,,ac,name keyword (heuristic),,41.328016,69.285362,,Mo-Sa 09:00-18:00,,https://www.openstreetmap.org/node/6353751029,S13,no
+osm_n2392034765,Ремонт и заправка автокондиционеров,,ac,name keyword (heuristic),,41.258964,69.163732,,,,https://www.openstreetmap.org/node/2392034765,S13,no
+osm_n5794988455,Ремонт и установка автокондиционера,,ac,name keyword (heuristic),,41.27362,69.342904,Izzat ko'chasi,,,https://www.openstreetmap.org/node/5794988455,S13,no
+osm_n3893172178,Кузовные работы,Кузовные работы,body,name keyword (heuristic),,41.311422,69.338549,,,,https://www.openstreetmap.org/node/3893172178,S13,no
+osm_n5794988454,Кузовные работы,,body,name keyword (heuristic),,41.273807,69.342561,Izzat ko'chasi,,,https://www.openstreetmap.org/node/5794988454,S13,no
+osm_n6311323222,Кузовные работы,Кузовные работы,body,name keyword (heuristic),,41.314114,69.335975,,,,https://www.openstreetmap.org/node/6311323222,S13,no
+osm_n6354381845,Сварные работы,,body,name keyword (heuristic),,41.308271,69.327053,,,,https://www.openstreetmap.org/node/6354381845,S13,no
+osm_n4151580991,"""Poxtaxt Avtosavdo"" avtosaloni","Автосалон ""Пойтахт Автосавдо""",brand_dealer,osm shop=car (showroom; service not confirmed),chevrolet,41.345892,69.347827,,Mo-Su 09:00-18:00,,https://www.openstreetmap.org/node/4151580991,S14,no
+osm_n12979105375,BMW,,brand_dealer,osm shop=car (showroom; service not confirmed),bmw,41.329944,69.313187,,,,https://www.openstreetmap.org/node/12979105375,S14,no
+osm_n12662689954,BYD Megawatt Next,,brand_dealer,osm shop=car (showroom; service not confirmed),byd,41.297713,69.248297,,Mo-Su 10:00-22:00,,https://www.openstreetmap.org/node/12662689954,S14,no
+osm_n11828398783,Byd Chigatoy,,brand_dealer,osm shop=car (showroom; service not confirmed),byd,41.337195,69.222525,,Mo-Su 08:30-21:00,,https://www.openstreetmap.org/node/11828398783,S14,no
+osm_n1339711604,Chevrolet,,brand_dealer,osm shop=car (showroom; service not confirmed),chevrolet,41.255744,69.190477,,,,https://www.openstreetmap.org/node/1339711604,S14,no
+osm_n9733885889,Hyundai,,brand_dealer,osm shop=car (showroom; service not confirmed),hyundai,41.318724,69.249111,,,,https://www.openstreetmap.org/node/9733885889,S14,no
+osm_n4642395890,ISUZU,ISUZU,brand_dealer,osm shop=car (showroom; service not confirmed),isuzu,41.334383,69.284199,,,,https://www.openstreetmap.org/node/4642395890,S14,no
+osm_w171263849,LADA Uzbekistan,,brand_dealer,osm shop=car (showroom; service not confirmed),lada,41.236692,69.214589,Yangi sirg'ali ko'chasi 7,Mo-Sa 09:00-20:00,https://www.lada.uz,https://www.openstreetmap.org/way/171263849,S14,no
+osm_w149541352,LionMotors,,brand_dealer,osm shop=car (showroom; service not confirmed),chevrolet,41.260177,69.317636,7a,,http://www.lionmotors.uz/,https://www.openstreetmap.org/way/149541352,S14,no
+osm_w808003717,Lux Auto Motors,,brand_dealer,osm shop=car (showroom; service not confirmed),chevrolet,41.335924,69.315313,,Mo-Sa 09:00-18:00,,https://www.openstreetmap.org/way/808003717,S14,no
+osm_n4679987293,TECHNIC DIESEL TRADE MAN центр,MAN центр TECHNIC DIESEL TRADE,brand_dealer,osm shop=car (showroom; service not confirmed),man,41.257222,69.33367,Uysozlar ko'chasi 23A,"Mo-Sa 09:00-12:00, 13:00-18:00",https://man-tdt.uz/,https://www.openstreetmap.org/node/4679987293,S14,no
+osm_n10697186728,Toyota,,brand_dealer,osm shop=car (showroom; service not confirmed),toyota,41.318817,69.247472,,Mo-Su 09:00-20:00,,https://www.openstreetmap.org/node/10697186728,S14,no
+osm_n1220036400,Автосалон UzDAEWOO,Автосалон UzDAEWOO,brand_dealer,osm shop=car (showroom; service not confirmed),chevrolet,41.38215,69.28931,,,,https://www.openstreetmap.org/node/1220036400,S14,no
+osm_n6911042985,Лада,Лада,brand_dealer,osm shop=car (showroom; service not confirmed),lada,41.348729,69.288127,,,,https://www.openstreetmap.org/node/6911042985,S14,no
+osm_n10538614796,Avto servis,,brand_service,osm brand tag or brand in name,chevrolet,41.346638,69.258321,,,,https://www.openstreetmap.org/node/10538614796,S13,no
+osm_n8051670987,Avtoservis Daewoo,,brand_service,osm brand tag or brand in name,chevrolet,41.338872,69.220815,,,,https://www.openstreetmap.org/node/8051670987,S13,no
+osm_n10777824179,Begzod Servis SXS,,brand_service,osm brand tag or brand in name,chevrolet,41.294681,69.207993,,,,https://www.openstreetmap.org/node/10777824179,S13,no
+osm_n10928967165,Gavxar,,brand_service,osm brand tag or brand in name,chevrolet,41.259576,69.213208,,,,https://www.openstreetmap.org/node/10928967165,S13,no
+osm_n10777824190,Humo NTD Avtoservis,,brand_service,osm brand tag or brand in name,chevrolet,41.293564,69.207749,,,,https://www.openstreetmap.org/node/10777824190,S13,no
+osm_w328230823,Isuzu service center,Isuzu сервисный центр,brand_service,osm brand tag or brand in name,isuzu,41.253086,69.3099,,,,https://www.openstreetmap.org/way/328230823,S13,no
+osm_n10692811551,Lux,,brand_service,osm brand tag or brand in name,chevrolet,41.36298,69.216122,,,,https://www.openstreetmap.org/node/10692811551,S13,no
+osm_n10933931526,Megawatt Service,,brand_service,osm brand tag or brand in name,byd,41.205612,69.23845,,,,https://www.openstreetmap.org/node/10933931526,S13,no
+osm_n1819768048,Service Hyundai Motor,,brand_service,osm brand tag or brand in name,hyundai,41.261626,69.229031,,,,https://www.openstreetmap.org/node/1819768048,S13,no
+osm_n11091336621,Taxtapul,,brand_service,osm brand tag or brand in name,chevrolet,41.341088,69.261359,,,,https://www.openstreetmap.org/node/11091336621,S13,no
+osm_r9468094,Texnik Dizel Servis OOO (MAN CENTRE),,brand_service,osm brand tag or brand in name,man,41.25819,69.332696,,"Mo-Sa 09:00-13:00, 14:00-18:00",http://tdservis.uz,https://www.openstreetmap.org/relation/9468094,S13,no
+osm_n4322879394,Toyota,,brand_service,osm brand tag or brand in name,toyota,41.255751,69.189369,,,,https://www.openstreetmap.org/node/4322879394,S13,no
+osm_n5117830724,Автосервис «BMW» «AutoZone»,AUTOZONE,brand_service,osm brand tag or brand in name,bmw,41.273719,69.300603,Eski Sariko'l ko'chasi,Mo-Fr 09:00-19:00,,https://www.openstreetmap.org/node/5117830724,S13,no
+osm_w108548949,Автосервис ВАЗ,Автосервис ВАЗ,brand_service,osm brand tag or brand in name,lada,41.257721,69.197,Bunyodkor shoh ko'chasi 27,,,https://www.openstreetmap.org/way/108548949,S13,no
+osm_n3604293181,ЛАДА СЕРВИЗ,,brand_service,osm brand tag or brand in name,lada,41.341048,69.358733,,,,https://www.openstreetmap.org/node/3604293181,S13,no
+osm_w127853987,"ОАО ""Сергели-Автотехсервис""",,brand_service,osm brand tag or brand in name,chevrolet,41.219865,69.242201,Обихаёт улица 39,,,https://www.openstreetmap.org/way/127853987,S13,no
+osm_n4237178075,Сервис тех. Обслуживания Daewoo-Chevrolet,Сервис тех. Обслуживания Daewoo-Shevrolet,brand_service,osm brand tag or brand in name,chevrolet,41.218922,69.241323,Обихаёт улица,,,https://www.openstreetmap.org/node/4237178075,S13,no
+osm_n5004442322,"Техобслуга Chevrolet, Lada","Техобслуга Chevrolet, Lada",brand_service,osm brand tag or brand in name,chevrolet;lada,41.282625,69.195847,,,,https://www.openstreetmap.org/node/5004442322,S13,no
+osm_w1122662135,,,brand_service,osm brand tag or brand in name,chevrolet,41.367185,69.184868,Shifokorlar 4-chi o'tish yo'li 12/3,,,https://www.openstreetmap.org/way/1122662135,S13,no
+osm_n10864469695,Autozone.uz - многопрофильный автосервис,,electrical,osm tag service:vehicle:electrical,,41.294515,69.297235,,Mo-Su 10:00-19:00,https://www.instagram.com/autozone.uz/,https://www.openstreetmap.org/node/10864469695,S13,no
+osm_w150927233,"BMW электрик, диагностика",,electrical,name keyword (heuristic),bmw,41.329245,69.312881,,Mo-Sa 10:00-21:00,,https://www.openstreetmap.org/way/150927233,S13,no
+osm_n4520242689,Авто Электрик,Авто Электрик,electrical,name keyword (heuristic),,41.323321,69.230335,,,,https://www.openstreetmap.org/node/4520242689,S13,no
+osm_n3704676739,"Автомастерска, Электрик",,electrical,name keyword (heuristic),,41.353339,69.266582,,,,https://www.openstreetmap.org/node/3704676739,S13,no
+osm_n4204641790,Автоэлектрик,,electrical,name keyword (heuristic),,41.341622,69.219071,,,,https://www.openstreetmap.org/node/4204641790,S13,no
+osm_n5794988355,Автоэлектрик,,electrical,name keyword (heuristic),,41.27367,69.3429,Izzat ko'chasi,,,https://www.openstreetmap.org/node/5794988355,S13,no
+osm_n12989957218,Аккумуляторщик,,electrical,name keyword (heuristic),,41.293665,69.24607,Тошбулок улица,9:00-18:00,,https://www.openstreetmap.org/node/12989957218,S13,no
+osm_n6642748899,Вали Галваника Электро апарат,,electrical,name keyword (heuristic),,41.276545,69.309596,,,,https://www.openstreetmap.org/node/6642748899,S13,no
+osm_w409034386,Электрик Шухрат,Электрик Шухрат,electrical,name keyword (heuristic),,41.357275,69.358994,Kasaba ko'chasi,,,https://www.openstreetmap.org/way/409034386,S13,no
+osm_n6535009462,Моторист Музаффар,,engine,name keyword (heuristic),,41.323982,69.231728,,,,https://www.openstreetmap.org/node/6535009462,S13,no
+osm_n4770555231,Ремонт автомоторов,Ремонт автомоторов,engine,name keyword (heuristic),,41.306551,69.19781,Чукуркуприк улица,,,https://www.openstreetmap.org/node/4770555231,S13,no
+osm_n4388700696,Токарный цех,Токарный цех,engine,name keyword (heuristic),,41.280069,69.260465,,"Mo-Sa 09:00-18:00, 12:00-02:00; Su 09:00-12:00",,https://www.openstreetmap.org/node/4388700696,S13,no
+osm_n4388705263,,Токарный цех,engine,name keyword (heuristic),,41.28255,69.299899,,,,https://www.openstreetmap.org/node/4388705263,S13,no
+osm_n5271983067,Easy Gas Service,,gas_lpg_cng,name keyword (heuristic),,41.258512,69.228763,Sa'diy ko'chasi 27,,https://www.stag.uz/,https://www.openstreetmap.org/node/5271983067,S13,no
+osm_n4056070631,Erkin Ergashovich,Эркин Эргашович,gas_lpg_cng,name keyword (heuristic),,41.287846,69.304502,,,,https://www.openstreetmap.org/node/4056070631,S13,no
+osm_n4192258993,SHOH METAN SERVIS,,gas_lpg_cng,name keyword (heuristic),,41.250171,69.354798,Toshkent halqa avtomobil yo'li 77,Mo-Sa 09:00-18:00,,https://www.openstreetmap.org/node/4192258993,S13,no
+osm_n5321370621,УСТАНОВКА ГБО ТОХИР,,gas_lpg_cng,name keyword (heuristic),,41.395531,69.264914,,,,https://www.openstreetmap.org/node/5321370621,S13,no
+osm_n1233425160,Установка ГБО,,gas_lpg_cng,name keyword (heuristic),,41.279003,69.295585,,,,https://www.openstreetmap.org/node/1233425160,S13,no
+osm_n1240478810,Установка ГБО под метан,,gas_lpg_cng,name keyword (heuristic),,41.281611,69.296133,,,,https://www.openstreetmap.org/node/1240478810,S13,no
+osm_n5345016023,AVTOLINE сервис центр,,general,default for shop=car_repair,,41.3386,69.35712,Buyuk Ipak Yo'li ko'chasi,Mo-Su 08:00-22:00,,https://www.openstreetmap.org/node/5345016023,S13,no
+osm_n5681220323,Apriori,,general,default for shop=car_repair,,41.364434,69.300592,,Mo-Sa 09:00-18:00,,https://www.openstreetmap.org/node/5681220323,S13,no
+osm_n1339711607,AutotehXizmat,,general,default for shop=car_repair,,41.25587,69.190728,,,,https://www.openstreetmap.org/node/1339711607,S13,no
+osm_n6340904086,Avtoritet,,general,default for shop=car_repair,,41.312527,69.209204,,,,https://www.openstreetmap.org/node/6340904086,S13,no
+osm_n9428411965,Avtoservis,,general,default for shop=car_repair,,41.322513,69.359514,,,,https://www.openstreetmap.org/node/9428411965,S13,no
+osm_n12741687339,Avtoservis,,general,default for shop=car_repair,,41.324075,69.231847,,,,https://www.openstreetmap.org/node/12741687339,S13,no
+osm_n4378928889,Avtoservis1,Автосервис,general,default for shop=car_repair,,41.291917,69.35448,,,,https://www.openstreetmap.org/node/4378928889,S13,no
+osm_n7835993885,Bunker Tashkent,,general,default for shop=car_repair,,41.278207,69.150079,Izza 2-o'tish ko'chasi,24/7,,https://www.openstreetmap.org/node/7835993885,S13,no
+osm_n4747525937,Carbox,Carbox,general,default for shop=car_repair,,41.296748,69.257782,,,,https://www.openstreetmap.org/node/4747525937,S13,no
+osm_n6132385685,Durbek kastoprav izzat,,general,default for shop=car_repair,,41.327961,69.206098,,,,https://www.openstreetmap.org/node/6132385685,S13,no
+osm_n4722142691,Eurostar Motors,Eurostar Motors,general,default for shop=car_repair,,41.223473,69.234773,,Mo-Su 09:00-18:00,,https://www.openstreetmap.org/node/4722142691,S13,no
+osm_n4693722792,Fix iT сервис центр,Fix iT сервис центр,general,default for shop=car_repair,,41.22682,69.218438,,,,https://www.openstreetmap.org/node/4693722792,S13,no
+osm_n4715997189,Fors.uz,Форс.уз,general,default for shop=car_repair,,41.264842,69.231327,,Mo-Sa 09:00-20:00; Su 09:00-18:00,https://fors.uz/,https://www.openstreetmap.org/node/4715997189,S13,no
+osm_n3784992792,GARAGE автосалон иномарка,,general,default for shop=car_repair,,41.263605,69.235381,,,,https://www.openstreetmap.org/node/3784992792,S13,no
+osm_n5899406742,HUMO,,general,default for shop=car_repair,,41.377452,69.268839,,,,https://www.openstreetmap.org/node/5899406742,S13,no
+osm_n6738269986,OSIPYANMOTORS,,general,default for shop=car_repair,,41.271572,69.280629,махалля Банокатий,Mo-Fr 09:00-18:00,,https://www.openstreetmap.org/node/6738269986,S13,no
+osm_n1242876356,Oktan Petrol,,general,default for shop=car_repair,,41.277809,69.306826,,,,https://www.openstreetmap.org/node/1242876356,S13,no
+osm_n5584532721,Premier Service,,general,default for shop=car_repair,,41.282738,69.193408,,,,https://www.openstreetmap.org/node/5584532721,S13,no
+osm_n3784992788,Rolf,,general,default for shop=car_repair,,41.296154,69.201957,,,,https://www.openstreetmap.org/node/3784992788,S13,no
+osm_n4837817221,SIGMA,,general,default for shop=car_repair,,41.271355,69.20798,,24/7,,https://www.openstreetmap.org/node/4837817221,S13,no
+osm_n5878100485,Spektr Service,Спектр Сервис,general,default for shop=car_repair,,41.276317,69.26355,Abdulla Kahhar ko'chasi,Sa-Th 09:00-18:00,,https://www.openstreetmap.org/node/5878100485,S13,no
+osm_n11545864628,Stek Uzbekistan,,general,default for shop=car_repair,,41.263388,69.233249,,Mo-Sa 10:30-22:00,,https://www.openstreetmap.org/node/11545864628,S13,no
+osm_w1524897052,Tengfei AutoService,,general,default for shop=car_repair,,41.254966,69.319113,,,,https://www.openstreetmap.org/way/1524897052,S13,no
+osm_n3595751010,tezkor servis,,general,default for shop=car_repair,,41.299835,69.20313,,,,https://www.openstreetmap.org/node/3595751010,S13,no
+osm_n7899197022,АВТОРИТЕТ,,general,default for shop=car_repair,,41.295385,69.29259,,,,https://www.openstreetmap.org/node/7899197022,S13,no
+osm_n3320429135,Авто ремонт,Авто ремонт,general,default for shop=car_repair,,41.356258,69.199241,,,,https://www.openstreetmap.org/node/3320429135,S13,no
+osm_w149541349,Авто сервис,,general,default for shop=car_repair,,41.26247,69.316387,Farg'ona Yo'li,Mo-Su 08:00-22:00,,https://www.openstreetmap.org/way/149541349,S13,no
+osm_n3704832499,Автомастерская,Автомастерская,general,default for shop=car_repair,,41.352693,69.266046,,,,https://www.openstreetmap.org/node/3704832499,S13,no
+osm_n5018002224,Автомастерская,,general,default for shop=car_repair,,41.361047,69.224502,,,,https://www.openstreetmap.org/node/5018002224,S13,no
+osm_n6403440085,Автомастерская,,general,default for shop=car_repair,,41.325649,69.348802,,,,https://www.openstreetmap.org/node/6403440085,S13,no
+osm_n12903894084,Автомастерская,,general,default for shop=car_repair,,41.261179,69.161889,,,,https://www.openstreetmap.org/node/12903894084,S13,no
+osm_w570250912,Автомастерская,,general,default for shop=car_repair,,41.290519,69.303072,,,,https://www.openstreetmap.org/way/570250912,S13,no
+osm_n1189660181,Автомастерские,,general,default for shop=car_repair,,41.309481,69.324727,,,,https://www.openstreetmap.org/node/1189660181,S13,no
+osm_n4087540888,Автомойка Autochem.uz,autochem.uz Car Wash,general,default for shop=car_repair,,41.283237,69.290573,,,,https://www.openstreetmap.org/node/4087540888,S13,no
+osm_n9375514529,Авторитет,,general,default for shop=car_repair,,41.340896,69.358512,,,,https://www.openstreetmap.org/node/9375514529,S13,no
+osm_n1772489918,Автосервис,,general,default for shop=car_repair,,41.362655,69.217572,,,,https://www.openstreetmap.org/node/1772489918,S13,no
+osm_n4269431790,Автосервис,,general,default for shop=car_repair,,41.284062,69.170998,,,,https://www.openstreetmap.org/node/4269431790,S13,no
+osm_n4271064293,Автосервис,,general,default for shop=car_repair,,41.270055,69.265104,,,,https://www.openstreetmap.org/node/4271064293,S13,no
+osm_n4369428393,Автосервис,Автосервис,general,default for shop=car_repair,,41.288499,69.343312,,,,https://www.openstreetmap.org/node/4369428393,S13,no
+osm_n4464824946,Автосервис,Автосервис,general,default for shop=car_repair,,41.332929,69.35155,,,,https://www.openstreetmap.org/node/4464824946,S13,no
+osm_n4483432091,Автосервис,Автосервис,general,default for shop=car_repair,,41.300496,69.227357,Байналминал улица 1,,,https://www.openstreetmap.org/node/4483432091,S13,no
+osm_n4582687989,Автосервис,Автосервис,general,default for shop=car_repair,,41.208138,69.22393,,,,https://www.openstreetmap.org/node/4582687989,S13,no
+osm_n4697494395,Автосервис,Автосервис,general,default for shop=car_repair,,41.299929,69.213105,Байналминал улица,Mo-Su 07:00-20:00,,https://www.openstreetmap.org/node/4697494395,S13,no
+osm_n4714605491,Автосервис,Автосервис,general,default for shop=car_repair,,41.269356,69.313695,,,,https://www.openstreetmap.org/node/4714605491,S13,no
+osm_n5074870664,Автосервис,,general,default for shop=car_repair,,41.346979,69.247016,Kichik Halqa yo'li,,,https://www.openstreetmap.org/node/5074870664,S13,no
+osm_n5074916245,Автосервис,Автосервис,general,default for shop=car_repair,,41.242339,69.335992,To'yona ko'chasi,,,https://www.openstreetmap.org/node/5074916245,S13,no
+osm_n5142360421,Автосервис,Автосервим,general,default for shop=car_repair,,41.346182,69.365251,,,,https://www.openstreetmap.org/node/5142360421,S13,no
+osm_n5551736821,Автосервис,,general,default for shop=car_repair,,41.258452,69.359609,Toshkent halqa avtomobil yo'li,,,https://www.openstreetmap.org/node/5551736821,S13,no
+osm_n5570222224,Автосервис,,general,default for shop=car_repair,,41.33525,69.304111,,,,https://www.openstreetmap.org/node/5570222224,S13,no
+osm_n5685395621,Автосервис,,general,default for shop=car_repair,,41.200517,69.226088,Davlatobod ko'chasi,,,https://www.openstreetmap.org/node/5685395621,S13,no
+osm_w586307237,Автосервис,,general,default for shop=car_repair,,41.197987,69.230418,,,,https://www.openstreetmap.org/way/586307237,S13,no
+osm_w586307238,Автосервис,,general,default for shop=car_repair,,41.200137,69.226235,,,,https://www.openstreetmap.org/way/586307238,S13,no
+osm_w628550460,Автосервис,,general,default for shop=car_repair,,41.358121,69.30738,,,,https://www.openstreetmap.org/way/628550460,S13,no
+osm_w662903830,Автосервис,,general,default for shop=car_repair,,41.361057,69.224549,,,,https://www.openstreetmap.org/way/662903830,S13,no
+osm_n6619066586,Автосервис LUX,,general,default for shop=car_repair,,41.362799,69.21622,,,,https://www.openstreetmap.org/node/6619066586,S13,no
+osm_n4378957091,Автосервис Форсаж,Автосервис Форсаж,general,default for shop=car_repair,,41.290301,69.3432,,,,https://www.openstreetmap.org/node/4378957091,S13,no
+osm_n5443936427,Автосервис ХАН КАР (XAN CAR),,general,default for shop=car_repair,,41.282958,69.193069,Farhod ko'chasi 14,Mo-Su 10:00-22:00,,https://www.openstreetmap.org/node/5443936427,S13,no
+osm_n5612705123,Автосервис и мойка,,general,default for shop=car_repair,,41.349244,69.389425,,,,https://www.openstreetmap.org/node/5612705123,S13,no
+osm_w153321906,"Автотеххизмат ""Рахат""",,general,default for shop=car_repair,,41.266972,69.364393,,,,https://www.openstreetmap.org/way/153321906,S13,no
+osm_n4742613365,Ал Азиз,Ал Азиз,general,default for shop=car_repair,,41.340846,69.261411,,,,https://www.openstreetmap.org/node/4742613365,S13,no
+osm_n4191395629,Без имени,,general,default for shop=car_repair,,41.329896,69.22519,,,,https://www.openstreetmap.org/node/4191395629,S13,no
+osm_n4378527289,Жамол Сервис,Сарик мастерская,general,default for shop=car_repair,,41.223984,69.212935,,,,https://www.openstreetmap.org/node/4378527289,S13,no
+osm_n4727212689,Катта Қаъни Автосервис,Катта кани автосервис,general,default for shop=car_repair,,41.272711,69.167926,Катта Канъи улица +998951427279,Mo-Su 09:00-20:00,https://facebook.com/shodrazvaltashkent,https://www.openstreetmap.org/node/4727212689,S13,no
+osm_n8116895421,Мошина уста,,general,default for shop=car_repair,,41.353781,69.186016,,,,https://www.openstreetmap.org/node/8116895421,S13,no
+osm_n5750260021,Мухаммаджон,,general,default for shop=car_repair,,41.272865,69.296578,Abdurauf Fitrat 5-o'tish ko'chasi,,,https://www.openstreetmap.org/node/5750260021,S13,no
+osm_n4727204691,Питстоп,Питстоп,general,default for shop=car_repair,,41.228555,69.177616,,Mo-Su 09:00-19:00,,https://www.openstreetmap.org/node/4727204691,S13,no
+osm_n4659467689,Регулировка фар,Регулировка фар,general,default for shop=car_repair,,41.326828,69.288915,,24/7,,https://www.openstreetmap.org/node/4659467689,S13,no
+osm_n7987967685,Регулировка фар,,general,default for shop=car_repair,,41.337404,69.325986,,,,https://www.openstreetmap.org/node/7987967685,S13,no
+osm_n4201909412,СТО,,general,default for shop=car_repair,,41.341052,69.213952,,,,https://www.openstreetmap.org/node/4201909412,S13,no
+osm_n4932667423,СТО,,general,default for shop=car_repair,,41.305153,69.193517,,,,https://www.openstreetmap.org/node/4932667423,S13,no
+osm_n6187308933,СТО,,general,default for shop=car_repair,,41.341057,69.213959,,,,https://www.openstreetmap.org/node/6187308933,S13,no
+osm_n6497355176,СТО,,general,default for shop=car_repair,,41.194097,69.214307,Дустлик,,,https://www.openstreetmap.org/node/6497355176,S13,no
+osm_n6876412985,СТО,,general,default for shop=car_repair,,41.339199,69.300428,,,,https://www.openstreetmap.org/node/6876412985,S13,no
+osm_n6885636417,СТО,,general,default for shop=car_repair,,41.305798,69.194054,,,,https://www.openstreetmap.org/node/6885636417,S13,no
+osm_n5251420021,СТО Алим ака,СТО Алим ака,general,default for shop=car_repair,,41.275098,69.213808,,,,https://www.openstreetmap.org/node/5251420021,S13,no
+osm_n4281625289,ТЭА,,general,default for shop=car_repair,,41.312552,69.347691,,,,https://www.openstreetmap.org/node/4281625289,S13,no
+osm_n6414857585,Учкахрамон,,general,default for shop=car_repair,,41.382869,69.291718,,,,https://www.openstreetmap.org/node/6414857585,S13,no
+osm_n4314055393,Чимбай СТО,,general,default for shop=car_repair,,41.346749,69.216634,,,,https://www.openstreetmap.org/node/4314055393,S13,no
+osm_n4207766189,ааа,,general,default for shop=car_repair,,41.307958,69.196709,,,,https://www.openstreetmap.org/node/4207766189,S13,no
+osm_n6601774885,автосервис,,general,default for shop=car_repair,,41.377719,69.313153,,,,https://www.openstreetmap.org/node/6601774885,S13,no
+osm_w136586164,автосервис,,general,default for shop=car_repair,,41.290319,69.176394,,,,https://www.openstreetmap.org/way/136586164,S13,no
+osm_w375029565,автосервис,,general,default for shop=car_repair,,41.29006,69.166923,,,,https://www.openstreetmap.org/way/375029565,S13,no
+osm_n4170123589,саша,,general,default for shop=car_repair,,41.358963,69.242591,,,,https://www.openstreetmap.org/node/4170123589,S13,no
+osm_n1014448926,,,general,default for shop=car_repair,,41.290512,69.300719,,,,https://www.openstreetmap.org/node/1014448926,S13,no
+osm_n1120018624,,,general,default for shop=car_repair,,41.284461,69.33697,,,,https://www.openstreetmap.org/node/1120018624,S13,no
+osm_n1142951614,,,general,default for shop=car_repair,,41.279524,69.294823,,,,https://www.openstreetmap.org/node/1142951614,S13,no
+osm_n1145356020,,,general,default for shop=car_repair,,41.253216,69.302855,,,,https://www.openstreetmap.org/node/1145356020,S13,no
+osm_n1224564034,,,general,default for shop=car_repair,,41.265032,69.21999,,,,https://www.openstreetmap.org/node/1224564034,S13,no
+osm_n1232483839,,,general,default for shop=car_repair,,41.298147,69.296647,,,,https://www.openstreetmap.org/node/1232483839,S13,no
+osm_n1233426637,,,general,default for shop=car_repair,,41.281297,69.296958,,,,https://www.openstreetmap.org/node/1233426637,S13,no
+osm_n1254060565,,,general,default for shop=car_repair,,41.252854,69.218002,,,,https://www.openstreetmap.org/node/1254060565,S13,no
+osm_n1255364442,,,general,default for shop=car_repair,,41.272348,69.282606,,,,https://www.openstreetmap.org/node/1255364442,S13,no
+osm_n1255364445,,,general,default for shop=car_repair,,41.272141,69.281032,,,,https://www.openstreetmap.org/node/1255364445,S13,no
+osm_n1339711623,,,general,default for shop=car_repair,,41.25106,69.355407,,,,https://www.openstreetmap.org/node/1339711623,S13,no
+osm_n1654949887,,,general,default for shop=car_repair,,41.276807,69.25998,,,,https://www.openstreetmap.org/node/1654949887,S13,no
+osm_n1772415049,,,general,default for shop=car_repair,,41.357688,69.2068,,,,https://www.openstreetmap.org/node/1772415049,S13,no
+osm_n1773701960,,,general,default for shop=car_repair,,41.28783,69.280811,,,,https://www.openstreetmap.org/node/1773701960,S13,no
+osm_n1853833689,,,general,default for shop=car_repair,,41.193916,69.234458,,,,https://www.openstreetmap.org/node/1853833689,S13,no
+osm_n2004304054,,,general,default for shop=car_repair,,41.277589,69.261491,,,,https://www.openstreetmap.org/node/2004304054,S13,no
+osm_n2011945485,,,general,default for shop=car_repair,,41.272006,69.363141,,,,https://www.openstreetmap.org/node/2011945485,S13,no
+osm_n2012617894,,,general,default for shop=car_repair,,41.254349,69.321907,,,,https://www.openstreetmap.org/node/2012617894,S13,no
+osm_n3497052433,,,general,default for shop=car_repair,,41.330136,69.307327,,,,https://www.openstreetmap.org/node/3497052433,S13,no
+osm_n3579530160,,,general,default for shop=car_repair,,41.300055,69.202528,,,,https://www.openstreetmap.org/node/3579530160,S13,no
+osm_n3784992789,,,general,default for shop=car_repair,,41.293731,69.207306,,,,https://www.openstreetmap.org/node/3784992789,S13,no
+osm_n3788750909,,,general,default for shop=car_repair,,41.243978,69.307897,,,,https://www.openstreetmap.org/node/3788750909,S13,no
+osm_n3792297864,,,general,default for shop=car_repair,,41.273348,69.174748,,,,https://www.openstreetmap.org/node/3792297864,S13,no
+osm_n3893172177,,,general,default for shop=car_repair,,41.335892,69.304643,,,,https://www.openstreetmap.org/node/3893172177,S13,no
+osm_n3893172182,,,general,default for shop=car_repair,,41.280615,69.321429,,,,https://www.openstreetmap.org/node/3893172182,S13,no
+osm_n3893172190,,,general,default for shop=car_repair,,41.280961,69.295662,,,,https://www.openstreetmap.org/node/3893172190,S13,no
+osm_n3910631789,,,general,default for shop=car_repair,,41.254092,69.204722,,,,https://www.openstreetmap.org/node/3910631789,S13,no
+osm_n3970966198,,,general,default for shop=car_repair,,41.262892,69.232332,,,,https://www.openstreetmap.org/node/3970966198,S13,no
+osm_n4186443991,,,general,default for shop=car_repair,,41.339922,69.220442,,Mo-Sa 10:00-19:00,,https://www.openstreetmap.org/node/4186443991,S13,no
+osm_n4191114735,,,general,default for shop=car_repair,,41.265654,69.219138,,,,https://www.openstreetmap.org/node/4191114735,S13,no
+osm_n4191114738,,Ремонт радиаторов,general,default for shop=car_repair,,41.26574,69.219458,,,,https://www.openstreetmap.org/node/4191114738,S13,no
+osm_n4191131076,,,general,default for shop=car_repair,,41.262948,69.231881,,,,https://www.openstreetmap.org/node/4191131076,S13,no
+osm_n4203929809,,,general,default for shop=car_repair,,41.24781,69.324574,,,,https://www.openstreetmap.org/node/4203929809,S13,no
+osm_n4204641806,,,general,default for shop=car_repair,,41.341707,69.21902,,,,https://www.openstreetmap.org/node/4204641806,S13,no
+osm_n4223565891,,,general,default for shop=car_repair,,41.339547,69.265838,,"Mo-Sa 09:00-13:00, 14:00-18:00",,https://www.openstreetmap.org/node/4223565891,S13,no
+osm_n4243132389,,,general,default for shop=car_repair,,41.241,69.215314,Yangi sirg'ali ko'chasi,,,https://www.openstreetmap.org/node/4243132389,S13,no
+osm_n4366506390,,,general,default for shop=car_repair,,41.258434,69.196654,,,,https://www.openstreetmap.org/node/4366506390,S13,no
+osm_n4378479993,,,general,default for shop=car_repair,,41.228566,69.177638,,,,https://www.openstreetmap.org/node/4378479993,S13,no
+osm_n4378526989,,,general,default for shop=car_repair,,41.230664,69.218857,,,,https://www.openstreetmap.org/node/4378526989,S13,no
+osm_n4378527089,,,general,default for shop=car_repair,,41.232021,69.217354,,,,https://www.openstreetmap.org/node/4378527089,S13,no
+osm_n4378527789,,,general,default for shop=car_repair,,41.22334,69.213527,,,,https://www.openstreetmap.org/node/4378527789,S13,no
+osm_n4388705262,,Volkswagen-центр,general,default for shop=car_repair,,41.282545,69.299763,,,,https://www.openstreetmap.org/node/4388705262,S13,no
+osm_n4398821135,,Автосервис,general,default for shop=car_repair,,41.249871,69.25522,,,,https://www.openstreetmap.org/node/4398821135,S13,no
+osm_n4421669689,,,general,default for shop=car_repair,,41.258857,69.152334,,,,https://www.openstreetmap.org/node/4421669689,S13,no
+osm_n4479094597,,,general,default for shop=car_repair,,41.337916,69.293236,,,,https://www.openstreetmap.org/node/4479094597,S13,no
+osm_n4513202613,,,general,default for shop=car_repair,,41.308641,69.343862,,,,https://www.openstreetmap.org/node/4513202613,S13,no
+osm_n4520242589,,,general,default for shop=car_repair,,41.323387,69.230575,,,,https://www.openstreetmap.org/node/4520242589,S13,no
+osm_n4526106127,,,general,default for shop=car_repair,,41.314687,69.334577,,,,https://www.openstreetmap.org/node/4526106127,S13,no
+osm_n4570574925,,,general,default for shop=car_repair,,41.347444,69.24695,,,,https://www.openstreetmap.org/node/4570574925,S13,no
+osm_n4693271649,,,general,default for shop=car_repair,,41.355213,69.287928,,,,https://www.openstreetmap.org/node/4693271649,S13,no
+osm_n5255190721,,,general,default for shop=car_repair,,41.28071,69.228713,,,,https://www.openstreetmap.org/node/5255190721,S13,no
+osm_n5257346023,,,general,default for shop=car_repair,,41.274193,69.224189,,,,https://www.openstreetmap.org/node/5257346023,S13,no
+osm_n5753169321,,,general,default for shop=car_repair,,41.327756,69.292423,,,,https://www.openstreetmap.org/node/5753169321,S13,no
+osm_n6112490091,,,general,default for shop=car_repair,,41.32039,69.173718,,,,https://www.openstreetmap.org/node/6112490091,S13,no
+osm_n6190357232,,,general,default for shop=car_repair,,41.306042,69.193297,,,,https://www.openstreetmap.org/node/6190357232,S13,no
+osm_n6237752686,,,general,default for shop=car_repair,,41.167246,69.243967,,,,https://www.openstreetmap.org/node/6237752686,S13,no
+osm_n6291264787,,,general,default for shop=car_repair,,41.325876,69.192898,,,,https://www.openstreetmap.org/node/6291264787,S13,no
+osm_n6354381840,,,general,default for shop=car_repair,,41.309182,69.32436,,,,https://www.openstreetmap.org/node/6354381840,S13,no
+osm_n6631388695,,,general,default for shop=car_repair,,41.349291,69.241412,,,,https://www.openstreetmap.org/node/6631388695,S13,no
+osm_n7833692347,,,general,default for shop=car_repair,,41.328735,69.193581,,,,https://www.openstreetmap.org/node/7833692347,S13,no
+osm_n8259338012,,,general,default for shop=car_repair,,41.299323,69.193612,,,,https://www.openstreetmap.org/node/8259338012,S13,no
+osm_n8933090509,,,general,default for shop=car_repair,,41.304386,69.319759,,,,https://www.openstreetmap.org/node/8933090509,S13,no
+osm_n9094082747,,,general,default for shop=car_repair,,41.347067,69.278451,,,,https://www.openstreetmap.org/node/9094082747,S13,no
+osm_n10101477117,,,general,default for shop=car_repair,,41.280255,69.333938,,,,https://www.openstreetmap.org/node/10101477117,S13,no
+osm_n10726349031,,,general,default for shop=car_repair,,41.281213,69.228829,,,,https://www.openstreetmap.org/node/10726349031,S13,no
+osm_n10746504523,,,general,default for shop=car_repair,,41.241759,69.172423,,,,https://www.openstreetmap.org/node/10746504523,S13,no
+osm_n12759677800,,,general,default for shop=car_repair,,41.29483,69.211715,,,,https://www.openstreetmap.org/node/12759677800,S13,no
+osm_n12968927846,,Автосервис,general,default for shop=car_repair,,41.267718,69.26471,,,,https://www.openstreetmap.org/node/12968927846,S13,no
+osm_n13246595155,,,general,default for shop=car_repair,,41.298762,69.186938,,,,https://www.openstreetmap.org/node/13246595155,S13,no
+osm_n13246595156,,,general,default for shop=car_repair,,41.298657,69.187888,,,,https://www.openstreetmap.org/node/13246595156,S13,no
+osm_w105958811,,,general,default for shop=car_repair,,41.382332,69.288963,Amir Temur shoh ko'chasi,,,https://www.openstreetmap.org/way/105958811,S13,no
+osm_w105958812,,,general,default for shop=car_repair,,41.382405,69.288071,,,,https://www.openstreetmap.org/way/105958812,S13,no
+osm_w105958931,,,general,default for shop=car_repair,,41.381794,69.287904,,,,https://www.openstreetmap.org/way/105958931,S13,no
+osm_w141322446,,,general,default for shop=car_repair,,41.359068,69.205681,Muxbir ko'chasi 4/2,,,https://www.openstreetmap.org/way/141322446,S13,no
+osm_w149714246,,,general,default for shop=car_repair,,41.346151,69.208321,,,,https://www.openstreetmap.org/way/149714246,S13,no
+osm_w164289189,,,general,default for shop=car_repair,,41.23279,69.272511,,,,https://www.openstreetmap.org/way/164289189,S13,no
+osm_w165624980,,,general,default for shop=car_repair,,41.278435,69.323823,,,,https://www.openstreetmap.org/way/165624980,S13,no
+osm_w226025577,,,general,default for shop=car_repair,,41.319001,69.357087,,,,https://www.openstreetmap.org/way/226025577,S13,no
+osm_w301152163,,,general,default for shop=car_repair,,41.255424,69.247264,,,,https://www.openstreetmap.org/way/301152163,S13,no
+osm_w324042024,,,general,default for shop=car_repair,,41.359374,69.241783,Qorasaroy ko'chasi 343в,,,https://www.openstreetmap.org/way/324042024,S13,no
+osm_w326740210,,,general,default for shop=car_repair,,41.33007,69.314227,,,,https://www.openstreetmap.org/way/326740210,S13,no
+osm_w366494055,,,general,default for shop=car_repair,,41.352762,69.266025,,,,https://www.openstreetmap.org/way/366494055,S13,no
+osm_w529178198,,,general,default for shop=car_repair,,41.245438,69.283205,,,,https://www.openstreetmap.org/way/529178198,S13,no
+osm_w549510426,,,general,default for shop=car_repair,,41.244956,69.230504,,,,https://www.openstreetmap.org/way/549510426,S13,no
+osm_w617870274,,,general,default for shop=car_repair,,41.337305,69.165186,,,,https://www.openstreetmap.org/way/617870274,S13,no
+osm_w617870276,,,general,default for shop=car_repair,,41.337316,69.165185,,,,https://www.openstreetmap.org/way/617870276,S13,no
+osm_w626315410,,,general,default for shop=car_repair,,41.342969,69.202151,,,,https://www.openstreetmap.org/way/626315410,S13,no
+osm_w682908982,,,general,default for shop=car_repair,,41.34897,69.1802,Farovon ko'chasi 459A,,,https://www.openstreetmap.org/way/682908982,S13,no
+osm_w688148468,,,general,default for shop=car_repair,,41.363331,69.203236,Talabalar ko'chasi,,,https://www.openstreetmap.org/way/688148468,S13,no
+osm_w957450062,,,general,default for shop=car_repair,,41.281047,69.313536,,,,https://www.openstreetmap.org/way/957450062,S13,no
+osm_w1025764362,,,general,default for shop=car_repair,,41.349356,69.335311,,,,https://www.openstreetmap.org/way/1025764362,S13,no
+osm_w1120553893,,,general,default for shop=car_repair,,41.269433,69.313848,,,,https://www.openstreetmap.org/way/1120553893,S13,no
+osm_w1552033003,,,general,default for shop=car_repair,,41.373359,69.310062,,,,https://www.openstreetmap.org/way/1552033003,S13,no
+osm_n11397485142,Avtoglass premium,,glass,name keyword (heuristic),,41.308737,69.237814,,"Mo-Su 09:00-13:00,14:00-19:00",,https://www.openstreetmap.org/node/11397485142,S13,no
+osm_n5372711821,Ремонт автостекол,Ремонт автостекол,glass,name keyword (heuristic),,41.364447,69.300133,Yangi Yunusobod ko'chasi,Su 09:00-18:00; Mo-Sa 09:00-18:00,,https://www.openstreetmap.org/node/5372711821,S13,no
+osm_n5387524148,Ремонт автостекол,,glass,osm tag service:vehicle:glass,,41.257708,69.358983,Toshkent halqa avtomobil yo'li,,,https://www.openstreetmap.org/node/5387524148,S13,no
+osm_n9106680645,Станция техосмотра,,inspection,name keyword (heuristic),,41.215134,69.337529,,,,https://www.openstreetmap.org/node/9106680645,S13,no
+osm_n9106680646,Станция техосмотра,,inspection,name keyword (heuristic),,41.305795,69.464332,,,,https://www.openstreetmap.org/node/9106680646,S13,no
+osm_n4622199992,Castrol Archa kucha,,oil_change,name keyword (heuristic),,41.305256,69.193435,Kichik Halqa yo'li,,,https://www.openstreetmap.org/node/4622199992,S13,no
+osm_n2657481732,Castrol Yunus-Obod Car Repair Station,Кастрол Юнусабад,oil_change,name keyword (heuristic),,41.377641,69.268769,,9:00-19:00,,https://www.openstreetmap.org/node/2657481732,S13,no
+osm_w401914336,Mannol,,oil_change,name keyword (heuristic),,41.244914,69.274796,,,,https://www.openstreetmap.org/way/401914336,S13,no
+osm_n13620105671,Mobil One Замена Масла,,oil_change,name keyword (heuristic),,41.354535,69.371594,,,,https://www.openstreetmap.org/node/13620105671,S13,no
+osm_n4744130523,Автосервис,"Автосервис-мойка ""MEGA HOUSE"" замена масла ""EUROOIL""",oil_change,name keyword (heuristic),,41.26838,69.289748,,,,https://www.openstreetmap.org/node/4744130523,S13,no
+osm_n5082926368,Артём замена масла,Артём замена масла,oil_change,name keyword (heuristic),,41.251035,69.355473,,Mo-Sa 09:00-19:00,,https://www.openstreetmap.org/node/5082926368,S13,no
+osm_n4464654696,Замена Маслa,Замена Маслa,oil_change,name keyword (heuristic),,41.325666,69.34873,Амударьинская улица 1А,Mo-Su 10:00-22:00,,https://www.openstreetmap.org/node/4464654696,S13,no
+osm_n7521569972,Замена Масла,,oil_change,name keyword (heuristic),,41.354459,69.372491,,,,https://www.openstreetmap.org/node/7521569972,S13,no
+osm_w804139329,Замена Масла,,oil_change,name keyword (heuristic),,41.354562,69.370833,,,,https://www.openstreetmap.org/way/804139329,S13,no
+osm_w804139330,Замена Масла,,oil_change,name keyword (heuristic),,41.354539,69.371002,,,,https://www.openstreetmap.org/way/804139330,S13,no
+osm_w1051627488,Замена Масла,,oil_change,name keyword (heuristic),,41.354107,69.371026,,,,https://www.openstreetmap.org/way/1051627488,S13,no
+osm_n4201909407,Замена масла,,oil_change,name keyword (heuristic),,41.33995,69.218735,,,,https://www.openstreetmap.org/node/4201909407,S13,no
+osm_n4201909408,Замена масла,,oil_change,name keyword (heuristic),,41.341226,69.214513,,,,https://www.openstreetmap.org/node/4201909408,S13,no
+osm_n4201909409,Замена масла,,oil_change,name keyword (heuristic),,41.342041,69.212036,,,,https://www.openstreetmap.org/node/4201909409,S13,no
+osm_n4448691090,Замена масла,Замена масла,oil_change,name keyword (heuristic),,41.284992,69.337065,,,,https://www.openstreetmap.org/node/4448691090,S13,no
+osm_n4621063190,Замена масла,Замена масла,oil_change,name keyword (heuristic),,41.372863,69.322447,,,,https://www.openstreetmap.org/node/4621063190,S13,no
+osm_n4831271324,Замена масла,Замена масла,oil_change,name keyword (heuristic),,41.317677,69.357867,,,,https://www.openstreetmap.org/node/4831271324,S13,no
+osm_n5115206023,Замена масла,Замена масла,oil_change,name keyword (heuristic),,41.268729,69.213125,,Mo-Su 09:00-18:00,,https://www.openstreetmap.org/node/5115206023,S13,no
+osm_n5794987055,Замена масла,,oil_change,name keyword (heuristic),,41.273847,69.342553,Izzat ko'chasi,,,https://www.openstreetmap.org/node/5794987055,S13,no
+osm_n8051671110,Замена масла,,oil_change,name keyword (heuristic),,41.333547,69.229401,,,,https://www.openstreetmap.org/node/8051671110,S13,no
+osm_w551188717,Замена масла,,oil_change,name keyword (heuristic),,41.363641,69.203056,6А,,,https://www.openstreetmap.org/way/551188717,S13,no
+osm_n5437044766,Замена масла ENOC by InRent,"Замена масла Total, развал-схождение",oil_change,name keyword (heuristic),,41.330953,69.31374,,Mo-Sa 09:00-20:00,,https://www.openstreetmap.org/node/5437044766,S13,no
+osm_n5045654224,Замена масла Лёха,Замена масла Лёха,oil_change,name keyword (heuristic),,41.251418,69.36994,,,,https://www.openstreetmap.org/node/5045654224,S13,no
+osm_n4494391293,Замена масла+электрики,Замена масла+электрики,oil_change,name keyword (heuristic),,41.280629,69.350706,,,,https://www.openstreetmap.org/node/4494391293,S13,no
+osm_n5513456023,Замена моторных масел Liqui Moly,,oil_change,name keyword (heuristic),,41.312564,69.193167,Kichik Halqa yo'li 80,Mo-Su 09:00-18:00,,https://www.openstreetmap.org/node/5513456023,S13,no
+osm_n13246595163,,,oil_change,osm tag service:vehicle:oil_change,,41.298749,69.188413,,,,https://www.openstreetmap.org/node/13246595163,S13,no
+osm_w776542857,,,oil_change,osm tag service:vehicle:oil_change,,41.348052,69.168706,Farobiy ko'chasi,,,https://www.openstreetmap.org/way/776542857,S13,no
+osm_n5872929086,3-D развал схождение,,suspension,name keyword (heuristic),,41.271682,69.189488,Qatortol 2-o'tish ko'chasi,Mo-Su 09:00-21:00,,https://www.openstreetmap.org/node/5872929086,S13,no
+osm_n4770555232,Перекачка и ремонт амортизаторов,Перекачка и ремонт амортизаторов,suspension,name keyword (heuristic),,41.306467,69.19792,,,,https://www.openstreetmap.org/node/4770555232,S13,no
+osm_n5349712223,Развал,,suspension,name keyword (heuristic),,41.356266,69.199023,,,,https://www.openstreetmap.org/node/5349712223,S13,no
+osm_n4621010591,Развал схождение,Развал схождение,suspension,name keyword (heuristic),,41.372685,69.322504,,,,https://www.openstreetmap.org/node/4621010591,S13,no
+osm_n4972955722,Развал-схождение,,suspension,name keyword (heuristic),,41.289229,69.302327,,,,https://www.openstreetmap.org/node/4972955722,S13,no
+osm_n7099398287,Ремонт Амортизатора,,suspension,name keyword (heuristic),,41.282402,69.196331,Kichik Halqa yo'li,Mo-Su 09:00-18:00,,https://www.openstreetmap.org/node/7099398287,S13,no
+osm_n4770577022,Ремонт ходовой части автомобиля,,suspension,name keyword (heuristic),,41.306618,69.197747,Чукуркуприк улица,,,https://www.openstreetmap.org/node/4770577022,S13,no
+osm_n6681722485,"Автосервис - мотор, замена КПП",Автосервис - замена и ремонт мотора и коробка передач,transmission,name keyword (heuristic),,41.338557,69.223904,,,,https://www.openstreetmap.org/node/6681722485,S13,no
+osm_n1145356015,CTO,,tyres,osm tag service:vehicle:tyres,,41.247721,69.301174,,,,https://www.openstreetmap.org/node/1145356015,S13,no
+osm_n4971454321,DISK OSIYO,DISK OSIYO,tyres,name keyword (heuristic),,41.250293,69.217381,,,,https://www.openstreetmap.org/node/4971454321,S13,no
+osm_n4117804189,GoodYear Store,,tyres,name keyword (heuristic),,41.348084,69.350558,,Mo-Su 09:00-20:00,,https://www.openstreetmap.org/node/4117804189,S13,no
+osm_n4237497888,Koleso,,tyres,osm tag shop=tyres,,41.326116,69.254839,,,,https://www.openstreetmap.org/node/4237497888,S13,no
+osm_n1242876352,Oktan Petrol,,tyres,osm tag service:vehicle:tyres,,41.277935,69.306828,,,,https://www.openstreetmap.org/node/1242876352,S13,no
+osm_n4249074566,Shina.uz,,tyres,osm tag shop=tyres,,41.325545,69.255642,,,,https://www.openstreetmap.org/node/4249074566,S13,no
+osm_n5858852086,Авто Маркет,,tyres,osm tag shop=tyres,,41.262183,69.227295,,Mo-Sa 09:00-18:00,http://www.nexen.uz,https://www.openstreetmap.org/node/5858852086,S13,no
+osm_n5214809523,Авточехолы,,tyres,osm tag shop=tyres,,41.260845,69.193834,Bogodob ko'chasi,Mo-Su 09:00-18:00,,https://www.openstreetmap.org/node/5214809523,S13,no
+osm_n5877090489,Аккумурятор DELKOR,,tyres,osm tag shop=tyres,,41.323508,69.230509,Лайлитогон,Mo-Sa 09:00-18:00,http://www.delkor.uz,https://www.openstreetmap.org/node/5877090489,S13,no
+osm_n4302122290,Вулканизация,,tyres,name keyword (heuristic),,41.339487,69.266022,,,,https://www.openstreetmap.org/node/4302122290,S13,no
+osm_n4367206994,Вулканизация,Вулканизация,tyres,name keyword (heuristic),,41.32343,69.230455,,,,https://www.openstreetmap.org/node/4367206994,S13,no
+osm_n4621073789,Вулканизация,Вулканизация,tyres,name keyword (heuristic),,41.372777,69.322481,,,,https://www.openstreetmap.org/node/4621073789,S13,no
+osm_n4714605490,Вулканизация,Вулканизация,tyres,name keyword (heuristic),,41.265998,69.313669,,,,https://www.openstreetmap.org/node/4714605490,S13,no
+osm_n4770555433,Вулканизация,Вулканизация,tyres,name keyword (heuristic),,41.306682,69.197662,Чукуркуприк улица,,,https://www.openstreetmap.org/node/4770555433,S13,no
+osm_n4773537928,Вулканизация,Вулканизация,tyres,name keyword (heuristic),,41.316231,69.355967,,,,https://www.openstreetmap.org/node/4773537928,S13,no
+osm_n4976703823,Вулканизация,Вулканизация,tyres,name keyword (heuristic),,41.274701,69.21358,,,,https://www.openstreetmap.org/node/4976703823,S13,no
+osm_n5007769721,Вулканизация,Вулканизация,tyres,name keyword (heuristic),,41.223516,69.207602,,,,https://www.openstreetmap.org/node/5007769721,S13,no
+osm_n5116382521,Вулканизация,Вулканизация,tyres,name keyword (heuristic),,41.277664,69.176644,,,,https://www.openstreetmap.org/node/5116382521,S13,no
+osm_n5116382621,Вулканизация,Вулканизация,tyres,name keyword (heuristic),,41.283954,69.170952,,,,https://www.openstreetmap.org/node/5116382621,S13,no
+osm_n8981456416,Вулканизация,,tyres,name keyword (heuristic),,41.289291,69.301993,,,,https://www.openstreetmap.org/node/8981456416,S13,no
+osm_n9027661617,Вулканизация,,tyres,name keyword (heuristic),,41.350315,69.379581,,,,https://www.openstreetmap.org/node/9027661617,S13,no
+osm_n9027661619,Вулканизация,,tyres,name keyword (heuristic),,41.348983,69.389616,,,,https://www.openstreetmap.org/node/9027661619,S13,no
+osm_n9147313017,Вулканизация,,tyres,name keyword (heuristic),,41.347164,69.365737,,,,https://www.openstreetmap.org/node/9147313017,S13,no
+osm_n9205691655,Вулканизация,,tyres,name keyword (heuristic),,41.282868,69.447781,,,,https://www.openstreetmap.org/node/9205691655,S13,no
+osm_n9584854517,Вулканизация,,tyres,name keyword (heuristic),,41.362048,69.383775,,,,https://www.openstreetmap.org/node/9584854517,S13,no
+osm_n9789556117,Вулканизация,,tyres,name keyword (heuristic),,41.329677,69.347168,,,,https://www.openstreetmap.org/node/9789556117,S13,no
+osm_n4744121622,Вулканизация у Марата,Вулканизация у Марата АЗС MUSTANG,tyres,name keyword (heuristic),,41.268923,69.28918,,,,https://www.openstreetmap.org/node/4744121622,S13,no
+osm_n9955055187,Подкачка,,tyres,name keyword (heuristic),,41.287319,69.286994,,,,https://www.openstreetmap.org/node/9955055187,S13,no
+osm_n1098324258,Шиномонтаж,Шиномонтаж,tyres,osm tag shop=tyres,,41.271153,69.286916,Abdurauf Fitrat ko'chasi,Mo-Su 09:00-20:00,,https://www.openstreetmap.org/node/1098324258,S13,no
+osm_n1223005880,Шиномонтаж,Шиномонтаж,tyres,name keyword (heuristic),,41.270701,69.278454,,,,https://www.openstreetmap.org/node/1223005880,S13,no
+osm_n2613066696,Шиномонтаж,Шиномонтаж,tyres,name keyword (heuristic),,41.330642,69.307117,,,,https://www.openstreetmap.org/node/2613066696,S13,no
+osm_n3154428623,Шиномонтаж,,tyres,name keyword (heuristic),,41.326106,69.254805,,,,https://www.openstreetmap.org/node/3154428623,S13,no
+osm_n4185753492,Шиномонтаж,,tyres,name keyword (heuristic),,41.329906,69.22255,,Mo-Su 09:00-18:00,,https://www.openstreetmap.org/node/4185753492,S13,no
+osm_n4201909418,Шиномонтаж,,tyres,name keyword (heuristic),,41.341078,69.213826,,,,https://www.openstreetmap.org/node/4201909418,S13,no
+osm_n4464652796,Шиномонтаж,Замена колес Вулканизация,tyres,name keyword (heuristic),,41.325783,69.348801,Amudaryo ko'chasi,,,https://www.openstreetmap.org/node/4464652796,S13,no
+osm_n4773538821,Шиномонтаж,,tyres,name keyword (heuristic),,41.322638,69.359231,,,,https://www.openstreetmap.org/node/4773538821,S13,no
+osm_n4934809298,Шиномонтаж,,tyres,name keyword (heuristic),,41.290685,69.35091,,,,https://www.openstreetmap.org/node/4934809298,S13,no
+osm_n4973022075,Шиномонтаж,Шиномонтаж круглосуточно,tyres,name keyword (heuristic),,41.287968,69.280905,,24/7,,https://www.openstreetmap.org/node/4973022075,S13,no
+osm_n5074927841,Шиномонтаж,Шиномонтаж для грузовых машин,tyres,name keyword (heuristic),,41.24258,69.336655,Toshkent halqa avtomobil yo'li,,,https://www.openstreetmap.org/node/5074927841,S13,no
+osm_n5685395821,Шиномонтаж,,tyres,name keyword (heuristic),,41.200442,69.226139,,,,https://www.openstreetmap.org/node/5685395821,S13,no
+osm_n7276393685,Шиномонтаж,,tyres,name keyword (heuristic),,41.24727,69.324133,,Mo-Su 09:00-18:00,,https://www.openstreetmap.org/node/7276393685,S13,no
+osm_n7833689916,Шиномонтаж,,tyres,name keyword (heuristic),,41.320738,69.22405,,,,https://www.openstreetmap.org/node/7833689916,S13,no
+osm_n7833689919,Шиномонтаж,,tyres,name keyword (heuristic),,41.321495,69.222523,,,,https://www.openstreetmap.org/node/7833689919,S13,no
+osm_w804100158,Шиномонтаж,,tyres,name keyword (heuristic),,41.358726,69.38436,,,,https://www.openstreetmap.org/way/804100158,S13,no
+osm_n4494408089,Шиномонтаж и подкачка,Шиномонтаж и подкачка,tyres,osm tag shop=tyres,,41.280503,69.350836,,,,https://www.openstreetmap.org/node/4494408089,S13,no
+osm_w823343947,Шиномонтаж у дороги,,tyres,name keyword (heuristic),,41.26791,69.265608,,,,https://www.openstreetmap.org/way/823343947,S13,no
+osm_n1145356019,,,tyres,osm tag service:vehicle:tyres,,41.253225,69.302745,,,,https://www.openstreetmap.org/node/1145356019,S13,no
+osm_n1237273069,,,tyres,osm tag service:vehicle:tyres,,41.318385,69.313515,,,,https://www.openstreetmap.org/node/1237273069,S13,no
+osm_n1633713366,,,tyres,osm tag service:vehicle:tyres,,41.244608,69.314566,,,,https://www.openstreetmap.org/node/1633713366,S13,no
+osm_n1633713368,,,tyres,osm tag service:vehicle:tyres,,41.262358,69.316476,,,,https://www.openstreetmap.org/node/1633713368,S13,no
+osm_n1637888428,,,tyres,osm tag shop=tyres,,41.329199,69.313673,,,,https://www.openstreetmap.org/node/1637888428,S13,no
+osm_n3893172179,,,tyres,osm tag service:vehicle:tyres,,41.315506,69.316192,,,,https://www.openstreetmap.org/node/3893172179,S13,no
+osm_n4271055695,,,tyres,osm tag shop=tyres,,41.284137,69.194914,,,,https://www.openstreetmap.org/node/4271055695,S13,no
+osm_n4714581694,,Вулканизация,tyres,name keyword (heuristic),,41.267458,69.313335,,,,https://www.openstreetmap.org/node/4714581694,S13,no
+osm_n7616124985,,,tyres,osm tag shop=tyres,,41.354166,69.298568,,,,https://www.openstreetmap.org/node/7616124985,S13,no
+osm_n11019852541,,,tyres,osm tag shop=tyres,,41.275276,69.214085,,,,https://www.openstreetmap.org/node/11019852541,S13,no
+osm_n12946578794,,,tyres,osm tag shop=tyres,,41.292903,69.234351,,,,https://www.openstreetmap.org/node/12946578794,S13,no
+osm_w426990485,,Шиномонтаж,tyres,name keyword (heuristic),,41.282301,69.33259,,,,https://www.openstreetmap.org/way/426990485,S13,no
+osm_w833098926,,,tyres,osm tag service:vehicle:tyres,,41.347636,69.166283,Farobiy ko'chasi,,,https://www.openstreetmap.org/way/833098926,S13,no

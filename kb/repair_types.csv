@@ -1,0 +1,18 @@
+repair_type,label_en,label_ru,label_uz,workshop_categories,note
+engine,Engine / ignition repair,Ремонт двигателя / зажигания,Motor ta'miri,general;engine;brand_service,Misfire / oil burning / timing / sensors
+cooling,Cooling system,Система охлаждения,Sovutish tizimi,general;engine;brand_service,Radiator / pump / thermostat / head gasket
+oil_service,Oil change and leaks,Замена масла и течи,Moy almashtirish,oil_change;general;brand_service,Oil level / gasket and seal leaks
+transmission,Gearbox / clutch,КПП / сцепление,Uzatmalar qutisi,transmission;general;brand_service,Manual synchros / clutch / automatic
+brakes,Brakes,Тормоза,Tormoz,general;suspension;brand_service,Safety-critical
+suspension_steering,Suspension and steering,Ходовая и рулевое,Yurish qismi va rul,suspension;general;brand_service,Ball joints / shocks / bearings / rack
+electrical,Electrics / battery / alternator,Автоэлектрика / АКБ / генератор,Avtoelektrika,electrical;general;brand_service,Charging / wiring / lights
+body,Body / paint / corrosion,Кузовной ремонт,Kuzov ta'miri,body,Dents / rust / doors / hinges
+glass,Glass,Автостекло,Avtooyna,glass,Windscreen / windows
+tyres,Tyres and wheels,Шиномонтаж,Vulkanizatsiya / shinalar,tyres,Puncture / pressure / alignment
+alignment,Wheel alignment,Развал-схождение,Razval-sxojdeniye,suspension;tyres,Uneven tyre wear / pulling
+ac,Air conditioning,Автокондиционер,Konditsioner,ac;general,Refrigerant / compressor
+fuel_system,Fuel system,Топливная система,Yoqilg'i tizimi,general;engine;brand_service,Fuel smell / lines / pump — fire risk
+exhaust,Exhaust,Выхлопная система,Chiqindi gaz tizimi,general,Manifold / silencer
+airbag_srs,Airbags / SRS,Подушки безопасности,Xavfsizlik yostiqlari,brand_service;electrical,Prefer dealer
+ev_hv,EV / hybrid high-voltage system,Высоковольтная система EV / гибрида,EV yuqori kuchlanish tizimi,brand_service,Dealer only — HV safety training required
+diagnostics,Computer diagnostics,Компьютерная диагностика,Kompyuter diagnostikasi,general;electrical;brand_service,When the cause is unclear
