@@ -35,6 +35,7 @@ owner's words + car model + yes/no context ────────────�
 - **Knowledge:** 28 Markdown records with 20 sources (NHTSA, manufacturer manuals for Cobalt, Lacetti, Nexia and Damas, 3M, I-CAR and others). Records tied to a specific car model are shown with a "check that your model year is covered by this manual" note.
 - **LLM (optional):** Gemini 2.5 Flash Lite through OpenRouter explains only the retrieved records, citing a source for each claim. Photos are never sent to it.
 - **Workshops:** published contacts from `kb/workshops.md`, matched by car brand and repair type. They are contacts, not verified referrals or quotes.
+- **Nearest technician (demo):** `kb/demo-technicians.json` holds 8 **fictional** technicians with approximate Tashkent district coordinates, clearly labelled as demo data in the app. With **📍 Use my location**, the browser sorts them by distance and each one links to a Google Maps route. Location stays in the browser and is never sent to our server. A real deployment would replace this file with verified partner workshops.
 
 ## Run the app now
 

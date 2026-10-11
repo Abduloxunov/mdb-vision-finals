@@ -58,6 +58,7 @@ async function render(r){
   const shops=$('workshops');shops.replaceChildren();if(!r.workshops.length)shops.append(el('p','No matching contact in our directory yet.','small'));
   for(const w of r.workshops){const c=el('div',undefined,'shop');c.append(el('b',w.name),el('p',w.address||'Address not published','small'));if(w.matched.length)c.append(el('p','Offers: '+w.matched.join(', '),'small'));
     if(w.phone){const a=el('a','📞 '+w.phone);a.href='tel:'+w.phone.replace(/[^+\d]/g,'');c.append(a);}c.append(el('p','Published contact; confirm before visiting.','tiny'));shops.append(c);}
+  drawTechs(r.technicians||[]);
   const g=$('gallery');g.replaceChildren(...await Promise.all(r.photos.map(drawPhoto)));$('gallery').previousElementSibling.hidden=!r.photos.length;
   const sources=Object.fromEntries(r.evidence.sources.map(x=>[x.id,x]));const ans=$('answer');ans.replaceChildren();const ex=r.explanation||{};
   if(ex.answer){ans.append(el('h3','AI explanation (from the sources below)'));for(const c of ex.answer.claims){const p=el('p',c.text+' ','claim');p.append(sourceLink(sources[c.source_id],`[${c.record_id}]`));ans.append(p);}for(const q of ex.answer.follow_up_questions)ans.append(el('p','❓ '+q));}
@@ -69,3 +70,22 @@ async function render(r){
   $('empty').hidden=true;$('results').hidden=false;}
 $('download').addEventListener('click',()=>{if(!current)return;const url=URL.createObjectURL(new Blob([current.report],{type:'text/markdown;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=`cardoctor-${current.mode}-report.md`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
 $('print').addEventListener('click',()=>window.print());
+
+// Technicians: sort by distance from the user (browser geolocation), show on a simple map, link to routes.
+const CITY={lat:41.311,lon:69.28};let here=null,techList=[];
+function km(a,b){const R=6371,r=Math.PI/180,dl=(b.lat-a.lat)*r,dn=(b.lon-a.lon)*r;const h=Math.sin(dl/2)**2+Math.cos(a.lat*r)*Math.cos(b.lat*r)*Math.sin(dn/2)**2;return 2*R*Math.asin(Math.sqrt(h));}
+function routeUrl(t){const dest=`${t.lat},${t.lon}`;return here?`https://www.google.com/maps/dir/?api=1&origin=${here.lat},${here.lon}&destination=${dest}`:`https://www.google.com/maps/search/?api=1&query=${dest}`;}
+function svgEl(tag,attrs,text){const x=document.createElementNS('http://www.w3.org/2000/svg',tag);for(const[k,v]of Object.entries(attrs))x.setAttribute(k,v);if(text!==undefined)x.textContent=text;return x;}
+function drawTechs(list){techList=list;const box=$('techs'),map=$('techmap');$('techs').closest('.nearby').hidden=!list.length;if(!list.length)return;
+  const from=here||CITY;const sorted=[...list].map(t=>({...t,dist:km(from,t)})).sort((a,b)=>a.dist-b.dist);
+  const pts=[...sorted,...(here?[{...here,me:true}]:[])];const lats=pts.map(p=>p.lat),lons=pts.map(p=>p.lon);
+  const pad=.01,minLa=Math.min(...lats)-pad,maxLa=Math.max(...lats)+pad,minLo=Math.min(...lons)-pad,maxLo=Math.max(...lons)+pad;
+  const X=lon=>20+(lon-minLo)/(maxLo-minLo)*360,Y=lat=>155-(lat-minLa)/(maxLa-minLa)*140;
+  map.replaceChildren(svgEl('rect',{x:0,y:0,width:400,height:170,rx:12,class:'mapbg'}),svgEl('text',{x:390,y:16,class:'north'},'N ↑ Tashkent'));
+  sorted.forEach((t,i)=>{const g=svgEl('a',{href:routeUrl(t),target:'_blank'});g.append(svgEl('circle',{cx:X(t.lon),cy:Y(t.lat),r:i===0?11:8,class:i===0?'pin best':'pin'}),svgEl('text',{x:X(t.lon),y:Y(t.lat)+4,class:'pinlabel'},String(i+1)));map.append(g);});
+  if(here){map.append(svgEl('circle',{cx:X(here.lon),cy:Y(here.lat),r:9,class:'me'}),svgEl('text',{x:X(here.lon),y:Y(here.lat)-14,class:'melabel'},'You'));}
+  box.replaceChildren(...sorted.slice(0,4).map((t,i)=>{const c=el('div',undefined,'shop'+(i===0?' best':''));c.append(el('b',`${i+1}. ${t.name}`),el('p',`${t.dist.toFixed(1)} km ${here?'from you':'from city centre'} · ${t.district}`,'small'),el('p','Can help with: '+t.matched.join(', '),'small'));
+    if(t.mobile)c.append(el('p','🚐 Can come to you','small'));const a=el('a','🧭 Route');a.href=routeUrl(t);a.target='_blank';a.rel='noopener noreferrer';c.append(a,el('p','Demo technician (fictional)','tiny'));return c;}));}
+$('locate').addEventListener('click',()=>{if(!navigator.geolocation){$('locate').textContent='Location not available';return;}$('locate').textContent='Locating…';
+  navigator.geolocation.getCurrentPosition(p=>{here={lat:p.coords.latitude,lon:p.coords.longitude};$('locate').textContent='📍 Location on';drawTechs(techList);},
+  ()=>{$('locate').textContent='Location blocked: showing distance from city centre';},{enableHighAccuracy:true,timeout:8000});});

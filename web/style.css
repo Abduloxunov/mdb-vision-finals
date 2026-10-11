@@ -17,3 +17,6 @@ label>small{display:block;margin-top:6px;line-height:1.5}
 @media print{header,.modes,.intro,.input,.actions,footer{display:none}.workspace{display:block}.card{border:0;box-shadow:none}.verdict{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 .pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}.pair[hidden]{display:none}
 .carmap[hidden]{display:none}.overview:has(.carmap[hidden]){grid-template-columns:1fr}
+.nearby{border:1px solid #e0e7eb;border-radius:14px;padding:14px;margin-bottom:14px}.nearby[hidden]{display:none}.nearhead{display:flex;justify-content:space-between;align-items:center;gap:10px}.small-btn{width:auto;margin:0;padding:8px 12px;font-size:13px}
+.techmap{width:100%;height:auto;margin:8px 0}.mapbg{fill:#eef4f2;stroke:#d4e2dd}.pin{fill:#128271;stroke:white;stroke-width:2}.pin.best{fill:#d9822b}.pinlabel{font:700 10px system-ui;fill:white;text-anchor:middle;pointer-events:none}.me{fill:#2b6fd9;stroke:white;stroke-width:3}.melabel{font:700 11px system-ui;fill:#2b6fd9;text-anchor:middle}.shop.best{border-color:#d9822b;background:#fff8f0}
+.north{font:600 10px system-ui;fill:#7a929e;text-anchor:end}

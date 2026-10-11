@@ -23,7 +23,8 @@ VERDICTS = {
     'none': ('No damage detected', 'No supported damage was found at this sensitivity. Hidden faults are still possible.'),
 }
 # Repair type keywords -> published service names in kb/workshops.md.
-SERVICE_HINTS = [('body', 'Body repair'), ('paint', 'Body repair'), ('glass', 'Body repair'), ('lamp', 'Body repair'),
+SERVICE_HINTS = [('body', 'Body repair'), ('paint', 'Body repair'), ('glass', 'Glass replacement'), ('windscreen', 'Glass replacement'),
+                 ('dent', 'Body repair'), ('bumper', 'Body repair'), ('lamp', 'Body repair'),
                  ('tyre', 'Tyre fitting'), ('tire', 'Tyre fitting'), ('wheel', 'Alignment'),
                  ('electr', 'Electrical diagnostics'), ('charg', 'Electrical diagnostics'),
                  ('engine', 'Maintenance'), ('cool', 'Maintenance'), ('brake', 'Maintenance'), ('fluid', 'Maintenance')]
@@ -86,6 +87,29 @@ def workshops(evidence, vehicle):
              'address': w.get('address', ''), 'phone': w.get('phone', ''),
              'services': w.get('published_services') or [], 'matched': sorted(set(w.get('published_services') or []) & wanted),
              'source_id': w.get('source_id', ''), 'limitations': w.get('limitations', '')} for _, w in ranked[:3]]
+
+
+def technicians(evidence, vehicle, findings):
+    """Synthetic demo technicians with coordinates, matched by needed service; the browser sorts by distance."""
+    path = retrieve.BASE / 'demo-technicians.json'
+    if not path.is_file():
+        return []
+    wanted = {service for r in evidence for key, service in SERVICE_HINTS if key in r['repair_type'].casefold()}
+    labels = {d['label'] for d in findings}
+    if labels & {'dent', 'scratch', 'crack', 'lamp broken'}:
+        wanted.add('Body repair')
+    if 'glass shatter' in labels:
+        wanted.add('Glass replacement')
+    if 'tire flat' in labels:
+        wanted.add('Tyre fitting')
+    brand = brand_of(vehicle)
+    out = []
+    for t in json.loads(path.read_text(encoding='utf-8'))['technicians']:
+        matched = sorted(set(t['services']) & wanted)
+        if not matched or (t['brands'] and brand not in t['brands']):
+            continue
+        out.append({**t, 'matched': matched, 'demo': True})
+    return out
 
 
 def verdict(evidence, findings):
@@ -284,6 +308,7 @@ class Assessor:
                   'views_damaged': sorted({d['view'] for d in findings}), 'views_checked': sorted({v for _, v in images}),
                   'verdict': verdict(evidence, findings), 'evidence': merged, 'explanation': explanation,
                   'workshops': workshops(evidence, vehicle) if (evidence or findings) else [],
+                  'technicians': technicians(evidence, vehicle, findings) if (evidence or findings) else [],
                   'warnings': warnings, 'threshold': threshold,
                   'model': {'name': 'RF-DETR Nano (fine-tuned on CarDD)', 'checkpoint': self.pipeline.checkpoint.name if images else None,
                             'sha256': self.pipeline.identity if images else None},
