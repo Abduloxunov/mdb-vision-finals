@@ -1,0 +1,8 @@
+{
+  "note": "Sample packages the jury can pick. Put our own photos (no faces, no readable plates) in car1/, car2/, car3/ with these exact file names.",
+  "packages": [
+    {"id": "car1", "title": "Sample car 1", "vehicle": "Chevrolet Cobalt", "photos": [{"file": "front.jpg", "view": "front"}, {"file": "rear.jpg", "view": "rear"}, {"file": "left.jpg", "view": "left"}, {"file": "right.jpg", "view": "right"}]},
+    {"id": "car2", "title": "Sample car 2", "vehicle": "Chevrolet Nexia", "photos": [{"file": "front.jpg", "view": "front"}, {"file": "rear.jpg", "view": "rear"}, {"file": "left.jpg", "view": "left"}, {"file": "right.jpg", "view": "right"}]},
+    {"id": "car3", "title": "Sample car 3", "vehicle": "BYD Song Plus", "photos": [{"file": "front.jpg", "view": "front"}, {"file": "rear.jpg", "view": "rear"}, {"file": "left.jpg", "view": "left"}, {"file": "right.jpg", "view": "right"}]}
+  ]
+}

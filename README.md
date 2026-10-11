@@ -1,3 +1,13 @@
+---
+title: CarDoctor
+emoji: 🚗
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # CarDoctor — MDB Vision
 
 **See the damage. Know what to do. Find who can fix it.**
@@ -37,6 +47,29 @@ owner's words + car model + yes/no context ────────────�
 - **Workshops:** published contacts from `kb/workshops.md`, matched by car brand and repair type. They are contacts, not verified referrals or quotes.
 - **3D damage view:** a simple 3D car built in code (`web/car3d.js`, [three.js](https://threejs.org) r160, MIT, bundled in `web/vendor/` with its licence). Areas turn red from each photo's side tag and damage type: a flat tyre on a left photo marks the left wheels; shattered glass on a front photo marks the windshield. It marks the area, not the exact spot. Drag or use the Front/Left/Rear/Right buttons to rotate.
 - **Nearest technician (demo):** `kb/demo-technicians.json` holds 8 **fictional** technicians with approximate Tashkent district coordinates, clearly labelled as demo data in the app. With **📍 Use my location**, the browser sorts them by distance and each one links to a Google Maps route. Location stays in the browser and is never sent to our server. A real deployment would replace this file with verified partner workshops.
+
+## Deploy (Hugging Face Space, Docker)
+
+The public demo is built from this repository by the `Dockerfile` (frontend and backend in one container, CPU inference).
+
+1. Create a Space with the **Docker** SDK, e.g. `Abduloxunov/cardoctor`.
+2. Upload the trained weights once to a **private** model repo, because they stay out of git pending the CarDD rights review:
+   `huggingface-cli upload Abduloxunov/cardoctor-weights checkpoint_best_ema.pth --repo-type model --private`
+3. Space **Settings → Variables and secrets**: secret `HF_TOKEN` (read token); variable `CARDOCTOR_WEIGHTS_REPO=Abduloxunov/cardoctor-weights`; optional secret `OPENROUTER_API_KEY`.
+4. Push this repo to the Space: `git remote add space https://huggingface.co/spaces/Abduloxunov/cardoctor` then `git push space main`.
+5. Public link: `https://abduloxunov-cardoctor.hf.space`. `deploy/start_space.py` downloads the weights, allows only the Space hostname (`SPACE_HOST`), and starts the server on port 7860.
+
+**Sample cars for the jury:** put our own photos (no faces, no readable plates) in `web/samples/car1/`, `car2/` and `car3/` as `front.jpg`, `rear.jpg`, `left.jpg` and `right.jpg`. The page then shows "Sample car 1/2/3" buttons. The jury can also upload their own photos.
+
+## Where inference runs, speed, cost and limits
+
+| Question | Answer |
+|---|---|
+| Where inference runs | Server, CPU only: the Hugging Face Space container (demo) or a laptop. No GPU is needed for inference. |
+| Speed | Measured locally on CPU, warm, one photo, no LLM: 0.351–0.410 s, median 0.364 s (see Measured results). Whole-car checks scale with the number of photos. The model now loads at startup, so the first check is not slower. |
+| Cost per inspection | Compute: a CPU container (Space hardware price per hour divided by checks per hour). Optional LLM explanation: one Gemini 2.5 Flash Lite call through OpenRouter, priced per token by the provider. We have not measured a per-inspection figure yet. |
+| Night, rain, local vehicles | Not yet measured. CarDD is mostly daylight photos of non-Uzbek cars, so performance at night, in rain and on Cobalt/Nexia/Damas is a known risk. Plan: a local test set of team-collected photos (T11) with per-condition accuracy. |
+| Known failure cases | Cracks and small defects are weak (see Measured results); interior photos are out of the training distribution; one photo cannot show hidden faults. |
 
 ## Run the app now
 

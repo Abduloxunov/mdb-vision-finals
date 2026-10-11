@@ -2,12 +2,13 @@
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlsplit
-import argparse,atexit,json,mimetypes,secrets,threading,traceback
+import argparse,atexit,json,mimetypes,os,re,secrets,threading,traceback
 from pipeline import Pipeline,report,ROOT
 from assess import Assessor
 TOKEN=secrets.token_urlsafe(32)
 PIPELINE=None
 ASSESSOR=None
+PUBLIC_HOSTS={h.strip().lower() for h in os.environ.get('CARDOCTOR_PUBLIC_HOSTS','').split(',') if h.strip() and h.strip()!='*'}
 WARM={'state':'loading'}
 def warmup():
     """Load the damage model and text index at startup so the first check is fast (no downloads; local files only)."""
@@ -34,12 +35,20 @@ class Handler(BaseHTTPRequestHandler):
         self.send_response(status)
         for key,value in {'Content-Type':kind,'Content-Length':str(len(body)),'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer','Content-Security-Policy':"default-src 'self'; img-src 'self' data: blob:; style-src 'self'; script-src 'self'; connect-src 'self'; frame-ancestors 'none'"}.items():self.send_header(key,value)
         self.end_headers();self.wfile.write(body)
-    def valid_host(self):return self.headers.get('Host') in {f'127.0.0.1:{PORT}',f'localhost:{PORT}'}
+    def valid_host(self):
+        # Local use: loopback only. Public deployment: the exact hostnames in CARDOCTOR_PUBLIC_HOSTS.
+        host=self.headers.get('Host') or ''
+        return host in {f'127.0.0.1:{PORT}',f'localhost:{PORT}'} or host.split(':')[0].lower() in PUBLIC_HOSTS
     def do_GET(self):
         if not self.valid_host():return self.send({'error':'Invalid host.'},400)
         path=urlsplit(self.path).path
         if path=='/api/health':return self.send({'token':TOKEN,'checkpoint_available':PIPELINE.checkpoint.is_file() and PIPELINE.checkpoint.stat().st_size>1000000,'model':'RF-DETR Nano','private_local_demo':True,'warm':WARM['state']})
         static={'/':'index.html','/app.js':'app.js','/car3d.js':'car3d.js','/vendor/three.module.min.js':'vendor/three.module.min.js','/style.css':'style.css','/favicon.svg':'favicon.svg'}
+        if path=='/samples/samples.json' or re.fullmatch(r'/samples/car[1-9]/[a-z0-9_-]+\.(jpg|jpeg|png|webp)',path):
+            file=(ROOT/'web'/path.lstrip('/')).resolve()
+            if file.is_file() and file.is_relative_to((ROOT/'web'/'samples').resolve()):
+                return self.send(file.read_bytes(),kind=mimetypes.guess_type(str(file))[0] or 'application/octet-stream')
+            return self.send({'error':'Not found.'},404)
         if path in static:
             file=ROOT/'web'/static[path]
             kind='text/javascript; charset=utf-8' if file.suffix=='.js' else mimetypes.guess_type(str(file))[0] or 'text/plain'
@@ -73,8 +82,9 @@ if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--port',type=int,default=8766)
     parser.add_argument('--checkpoint',type=Path)
+    parser.add_argument('--host',default='127.0.0.1',help='Bind address; 0.0.0.0 only inside a hosting container.')
     args=parser.parse_args();PORT=args.port;PIPELINE=Pipeline(args.checkpoint);ASSESSOR=Assessor(PIPELINE)
     atexit.register(PIPELINE.close)
     threading.Thread(target=warmup,daemon=True).start()
     print(f'CarDoctor: http://127.0.0.1:{PORT}',flush=True)
-    ThreadingHTTPServer(('127.0.0.1',PORT),Handler).serve_forever()
+    ThreadingHTTPServer((args.host,PORT),Handler).serve_forever()

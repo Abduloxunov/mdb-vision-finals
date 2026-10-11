@@ -1,0 +1,5 @@
+# Sample photos are binary; Hugging Face Spaces only accepts binary files through LFS/Xet.
+web/samples/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+web/samples/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
+web/samples/**/*.png filter=lfs diff=lfs merge=lfs -text
+web/samples/**/*.webp filter=lfs diff=lfs merge=lfs -text

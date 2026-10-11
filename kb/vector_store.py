@@ -108,7 +108,7 @@ class VectorKB:
             if marker['model_id']!=MODEL_ID or marker['revision']!=MODEL_REVISION or marker['dimension']!=DIMENSION:
                 raise RuntimeError('Model identity mismatch; run the pinned setup.')
             path = Path(marker['path']).resolve()
-            if path.drive.upper()!='D:' or not path.is_relative_to(self.root):
+            if (__import__('os').name=='nt' and path.drive.upper()!='D:') or not path.is_relative_to(self.root):
                 raise RuntimeError('Model path must be inside the selected D: runtime.')
             import os
             os.environ['HF_HUB_OFFLINE']='1'

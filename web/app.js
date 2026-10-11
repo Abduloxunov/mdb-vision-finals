@@ -97,3 +97,12 @@ function drawTechs(list){techList=list;const box=$('techs'),map=$('techmap');$('
 $('locate').addEventListener('click',()=>{if(!navigator.geolocation){$('locate').textContent='Location not available';return;}$('locate').textContent='Locating…';
   navigator.geolocation.getCurrentPosition(p=>{here={lat:p.coords.latitude,lon:p.coords.longitude};$('locate').textContent='📍 Location on';drawTechs(techList);},
   ()=>{$('locate').textContent='Location blocked: showing distance from city centre';},{enableHighAccuracy:true,timeout:8000});});
+
+// Sample packages for the jury: each loads several photos of one car with their side tags.
+fetch('/samples/samples.json').then(r=>r.ok?r.json():null).then(m=>{if(!m)return;const box=$('sampleBtns');
+  for(const pk of m.packages){const b=el('button',pk.title,'secondary sample');b.type='button';b.addEventListener('click',async()=>{
+    $('status').textContent=`Loading ${pk.title}…`;const loaded=[];
+    for(const ph of pk.photos){try{const r=await fetch(`/samples/${pk.id}/${ph.file}`);if(!r.ok)continue;loaded.push({image:await shrink(new File([await r.blob()],ph.file)),view:ph.view});}catch{}}
+    if(!loaded.length){$('status').textContent=`${pk.title} has no photos yet.`;return;}
+    photos.splice(0,photos.length,...loaded);$('vehicle').value=pk.vehicle||'';drawThumbs();$('status').textContent=`${pk.title}: ${loaded.length} photos loaded. Press the button to check.`;});box.append(b);}
+  $('samples').hidden=!m.packages.length;}).catch(()=>{});

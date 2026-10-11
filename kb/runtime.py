@@ -10,7 +10,7 @@ DIMENSION = 384
 
 def configure(runtime=None):
     path = Path(runtime or os.environ.get('CARDOCTOR_KB_RUNTIME', BASE / '.runtime')).resolve()
-    if path.drive.upper() != 'D:':
+    if os.name == 'nt' and path.drive.upper() != 'D:':
         raise ValueError('KB caches and runtime must be on D:.')
     path.mkdir(parents=True, exist_ok=True)
     paths = {'HF_HOME':'cache/huggingface', 'HF_HUB_CACHE':'cache/huggingface/hub',
