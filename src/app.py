@@ -39,10 +39,11 @@ class Handler(BaseHTTPRequestHandler):
         if not self.valid_host():return self.send({'error':'Invalid host.'},400)
         path=urlsplit(self.path).path
         if path=='/api/health':return self.send({'token':TOKEN,'checkpoint_available':PIPELINE.checkpoint.is_file() and PIPELINE.checkpoint.stat().st_size>1000000,'model':'RF-DETR Nano','private_local_demo':True,'warm':WARM['state']})
-        static={'/':'index.html','/app.js':'app.js','/style.css':'style.css','/favicon.svg':'favicon.svg'}
+        static={'/':'index.html','/app.js':'app.js','/car3d.js':'car3d.js','/vendor/three.module.min.js':'vendor/three.module.min.js','/style.css':'style.css','/favicon.svg':'favicon.svg'}
         if path in static:
             file=ROOT/'web'/static[path]
-            return self.send(file.read_bytes(),kind=mimetypes.guess_type(str(file))[0] or 'text/plain')
+            kind='text/javascript; charset=utf-8' if file.suffix=='.js' else mimetypes.guess_type(str(file))[0] or 'text/plain'
+            return self.send(file.read_bytes(),kind=kind)
         return self.send({'error':'Not found.'},404)
     def do_POST(self):
         if not self.valid_host():return self.send({'error':'Invalid host.'},400)

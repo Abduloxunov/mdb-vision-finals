@@ -31,6 +31,11 @@
   <div id="empty"><div class="empty-icon">🔍</div><h3>Your report appears here</h3><p>Add photos from different sides, or describe the problem, then press <b>Check the car</b>.</p></div>
   <div id="results" hidden>
     <div id="verdict" class="verdict"></div>
+    <div id="car3d" class="car3d" hidden>
+      <div class="car3dhead"><b>3D damage view</b><span class="viewbtns"><button type="button" data-look="front">Front</button><button type="button" data-look="left">Left</button><button type="button" data-look="rear">Rear</button><button type="button" data-look="right">Right</button></span></div>
+      <canvas id="car3dCanvas" aria-label="3D car with damaged areas in red"></canvas>
+      <p id="car3dList" class="small"></p><p class="tiny">Drag to rotate. Areas are marked from each photo's side and damage type, not the exact spot.</p>
+    </div>
     <div class="overview">
       <div class="carmap"><svg viewBox="0 0 200 320" role="img" aria-label="Car sides with damage">
         <rect class="zone" data-view="front" x="50" y="10" width="100" height="58" rx="24"/>
@@ -57,4 +62,4 @@
   </div>
 </section></div>
 <footer>CarDoctor shows visible damage candidates and sourced guidance. A photo cannot prove hidden faults, repair prices or roadworthiness. A qualified mechanic makes the final call.</footer>
-</main><script src="/app.js" defer></script></body></html>
+</main><script src="/app.js" defer></script><script type="module" src="/car3d.js"></script></body></html>

@@ -71,7 +71,7 @@ async function render(r){
   if(!r.evidence.evidence.length)ev.append(el('p','No matching guidance yet. Add the car model or describe the problem in more detail.','small'));
   for(const rec of r.evidence.evidence){const b=el('article',undefined,'record');const lvl=rec.urgency.level.replace(/_/g,' ');b.append(el('span',lvl,'pill '+rec.urgency.level),el('h4',rec.title),el('p',rec.source_summary));const ul=el('ul');for(const a of rec.actions)ul.append(el('li',a));b.append(ul,el('p','Repair type: '+rec.repair_type,'small'));
     for(const ref of rec.source_refs){const p=el('p',undefined,'small');p.append('Source: ',sourceLink(sources[ref.source_id]),' · '+ref.locator);b.append(p);}ev.append(b);}
-  $('empty').hidden=true;$('results').hidden=false;}
+  $('empty').hidden=true;$('results').hidden=false;window.dispatchEvent(new CustomEvent('cardoctor:result',{detail:r}));}
 $('download').addEventListener('click',()=>{if(!current)return;const url=URL.createObjectURL(new Blob([current.report],{type:'text/markdown;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=`cardoctor-${current.mode}-report.md`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
 $('print').addEventListener('click',()=>window.print());
 

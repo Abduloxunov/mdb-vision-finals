@@ -35,6 +35,7 @@ owner's words + car model + yes/no context ────────────�
 - **Knowledge:** 28 Markdown records with 20 sources (NHTSA, manufacturer manuals for Cobalt, Lacetti, Nexia and Damas, 3M, I-CAR and others). Records tied to a specific car model are shown with a "check that your model year is covered by this manual" note.
 - **LLM (optional):** Gemini 2.5 Flash Lite through OpenRouter explains only the retrieved records, citing a source for each claim. Photos are never sent to it.
 - **Workshops:** published contacts from `kb/workshops.md`, matched by car brand and repair type. They are contacts, not verified referrals or quotes.
+- **3D damage view:** a simple 3D car built in code (`web/car3d.js`, [three.js](https://threejs.org) r160, MIT, bundled in `web/vendor/` with its licence). Areas turn red from each photo's side tag and damage type: a flat tyre on a left photo marks the left wheels; shattered glass on a front photo marks the windshield. It marks the area, not the exact spot. Drag or use the Front/Left/Rear/Right buttons to rotate.
 - **Nearest technician (demo):** `kb/demo-technicians.json` holds 8 **fictional** technicians with approximate Tashkent district coordinates, clearly labelled as demo data in the app. With **📍 Use my location**, the browser sorts them by distance and each one links to a Google Maps route. Location stays in the browser and is never sent to our server. A real deployment would replace this file with verified partner workshops.
 
 ## Run the app now
@@ -107,6 +108,7 @@ D:\hakathon_wiut\.venv\Scripts\python.exe -B -m unittest discover -s kb -p 'test
 
 ## Sources, licences and AI use
 
+- [three.js](https://github.com/mrdoob/three.js) r160 (MIT): 3D rendering for the damage view; unmodified build in `web/vendor/three.module.min.js`, licence in `web/vendor/THREE-LICENSE.txt`.
 - [RF-DETR](https://github.com/roboflow/rf-detr): official Nano/core model implementation; review the exact variant's Apache-2.0 terms. CarDoctor training changes its weights, not the dataset rights.
 - [CarDD](https://github.com/CarDD-USTC/CarDD): research damage data, not repair-cost or mechanical-diagnosis labels. User authorized research use; author consent/access terms are unverified. Keep data and checkpoints private pending a rights review before redistribution or commercial use.
 - [Multilingual E5-small](https://huggingface.co/intfloat/multilingual-e5-small/tree/614241f622f53c4eeff9890bdc4f31cfecc418b3): pinned MIT-published model; [Qdrant client](https://github.com/qdrant/qdrant-client): Apache-2.0. Model scores are not our accuracy measurements.
