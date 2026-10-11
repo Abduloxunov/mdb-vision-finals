@@ -1,0 +1,13 @@
+{
+  "notice": "SYNTHETIC DEMO DATA. These technicians are fictional and exist only to demonstrate distance sorting and routing. Coordinates are approximate Tashkent district centres. No business, phone number, price or rating is real or implied.",
+  "technicians": [
+    {"id": "D01", "name": "Demo Body & Paint, Chilonzor", "district": "Chilonzor", "lat": 41.2756, "lon": 69.2034, "services": ["Body repair", "Glass replacement"], "brands": [], "mobile": false},
+    {"id": "D02", "name": "Demo Tyre Point, Yunusobod", "district": "Yunusobod", "lat": 41.3640, "lon": 69.2870, "services": ["Tyre fitting", "Alignment"], "brands": [], "mobile": true},
+    {"id": "D03", "name": "Demo Auto Electric, Mirzo Ulugbek", "district": "Mirzo Ulugbek", "lat": 41.3300, "lon": 69.3350, "services": ["Electrical diagnostics", "Maintenance"], "brands": [], "mobile": false},
+    {"id": "D04", "name": "Demo Engine Service, Yakkasaroy", "district": "Yakkasaroy", "lat": 41.2900, "lon": 69.2600, "services": ["Maintenance", "Electrical diagnostics"], "brands": ["Chevrolet"], "mobile": false},
+    {"id": "D05", "name": "Demo Truck & Fleet Service, Sergeli", "district": "Sergeli", "lat": 41.2270, "lon": 69.2210, "services": ["Maintenance", "Tyre fitting", "Body repair"], "brands": [], "mobile": true},
+    {"id": "D06", "name": "Demo EV Care, Yashnobod", "district": "Yashnobod", "lat": 41.2950, "lon": 69.3300, "services": ["Electrical diagnostics", "Maintenance", "Body repair"], "brands": ["BYD"], "mobile": false},
+    {"id": "D07", "name": "Demo Glass & Lamps, Shayxontohur", "district": "Shayxontohur", "lat": 41.3260, "lon": 69.2280, "services": ["Glass replacement", "Body repair"], "brands": [], "mobile": false},
+    {"id": "D08", "name": "Demo Roadside Help, Uchtepa", "district": "Uchtepa", "lat": 41.3000, "lon": 69.1700, "services": ["Tyre fitting", "Maintenance"], "brands": [], "mobile": true}
+  ]
+}

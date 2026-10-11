@@ -18,7 +18,7 @@ def setup(runtime=None):
                         'sentence_bert_config.json','sentencepiece.bpe.model','tokenizer.json',
                         'tokenizer_config.json','special_tokens_map.json','1_Pooling/config.json'],
         max_workers=2)).resolve()
-    if model_path.drive.upper() != 'D:':
+    if __import__('os').name == 'nt' and model_path.drive.upper() != 'D:':
         raise ValueError('Downloaded model was not stored on D:.')
     from sentence_transformers import SentenceTransformer
     model = SentenceTransformer(str(model_path), device='cpu', local_files_only=True, trust_remote_code=False)

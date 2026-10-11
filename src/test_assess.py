@@ -37,6 +37,13 @@ class Tests(unittest.TestCase):
         r=run()
         self.assertTrue(r['workshops'])
         self.assertTrue(all('Chevrolet' in w['brands'] for w in r['workshops']))
+    def test_demo_technicians_have_coordinates_and_match_needs(self):
+        r=run()
+        self.assertTrue(r['technicians'])
+        for t in r['technicians']:
+            self.assertTrue(t['demo']);self.assertTrue(t['matched'])
+            self.assertTrue(41<t['lat']<41.5 and 69<t['lon']<69.5)
+        self.assertTrue(any('Tyre fitting' in t['matched'] for t in r['technicians']))
     def test_text_only_fleet_without_component(self):
         r=run(photos=[],mode='fleet',query='flat tyre, lost pressure on the highway')
         self.assertEqual(r['findings'],[])

@@ -135,6 +135,7 @@ class VectorTests(unittest.TestCase):
             with self.assertRaises(RuntimeError):self.kb.query('bubble',part='tire')
         finally:p.write_text(saved,encoding='utf-8')
 
+    @unittest.skipUnless(os.name=='nt','The D: storage rule applies to the Windows workstation only.')
     def test_c_disk_runtime_rejected(self):
         with self.assertRaises(ValueError):configure('C:/do-not-create')
 

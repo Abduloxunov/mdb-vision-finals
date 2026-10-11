@@ -10,6 +10,7 @@
 <section class="input card"><form id="form">
   <h2>1. Photos of the car</h2>
   <label class="upload" for="photo"><b>＋ Add photos</b><small>Front, rear, left, right… up to 10. Large phone photos are shrunk automatically.</small><input id="photo" type="file" accept="image/jpeg,image/png,image/webp" multiple></label>
+  <div id="samples" class="samples" hidden><small>Or try a sample car:</small><div id="sampleBtns"></div></div>
   <div id="thumbs" class="thumbs"></div>
   <h2>2. About the car</h2>
   <label>Car model<input id="vehicle" maxlength="100" placeholder="e.g. Chevrolet Cobalt, BYD Song Plus"></label>
@@ -31,6 +32,11 @@
   <div id="empty"><div class="empty-icon">🔍</div><h3>Your report appears here</h3><p>Add photos from different sides, or describe the problem, then press <b>Check the car</b>.</p></div>
   <div id="results" hidden>
     <div id="verdict" class="verdict"></div>
+    <div id="car3d" class="car3d" hidden>
+      <div class="car3dhead"><b>3D damage view</b><span class="viewbtns"><button type="button" data-look="front">Front</button><button type="button" data-look="left">Left</button><button type="button" data-look="rear">Rear</button><button type="button" data-look="right">Right</button></span></div>
+      <canvas id="car3dCanvas" aria-label="3D car with damaged areas in red"></canvas>
+      <p id="car3dList" class="small"></p><p class="tiny">Drag to rotate. Areas are marked from each photo's side and damage type, not the exact spot.</p>
+    </div>
     <div class="overview">
       <div class="carmap"><svg viewBox="0 0 200 320" role="img" aria-label="Car sides with damage">
         <rect class="zone" data-view="front" x="50" y="10" width="100" height="58" rx="24"/>
@@ -44,7 +50,13 @@
       <div><h3>What we found</h3><ul id="summary" class="summary"></ul><p id="timing" class="small"></p></div>
     </div>
     <div id="warnings" class="notice"></div>
-    <h3 id="workshopTitle">Where to get it fixed</h3><div id="workshops" class="shops"></div>
+    <h3 id="workshopTitle">Where to get it fixed</h3>
+    <div class="nearby"><div class="nearhead"><b>Nearest technicians</b><button id="locate" class="secondary small-btn" type="button">📍 Use my location</button></div>
+      <p class="tiny">DEMO DATA: fictional technicians to show routing. Real published contacts are listed below.</p>
+      <svg id="techmap" class="techmap" viewBox="0 0 400 170" role="img" aria-label="Map of technicians in Tashkent"></svg>
+      <div id="techs" class="shops"></div></div>
+    <p><a id="nearReal" class="realmap" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&amp;query=avtoservis%20Toshkent">🗺 Find real workshops near me</a></p>
+    <p class="small"><b>Published contacts</b></p><div id="workshops" class="shops"></div>
     <h3>Photos</h3><div id="gallery" class="gallery"></div>
     <div id="answer"></div>
     <details class="guidance" open><summary>Guidance with sources</summary><div id="evidence"></div></details>
@@ -52,4 +64,4 @@
   </div>
 </section></div>
 <footer>CarDoctor shows visible damage candidates and sourced guidance. A photo cannot prove hidden faults, repair prices or roadworthiness. A qualified mechanic makes the final call.</footer>
-</main><script src="/app.js" defer></script></body></html>
+</main><script src="/app.js" defer></script><script type="module" src="/car3d.js"></script></body></html>

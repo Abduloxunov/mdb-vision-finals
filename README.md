@@ -1,3 +1,13 @@
+---
+title: CarDoctor
+emoji: 🚗
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # CarDoctor — MDB Vision
 
 **See the damage. Know what to do. Find who can fix it.**
@@ -35,6 +45,51 @@ owner's words + car model + yes/no context ────────────�
 - **Knowledge:** 28 Markdown records with 20 sources (NHTSA, manufacturer manuals for Cobalt, Lacetti, Nexia and Damas, 3M, I-CAR and others). Records tied to a specific car model are shown with a "check that your model year is covered by this manual" note.
 - **LLM (optional):** Gemini 2.5 Flash Lite through OpenRouter explains only the retrieved records, citing a source for each claim. Photos are never sent to it.
 - **Workshops:** published contacts from `kb/workshops.md`, matched by car brand and repair type. They are contacts, not verified referrals or quotes.
+- **3D damage view:** a simple 3D car built in code (`web/car3d.js`, [three.js](https://threejs.org) r160, MIT, bundled in `web/vendor/` with its licence). Areas turn red from each photo's side tag and damage type: a flat tyre on a left photo marks the left wheels; shattered glass on a front photo marks the windshield. It marks the area, not the exact spot. Drag or use the Front/Left/Rear/Right buttons to rotate.
+- **Nearest technician (demo):** `kb/demo-technicians.json` holds 8 **fictional** technicians with approximate Tashkent district coordinates, clearly labelled as demo data in the app. With **📍 Use my location**, the browser sorts them by distance and each one links to a Google Maps route. Location stays in the browser and is never sent to our server. A real deployment would replace this file with verified partner workshops.
+
+## Repository map and research
+
+| Path | What it is |
+|---|---|
+| `src/` | Server (`app.py`), single-photo pipeline (`pipeline.py`), whole-car check (`assess.py`), tests |
+| `web/` | Frontend: two modes, multi-photo upload, verdict, 2D/3D damage view, technicians, sample cars |
+| `kb/` | Knowledge base (28 records, [sources](kb/sources.md)), keyword + E5/Qdrant retrieval, LLM client, tests; demo technicians |
+| `experiments/` | CV training and evaluation: Colab, Hugging Face Jobs (CarDD, VehiDE), local prototype |
+| `deploy/`, `Dockerfile` | Hugging Face Space deployment |
+| `docs/` | Task statement, research dossier, model results, plans, team process |
+| `ideas/` | All 44 ideas from the idea phase, shortlist and final pick |
+| `research/before-final/` | Research made **before** the final (elimination round), included for transparency |
+
+**Research, in reading order:**
+1. [docs/RESEARCH.md](docs/RESEARCH.md): full dossier (process, 44 ideas × CV methods, finalists, decision, models and licences, datasets, Uzbekistan facts, prior art)
+2. [ideas/README.md](ideas/README.md), [ideas/SHORTLIST.md](ideas/SHORTLIST.md), [ideas/FINAL-PICK.md](ideas/FINAL-PICK.md): how we chose CarDoctor
+3. [docs/justification-cardoctor.md](docs/justification-cardoctor.md), [docs/CARDOCTOR-PROJECT-EXPLANATION.md](docs/CARDOCTOR-PROJECT-EXPLANATION.md): problem, users, evidence
+4. [docs/CARDOCTOR-CV-RESEARCH.md](docs/CARDOCTOR-CV-RESEARCH.md), [docs/CARDOCTOR-DATASET-OPTIONS.md](docs/CARDOCTOR-DATASET-OPTIONS.md), [docs/CARDOCTOR-MODEL-COMPARISON.md](docs/CARDOCTOR-MODEL-COMPARISON.md), [docs/CARDOCTOR-HF-RESULTS.md](docs/CARDOCTOR-HF-RESULTS.md), [docs/CARDOCTOR-VEHIDE-RESULTS.md](docs/CARDOCTOR-VEHIDE-RESULTS.md): models, data and measured results
+5. [kb/README.md](kb/README.md), [kb/VECTOR-RAG.md](kb/VECTOR-RAG.md), [kb/LLM-GROUNDING.md](kb/LLM-GROUNDING.md): retrieval and LLM grounding
+
+## Deploy (Hugging Face Space, Docker)
+
+The public demo is built from this repository by the `Dockerfile` (frontend and backend in one container, CPU inference).
+
+1. Create a Space with the **Docker** SDK, e.g. `Abduloxunov/cardoctor`.
+2. Upload the trained weights once to a **private** model repo, because they stay out of git pending the CarDD rights review:
+   `huggingface-cli upload Abduloxunov/cardoctor-weights checkpoint_best_ema.pth --repo-type model --private`
+3. Space **Settings → Variables and secrets**: secret `HF_TOKEN` (read token); variable `CARDOCTOR_WEIGHTS_REPO=Abduloxunov/cardoctor-weights`; optional secret `OPENROUTER_API_KEY`.
+4. Push this repo to the Space: `git remote add space https://huggingface.co/spaces/Abduloxunov/cardoctor` then `git push space main`.
+5. Public link: `https://abduloxunov-cardoctor.hf.space`. `deploy/start_space.py` downloads the weights, allows only the Space hostname (`SPACE_HOST`), and starts the server on port 7860.
+
+**Sample cars for the jury:** three team-supplied photo sets (BYD Seal, Toyota Camry, Chevrolet Cruze; plates masked or placeholders) are embedded as base64 in `web/samples/samples.json`, so no Git LFS is needed. The page shows "Sample 1/2/3" buttons; the jury can also upload their own photos.
+
+## Where inference runs, speed, cost and limits
+
+| Question | Answer |
+|---|---|
+| Where inference runs | Server, CPU only: the Hugging Face Space container (demo) or a laptop. No GPU is needed for inference. |
+| Speed | Measured locally on CPU, warm, one photo, no LLM: 0.351–0.410 s, median 0.364 s (see Measured results). Whole-car checks scale with the number of photos. The model now loads at startup, so the first check is not slower. |
+| Cost per inspection | Compute: a CPU container (Space hardware price per hour divided by checks per hour). Optional LLM explanation: one Gemini 2.5 Flash Lite call through OpenRouter, priced per token by the provider. We have not measured a per-inspection figure yet. |
+| Night, rain, local vehicles | Not yet measured. CarDD is mostly daylight photos of non-Uzbek cars, so performance at night, in rain and on Cobalt/Nexia/Damas is a known risk. Plan: a local test set of team-collected photos (T11) with per-condition accuracy. |
+| Known failure cases | Cracks and small defects are weak (see Measured results); interior photos are out of the training distribution; one photo cannot show hidden faults. |
 
 ## Run the app now
 
@@ -45,7 +100,7 @@ Set-Location D:\hakathon_wiut\finals\mdb-vision-finals
 .\start-app.ps1
 ```
 
-Open **http://127.0.0.1:8766/**. Choose **Sell / Buy** or **Fleet & trucks**, add photos (several sides) and/or describe the problem, then press the button.
+Git Bash or Linux: `python -B src/app.py`. Open **http://127.0.0.1:8766/**. Choose **Sell / Buy** or **Fleet & trucks**, add photos (several sides) and/or describe the problem, then press the button.
 
 **Public https demo** (laptop stays on): in a second window run
 `cloudflared tunnel --url http://127.0.0.1:8766 --http-host-header localhost:8766` and share the printed `https://….trycloudflare.com` link. The server stays bound to 127.0.0.1; the tunnel forwards to it. The older visual-reference experiment uses port 8765; the new integrated app uses 8766.
@@ -93,7 +148,7 @@ See [training results](docs/CARDOCTOR-HF-RESULTS.md), [app setup and API](docs/C
 
 The exact local package snapshot is in `requirements-app-local.txt` (Python 3.12.10). The existing repo rule targets Python 3.11; this local build has not been verified under 3.11. Use a D: virtual environment and D: caches; avoid reinstalling packages into the current working environment during the deadline.
 
-Copy the trusted weights separately, point `--checkpoint` at them, and set the backend-only API key locally. Build the pinned text model/index with `kb/setup_vector.py` then `kb/vector_store.py ingest` following [the vector guide](kb/VECTOR-RAG.md). Query-time model downloads are disabled. This app currently runs on the prepared Windows D: environment; Linux/public hosting requires an adapter and deployment verification.
+Copy the trusted weights separately, point `--checkpoint` at them, and set the backend-only API key locally. Build the pinned text model/index with `kb/setup_vector.py` then `kb/vector_store.py ingest` following [the vector guide](kb/VECTOR-RAG.md). Query-time model downloads are disabled. On Windows the KB runtime must be on D: (team rule); on Linux, including the Docker/Space image, any path works.
 
 ## Tests
 
@@ -106,6 +161,7 @@ D:\hakathon_wiut\.venv\Scripts\python.exe -B -m unittest discover -s kb -p 'test
 
 ## Sources, licences and AI use
 
+- [three.js](https://github.com/mrdoob/three.js) r160 (MIT): 3D rendering for the damage view; unmodified build in `web/vendor/three.module.min.js`, licence in `web/vendor/THREE-LICENSE.txt`.
 - [RF-DETR](https://github.com/roboflow/rf-detr): official Nano/core model implementation; review the exact variant's Apache-2.0 terms. CarDoctor training changes its weights, not the dataset rights.
 - [CarDD](https://github.com/CarDD-USTC/CarDD): research damage data, not repair-cost or mechanical-diagnosis labels. User authorized research use; author consent/access terms are unverified. Keep data and checkpoints private pending a rights review before redistribution or commercial use.
 - [Multilingual E5-small](https://huggingface.co/intfloat/multilingual-e5-small/tree/614241f622f53c4eeff9890bdc4f31cfecc418b3): pinned MIT-published model; [Qdrant client](https://github.com/qdrant/qdrant-client): Apache-2.0. Model scores are not our accuracy measurements.
@@ -114,9 +170,15 @@ D:\hakathon_wiut\.venv\Scripts\python.exe -B -m unittest discover -s kb -p 'test
 
 ## Team and delivery
 
-Davlatyor Abduloxunov: lead / final submission; Muhammadjon Xalimov: data and measurements; Bexruz Xasanov: KB, CV experiments and integrated app built here at the user's latest instruction. Presentation/demo planning continues with teammates. This local handoff does not merge another developer's branch. Development handoff is available for review in [PR #6](https://github.com/Abduloxunov/mdb-vision-finals/pull/6). Public deployment and final submission have not been performed by this chat.
+Team **MDB Vision**, built during the WIUT Hackathon 2026 finals (10–11 Oct 2026):
 
-Code freeze: **11 October 2026, 13:00 Asia/Tashkent**. The lead still needs the public HTTPS demo, public repository, permitted demo media, exported deck and final form submission. [Assignments](docs/tasks.md) and [official checklist](docs/submission.md) retain the team ownership/history.
+| Member | Role |
+|---|---|
+| Davlatyor Abduloxunov (@Abduloxunov) | Lead, integration, whole-car app, deployment, submission |
+| Muhammadjon Xalimov (@muxammadjonx07-dev) | Data, photos, measurements, pitch research |
+| Bexruz Xasanov (@bekhruz-khasanov) | Knowledge base and sources, CV training and experiments, first integrated app |
+
+How we worked (three people, each with an AI coding assistant): rules in [AGENTS.md](AGENTS.md), task board [docs/tasks.md](docs/tasks.md), decisions [docs/decisions.md](docs/decisions.md), messages [docs/team.md](docs/team.md) and timeline [docs/worklog.md](docs/worklog.md). Merged pull requests show the build history.
 
 ## Follow-on training status
 
