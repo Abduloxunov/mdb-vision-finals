@@ -61,8 +61,12 @@ async function render(r){
   $('warnings').textContent=r.warnings.join(' ');$('warnings').hidden=!r.warnings.length;
   const shops=$('workshops');shops.replaceChildren();if(!r.workshops.length)shops.append(el('p','No matching contact in our directory yet.','small'));
   for(const w of r.workshops){const c=el('div',undefined,'shop');c.append(el('b',w.name),el('p',w.address||'Address not published','small'));if(w.matched.length)c.append(el('p','Offers: '+w.matched.join(', '),'small'));
-    if(w.phone){const a=el('a','📞 '+w.phone);a.href='tel:'+w.phone.replace(/[^+\d]/g,'');c.append(a);}c.append(el('p','Published contact; confirm before visiting.','tiny'));shops.append(c);}
+    if(w.phone){const a=el('a','📞 '+w.phone);a.href='tel:'+w.phone.replace(/[^+\d]/g,'');c.append(a);}
+    if(w.address){const dest=encodeURIComponent(`${w.name}, ${w.address}`);const r=el('a',' · 🧭 Route');r.href=`https://www.google.com/maps/dir/?api=1&destination=${dest}`;r.target='_blank';r.rel='noopener noreferrer';c.append(r);}c.append(el('p','Published contact; confirm before visiting.','tiny'));shops.append(c);}
   drawTechs(r.technicians||[]);
+  const need=(r.technicians||[]).flatMap(t=>t.matched).concat(r.workshops.flatMap(w=>w.matched));
+  const term=need.includes('Tyre fitting')?'shinomontaj':need.includes('Glass replacement')?'avtooyna':need.includes('Electrical diagnostics')?'avtoelektrik':need.includes('Body repair')?'kuzov ta\'mirlash':'avtoservis';
+  const near=$('nearReal');near.href=here?`https://www.google.com/maps/search/${encodeURIComponent(term)}/@${here.lat},${here.lon},14z`:`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(term+' Toshkent')}`;near.textContent=`🗺 Find real ${term} workshops near me`;
   const g=$('gallery');g.replaceChildren(...await Promise.all(r.photos.map(drawPhoto)));$('gallery').previousElementSibling.hidden=!r.photos.length;
   const sources=Object.fromEntries(r.evidence.sources.map(x=>[x.id,x]));const ans=$('answer');ans.replaceChildren();const ex=r.explanation||{};
   if(ex.answer){ans.append(el('h3','AI explanation (from the sources below)'));for(const c of ex.answer.claims){const p=el('p',c.text+' ','claim');p.append(sourceLink(sources[c.source_id],`[${c.record_id}]`));ans.append(p);}for(const q of ex.answer.follow_up_questions)ans.append(el('p','❓ '+q));}
