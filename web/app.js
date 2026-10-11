@@ -16,7 +16,11 @@ function setMode(next){mode=next;for(const b of document.querySelectorAll('.mode
   const c=COPY[mode];$('eyebrow').textContent=c.eyebrow;$('headline').textContent=c.headline;$('lede').textContent=c.lede;$('queryLabel').textContent=c.query;$('query').placeholder=c.placeholder;$('submit').firstChild.textContent=c.button+' ';$('workshopTitle').textContent=c.shops;$('fleetCtx').hidden=mode!=='fleet';}
 for(const b of document.querySelectorAll('.mode'))b.addEventListener('click',()=>setMode(b.dataset.mode));
 
-fetch('/api/health').then(r=>r.json()).then(h=>{token=h.token;$('status').textContent=h.checkpoint_available?'Ready. Damage model loaded.':'Damage model file is missing. Text checks still work.';}).catch(()=>$('status').textContent='Server is unavailable. Restart the app.');
+// Poll until the server has loaded the models in memory (startup warm-up), so the first check is fast.
+function health(){fetch('/api/health').then(r=>r.json()).then(h=>{token=h.token;
+  if(h.warm==='loading'){$('status').textContent='Loading the damage model into memory… (first start only)';setTimeout(health,1500);return;}
+  $('status').textContent=h.warm==='ready'&&h.checkpoint_available?'Ready. Damage model loaded.':h.checkpoint_available?'Ready.':'Damage model file is missing. Text checks still work.';}).catch(()=>$('status').textContent='Server is unavailable. Restart the app.');}
+health();
 
 // Shrink photos in the browser so big phone photos upload fast and stay under limits.
 function shrink(file){return new Promise((resolve,reject)=>{const url=URL.createObjectURL(file);const img=new Image();

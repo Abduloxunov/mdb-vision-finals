@@ -2,12 +2,31 @@
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlsplit
-import argparse,atexit,json,mimetypes,secrets,traceback
+import argparse,atexit,json,mimetypes,secrets,threading,traceback
 from pipeline import Pipeline,report,ROOT
 from assess import Assessor
 TOKEN=secrets.token_urlsafe(32)
 PIPELINE=None
 ASSESSOR=None
+WARM={'state':'loading'}
+def warmup():
+    """Load the damage model and text index at startup so the first check is fast (no downloads; local files only)."""
+    try:
+        with PIPELINE.lock:
+            from PIL import Image
+            try:PIPELINE.model().predict(Image.new('RGB',(384,384),'gray'),threshold=0.5)
+            except ValueError as exc:
+                print('Damage model not loaded:',exc,flush=True);WARM['state']='no_checkpoint'
+            try:
+                if PIPELINE.retriever is None:
+                    from vector_store import VectorKB
+                    PIPELINE.retriever=VectorKB()
+                PIPELINE.retriever.query('warm up',part='body')
+            except Exception as exc:print('Vector index not loaded (keyword search still works):',type(exc).__name__,flush=True)
+        if WARM['state']=='loading':WARM['state']='ready'
+        print('CarDoctor warm-up finished:',WARM['state'],flush=True)
+    except Exception:
+        WARM['state']='failed';traceback.print_exc()
 PORT=8766
 class Handler(BaseHTTPRequestHandler):
     def send(self,body,status=200,kind='application/json; charset=utf-8'):
@@ -19,7 +38,7 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         if not self.valid_host():return self.send({'error':'Invalid host.'},400)
         path=urlsplit(self.path).path
-        if path=='/api/health':return self.send({'token':TOKEN,'checkpoint_available':PIPELINE.checkpoint.is_file() and PIPELINE.checkpoint.stat().st_size>1000000,'model':'RF-DETR Nano','private_local_demo':True})
+        if path=='/api/health':return self.send({'token':TOKEN,'checkpoint_available':PIPELINE.checkpoint.is_file() and PIPELINE.checkpoint.stat().st_size>1000000,'model':'RF-DETR Nano','private_local_demo':True,'warm':WARM['state']})
         static={'/':'index.html','/app.js':'app.js','/style.css':'style.css','/favicon.svg':'favicon.svg'}
         if path in static:
             file=ROOT/'web'/static[path]
@@ -55,5 +74,6 @@ if __name__=='__main__':
     parser.add_argument('--checkpoint',type=Path)
     args=parser.parse_args();PORT=args.port;PIPELINE=Pipeline(args.checkpoint);ASSESSOR=Assessor(PIPELINE)
     atexit.register(PIPELINE.close)
+    threading.Thread(target=warmup,daemon=True).start()
     print(f'CarDoctor: http://127.0.0.1:{PORT}',flush=True)
     ThreadingHTTPServer(('127.0.0.1',PORT),Handler).serve_forever()
