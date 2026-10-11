@@ -48,6 +48,26 @@ owner's words + car model + yes/no context ────────────�
 - **3D damage view:** a simple 3D car built in code (`web/car3d.js`, [three.js](https://threejs.org) r160, MIT, bundled in `web/vendor/` with its licence). Areas turn red from each photo's side tag and damage type: a flat tyre on a left photo marks the left wheels; shattered glass on a front photo marks the windshield. It marks the area, not the exact spot. Drag or use the Front/Left/Rear/Right buttons to rotate.
 - **Nearest technician (demo):** `kb/demo-technicians.json` holds 8 **fictional** technicians with approximate Tashkent district coordinates, clearly labelled as demo data in the app. With **📍 Use my location**, the browser sorts them by distance and each one links to a Google Maps route. Location stays in the browser and is never sent to our server. A real deployment would replace this file with verified partner workshops.
 
+## Repository map and research
+
+| Path | What it is |
+|---|---|
+| `src/` | Server (`app.py`), single-photo pipeline (`pipeline.py`), whole-car check (`assess.py`), tests |
+| `web/` | Frontend: two modes, multi-photo upload, verdict, 2D/3D damage view, technicians, sample cars |
+| `kb/` | Knowledge base (28 records, [sources](kb/sources.md)), keyword + E5/Qdrant retrieval, LLM client, tests; demo technicians |
+| `experiments/` | CV training and evaluation: Colab, Hugging Face Jobs (CarDD, VehiDE), local prototype |
+| `deploy/`, `Dockerfile` | Hugging Face Space deployment |
+| `docs/` | Task statement, research dossier, model results, plans, team process |
+| `ideas/` | All 44 ideas from the idea phase, shortlist and final pick |
+| `research/before-final/` | Research made **before** the final (elimination round), included for transparency |
+
+**Research, in reading order:**
+1. [docs/RESEARCH.md](docs/RESEARCH.md): full dossier (process, 44 ideas × CV methods, finalists, decision, models and licences, datasets, Uzbekistan facts, prior art)
+2. [ideas/README.md](ideas/README.md), [ideas/SHORTLIST.md](ideas/SHORTLIST.md), [ideas/FINAL-PICK.md](ideas/FINAL-PICK.md): how we chose CarDoctor
+3. [docs/justification-cardoctor.md](docs/justification-cardoctor.md), [docs/CARDOCTOR-PROJECT-EXPLANATION.md](docs/CARDOCTOR-PROJECT-EXPLANATION.md): problem, users, evidence
+4. [docs/CARDOCTOR-CV-RESEARCH.md](docs/CARDOCTOR-CV-RESEARCH.md), [docs/CARDOCTOR-DATASET-OPTIONS.md](docs/CARDOCTOR-DATASET-OPTIONS.md), [docs/CARDOCTOR-MODEL-COMPARISON.md](docs/CARDOCTOR-MODEL-COMPARISON.md), [docs/CARDOCTOR-HF-RESULTS.md](docs/CARDOCTOR-HF-RESULTS.md), [docs/CARDOCTOR-VEHIDE-RESULTS.md](docs/CARDOCTOR-VEHIDE-RESULTS.md): models, data and measured results
+5. [kb/README.md](kb/README.md), [kb/VECTOR-RAG.md](kb/VECTOR-RAG.md), [kb/LLM-GROUNDING.md](kb/LLM-GROUNDING.md): retrieval and LLM grounding
+
 ## Deploy (Hugging Face Space, Docker)
 
 The public demo is built from this repository by the `Dockerfile` (frontend and backend in one container, CPU inference).
@@ -80,7 +100,7 @@ Set-Location D:\hakathon_wiut\finals\mdb-vision-finals
 .\start-app.ps1
 ```
 
-Open **http://127.0.0.1:8766/**. Choose **Sell / Buy** or **Fleet & trucks**, add photos (several sides) and/or describe the problem, then press the button.
+Git Bash or Linux: `python -B src/app.py`. Open **http://127.0.0.1:8766/**. Choose **Sell / Buy** or **Fleet & trucks**, add photos (several sides) and/or describe the problem, then press the button.
 
 **Public https demo** (laptop stays on): in a second window run
 `cloudflared tunnel --url http://127.0.0.1:8766 --http-host-header localhost:8766` and share the printed `https://….trycloudflare.com` link. The server stays bound to 127.0.0.1; the tunnel forwards to it. The older visual-reference experiment uses port 8765; the new integrated app uses 8766.
@@ -128,7 +148,7 @@ See [training results](docs/CARDOCTOR-HF-RESULTS.md), [app setup and API](docs/C
 
 The exact local package snapshot is in `requirements-app-local.txt` (Python 3.12.10). The existing repo rule targets Python 3.11; this local build has not been verified under 3.11. Use a D: virtual environment and D: caches; avoid reinstalling packages into the current working environment during the deadline.
 
-Copy the trusted weights separately, point `--checkpoint` at them, and set the backend-only API key locally. Build the pinned text model/index with `kb/setup_vector.py` then `kb/vector_store.py ingest` following [the vector guide](kb/VECTOR-RAG.md). Query-time model downloads are disabled. This app currently runs on the prepared Windows D: environment; Linux/public hosting requires an adapter and deployment verification.
+Copy the trusted weights separately, point `--checkpoint` at them, and set the backend-only API key locally. Build the pinned text model/index with `kb/setup_vector.py` then `kb/vector_store.py ingest` following [the vector guide](kb/VECTOR-RAG.md). Query-time model downloads are disabled. On Windows the KB runtime must be on D: (team rule); on Linux, including the Docker/Space image, any path works.
 
 ## Tests
 
@@ -150,9 +170,15 @@ D:\hakathon_wiut\.venv\Scripts\python.exe -B -m unittest discover -s kb -p 'test
 
 ## Team and delivery
 
-Davlatyor Abduloxunov: lead / final submission; Muhammadjon Xalimov: data and measurements; Bexruz Xasanov: KB, CV experiments and integrated app built here at the user's latest instruction. Presentation/demo planning continues with teammates. This local handoff does not merge another developer's branch. Development handoff is available for review in [PR #6](https://github.com/Abduloxunov/mdb-vision-finals/pull/6). Public deployment and final submission have not been performed by this chat.
+Team **MDB Vision**, built during the WIUT Hackathon 2026 finals (10–11 Oct 2026):
 
-Code freeze: **11 October 2026, 13:00 Asia/Tashkent**. The lead still needs the public HTTPS demo, public repository, permitted demo media, exported deck and final form submission. [Assignments](docs/tasks.md) and [official checklist](docs/submission.md) retain the team ownership/history.
+| Member | Role |
+|---|---|
+| Davlatyor Abduloxunov (@Abduloxunov) | Lead, integration, whole-car app, deployment, submission |
+| Muhammadjon Xalimov (@muxammadjonx07-dev) | Data, photos, measurements, pitch research |
+| Bexruz Xasanov (@bekhruz-khasanov) | Knowledge base and sources, CV training and experiments, first integrated app |
+
+How we worked (three people, each with an AI coding assistant): rules in [AGENTS.md](AGENTS.md), task board [docs/tasks.md](docs/tasks.md), decisions [docs/decisions.md](docs/decisions.md), messages [docs/team.md](docs/team.md) and timeline [docs/worklog.md](docs/worklog.md). Merged pull requests show the build history.
 
 ## Follow-on training status
 
