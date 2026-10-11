@@ -79,7 +79,7 @@ The public demo is built from this repository by the `Dockerfile` (frontend and 
 4. Push this repo to the Space: `git remote add space https://huggingface.co/spaces/Abduloxunov/cardoctor` then `git push space main`.
 5. Public link: `https://abduloxunov-cardoctor.hf.space`. `deploy/start_space.py` downloads the weights, allows only the Space hostname (`SPACE_HOST`), and starts the server on port 7860.
 
-**Sample cars for the jury:** put our own photos (no faces, no readable plates) in `web/samples/car1/`, `car2/` and `car3/` as `front.jpg`, `rear.jpg`, `left.jpg` and `right.jpg`. The page then shows "Sample car 1/2/3" buttons. The jury can also upload their own photos.
+**Sample cars for the jury:** three team-supplied photo sets (BYD Seal, Toyota Camry, Chevrolet Cruze; plates masked or placeholders) are embedded as base64 in `web/samples/samples.json`, so no Git LFS is needed. The page shows "Sample 1/2/3" buttons; the jury can also upload their own photos.
 
 ## Where inference runs, speed, cost and limits
 

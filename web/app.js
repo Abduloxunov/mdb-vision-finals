@@ -66,7 +66,7 @@ async function render(r){
   drawTechs(r.technicians||[]);
   const need=(r.technicians||[]).flatMap(t=>t.matched).concat(r.workshops.flatMap(w=>w.matched));
   const term=need.includes('Tyre fitting')?'shinomontaj':need.includes('Glass replacement')?'avtooyna':need.includes('Electrical diagnostics')?'avtoelektrik':need.includes('Body repair')?'kuzov ta\'mirlash':'avtoservis';
-  const near=$('nearReal');near.href=here?`https://www.google.com/maps/search/${encodeURIComponent(term)}/@${here.lat},${here.lon},14z`:`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(term+' Toshkent')}`;near.textContent=`🗺 Find real ${term} workshops near me`;
+  window.realTerm=term;const near=$('nearReal');near.href=here?`https://www.google.com/maps/search/${encodeURIComponent(term)}/@${here.lat},${here.lon},14z`:`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(term+' Toshkent')}`;near.textContent=`🗺 Find real ${term} workshops near me`;
   const g=$('gallery');g.replaceChildren(...await Promise.all(r.photos.map(drawPhoto)));$('gallery').previousElementSibling.hidden=!r.photos.length;
   const sources=Object.fromEntries(r.evidence.sources.map(x=>[x.id,x]));const ans=$('answer');ans.replaceChildren();const ex=r.explanation||{};
   if(ex.answer){ans.append(el('h3','AI explanation (from the sources below)'));for(const c of ex.answer.claims){const p=el('p',c.text+' ','claim');p.append(sourceLink(sources[c.source_id],`[${c.record_id}]`));ans.append(p);}for(const q of ex.answer.follow_up_questions)ans.append(el('p','❓ '+q));}
@@ -95,14 +95,14 @@ function drawTechs(list){techList=list;const box=$('techs'),map=$('techmap');$('
   box.replaceChildren(...sorted.slice(0,4).map((t,i)=>{const c=el('div',undefined,'shop'+(i===0?' best':''));c.append(el('b',`${i+1}. ${t.name}`),el('p',`${t.dist.toFixed(1)} km ${here?'from you':'from city centre'} · ${t.district}`,'small'),el('p','Can help with: '+t.matched.join(', '),'small'));
     if(t.mobile)c.append(el('p','🚐 Can come to you','small'));const a=el('a','🧭 Route');a.href=routeUrl(t);a.target='_blank';a.rel='noopener noreferrer';c.append(a,el('p','Demo technician (fictional)','tiny'));return c;}));}
 $('locate').addEventListener('click',()=>{if(!navigator.geolocation){$('locate').textContent='Location not available';return;}$('locate').textContent='Locating…';
-  navigator.geolocation.getCurrentPosition(p=>{here={lat:p.coords.latitude,lon:p.coords.longitude};$('locate').textContent='📍 Location on';drawTechs(techList);},
+  navigator.geolocation.getCurrentPosition(p=>{here={lat:p.coords.latitude,lon:p.coords.longitude};$('locate').textContent='📍 Location on';drawTechs(techList);if(window.realTerm)$('nearReal').href=`https://www.google.com/maps/search/${encodeURIComponent(window.realTerm)}/@${here.lat},${here.lon},14z`;},
   ()=>{$('locate').textContent='Location blocked: showing distance from city centre';},{enableHighAccuracy:true,timeout:8000});});
 
 // Sample packages for the jury: each loads several photos of one car with their side tags.
 fetch('/samples/samples.json').then(r=>r.ok?r.json():null).then(m=>{if(!m)return;const box=$('sampleBtns');
   for(const pk of m.packages){const b=el('button',pk.title,'secondary sample');b.type='button';b.addEventListener('click',async()=>{
     $('status').textContent=`Loading ${pk.title}…`;const loaded=[];
-    for(const ph of pk.photos){try{const r=await fetch(`/samples/${pk.id}/${ph.file}`);if(!r.ok)continue;loaded.push({image:await shrink(new File([await r.blob()],ph.file)),view:ph.view});}catch{}}
+    for(const ph of pk.photos){try{let blob;if(ph.data){const bin=atob(ph.data.split(',')[1]);const u=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)u[i]=bin.charCodeAt(i);blob=new Blob([u],{type:'image/jpeg'});}else{const r=await fetch(`/samples/${pk.id}/${ph.file}`);if(!r.ok)continue;blob=await r.blob();}loaded.push({image:await shrink(new File([blob],ph.file)),view:ph.view});}catch{}}
     if(!loaded.length){$('status').textContent=`${pk.title} has no photos yet.`;return;}
     photos.splice(0,photos.length,...loaded);$('vehicle').value=pk.vehicle||'';drawThumbs();$('status').textContent=`${pk.title}: ${loaded.length} photos loaded. Press the button to check.`;});box.append(b);}
   $('samples').hidden=!m.packages.length;}).catch(()=>{});
